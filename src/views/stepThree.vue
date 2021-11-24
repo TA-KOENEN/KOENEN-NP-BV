@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ToolbarAuth :name="'Design App'" />
+    <ToolbarAuth :name="'Noodopvolging'" />
     <div class="ma-0 pa-0">
       <v-row no-gutters>
         <v-col
@@ -38,43 +38,31 @@
               <form ref="form">
                 <CustomDivider />
                 <div v-if="formal">
-                  <StatementText :statement="textIntro[3].textc" />
+                  <StatementText :statement="textIntro[3].textb" />
                 </div>
                 <div v-if="!formal">
-                  <StatementText :statement="textIntro[3].textcInf" />
+                  <StatementText :statement="textIntro[3].textbInf" />
                 </div>
                 <base-radio
-                  v-model="question_d"
+                  v-model="question_c"
                   :error-messages="errors"
                   rules="required"
-                  nrOptions="2"
-                  optionA="Ja, deze kleur is prima"
-                  optionB="Nee, ik wil dit wijzigen."
+                  nrOptions="3"
+                  optionA="Ja"
+                  optionB="Nee"
+                  optionC="Weet niet / onbekend"
                 ></base-radio>
-                <div v-if="question_a === 'ke1'">
-                  <div v-if="formal">
-                    <StatementText :statement="textIntro[3].textd" />
-                  </div>
-                  <div v-if="!formal">
-                    <StatementText :statement="textIntro[3].textdInf" />
-                  </div>
-                  <base-radio
-                    v-model="question_e"
-                    :error-messages="errors"
-                    rules="required"
-                    nrOptions="2"
-                    optionA="Ja, deze kleur is prima"
-                    optionB="Nee, ik wil dit wijzigen."
-                  ></base-radio>
+                <div v-if="formal">
+                  <StatementText
+                    :statement="'Aangezien u al een opvolger heeft aangesteld is de volgende vraag niet voor u van toepassing en wordt overgeslagen.'"
+                  ></StatementText>
                 </div>
-                <div v-if="question_d === 'ke2' || question_e === 'ke2'">
-                  <base-val-area
-                    :textA="'Welke wijzigingen mogen doorgevoerd worden?'"
-                    :rules="'max:200'"
-                    :label="'Wijzigingen'"
-                    v-model="text_b"
-                  />
+                <div v-if="!formal">
+                  <StatementText
+                    :statement="'Aangezien u al een opvolger heeft aangesteld is de volgende vraag niet voor u van toepassing en wordt overgeslagen.'"
+                  ></StatementText>
                 </div>
+
                 <CustomDivider />
                 <v-row class="mt-10">
                   <v-spacer />
@@ -114,42 +102,6 @@
               class="mb-5"
               :active="false"
             />
-            <step-text
-              :stepText="textIntro[9].header"
-              :number="9"
-              class="mb-5"
-              :active="false"
-            />
-            <step-text
-              :stepText="textIntro[10].header"
-              :number="10"
-              class="mb-5"
-              :active="false"
-            />
-            <step-text
-              :stepText="textIntro[11].header"
-              :number="11"
-              class="mb-5"
-              :active="false"
-            />
-            <step-text
-              :stepText="textIntro[12].header"
-              :number="12"
-              class="mb-5"
-              :active="false"
-            />
-            <step-text
-              :stepText="textIntro[13].header"
-              :number="13"
-              class="mb-5"
-              :active="false"
-            />
-            <step-text
-              :stepText="textIntro[14].header"
-              :number="14"
-              class="mb-5"
-              :active="false"
-            />
           </div>
         </v-col>
       </v-row>
@@ -175,34 +127,22 @@ export default {
         return this.$store.state.quick.question_a;
       },
     },
-    question_d: {
+    question_c: {
       get() {
-        return this.$store.state.quick.question_d;
+        return this.$store.state.quick.question_c;
       },
       set(value) {
-        this.$store.commit("quick/update_question_d", value);
-      },
-    },
-    question_e: {
-      get() {
-        return this.$store.state.quick.question_e;
-      },
-      set(value) {
-        this.$store.commit("quick/update_question_e", value);
-      },
-    },
-    text_b: {
-      get() {
-        return this.$store.state.quick.text_b;
-      },
-      set(value) {
-        this.$store.commit("quick/update_text_b", value);
+        this.$store.commit("quick/update_question_c", value);
       },
     },
   },
   methods: {
     nextStep() {
-      this.$router.push({ name: "stepFour" });
+      if (this.question_a === "ke1") {
+        this.$router.push({ name: "stepFive" });
+      } else {
+        this.$router.push({ name: "stepFour" });
+      }
     },
     backStep() {
       this.$router.push({ name: "stepTwo" });

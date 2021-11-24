@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ToolbarAuth :name="'Design App'" />
+    <ToolbarAuth :name="'Noodopvolging'" />
     <div class="ma-0 pa-0">
       <v-row no-gutters>
         <v-col
@@ -15,6 +15,7 @@
                 :head-text="textIntro[7].header"
                 :text-a="textIntro[7].texta"
                 :text-b="textIntro[7].textb"
+                :text-c="textIntro[7].textc"
               />
             </div>
             <div v-if="!formal">
@@ -22,6 +23,7 @@
                 :head-text="textIntro[7].headerInf"
                 :text-a="textIntro[7].textaInf"
                 :text-b="textIntro[7].textbInf"
+                :text-c="textIntro[7].textcInf"
               />
             </div>
           </div>
@@ -43,41 +45,15 @@
                 <div v-if="!formal">
                   <StatementText :statement="textIntro[7].textcInf" />
                 </div>
-
-                <ta-slider2 v-model="sl_a" />
                 <base-radio
-                  v-model="question_l"
+                  v-model="question_g"
                   :error-messages="errors"
                   rules="required"
-                  nrOptions="2"
-                  optionA="Ja, deze kleur is prima"
-                  optionB="Nee, ik wil dit wijzigen."
+                  nrOptions="3"
+                  optionA="Ja"
+                  optionB="Nee"
+                  optionC="Weet niet / onbekend"
                 ></base-radio>
-                <div v-if="question_a === 'ke1'">
-                  <div v-if="formal">
-                    <StatementText :statement="textIntro[7].textd" />
-                  </div>
-                  <div v-if="!formal">
-                    <StatementText :statement="textIntro[7].textdInf" />
-                  </div>
-                  <ta-slider2 v-model="sl_a" />
-                  <base-radio
-                    v-model="question_m"
-                    :error-messages="errors"
-                    rules="required"
-                    nrOptions="2"
-                    optionA="Ja, deze kleur is prima"
-                    optionB="Nee, ik wil dit wijzigen."
-                  ></base-radio>
-                </div>
-                <div v-if="question_l === 'ke2' || question_m === 'ke2'">
-                  <base-val-area
-                    :textA="'Welke wijzigingen mogen doorgevoerd worden?'"
-                    :rules="'max:200'"
-                    :label="'Wijzigingen'"
-                    v-model="text_f"
-                  />
-                </div>
                 <CustomDivider />
                 <v-row class="mt-10">
                   <v-spacer />
@@ -90,42 +66,6 @@
             <step-text
               :stepText="textIntro[8].header"
               :number="8"
-              class="mb-5"
-              :active="false"
-            />
-            <step-text
-              :stepText="textIntro[9].header"
-              :number="9"
-              class="mb-5"
-              :active="false"
-            />
-            <step-text
-              :stepText="textIntro[10].header"
-              :number="10"
-              class="mb-5"
-              :active="false"
-            />
-            <step-text
-              :stepText="textIntro[11].header"
-              :number="11"
-              class="mb-5"
-              :active="false"
-            />
-            <step-text
-              :stepText="textIntro[12].header"
-              :number="12"
-              class="mb-5"
-              :active="false"
-            />
-            <step-text
-              :stepText="textIntro[13].header"
-              :number="13"
-              class="mb-5"
-              :active="false"
-            />
-            <step-text
-              :stepText="textIntro[14].header"
-              :number="14"
               class="mb-5"
               :active="false"
             />
@@ -150,39 +90,18 @@ export default {
     };
   },
   computed: {
-    question_a: {
+    question_g: {
       get() {
-        return this.$store.state.quick.question_a;
-      },
-    },
-    question_l: {
-      get() {
-        return this.$store.state.quick.question_l;
+        return this.$store.state.quick.question_g;
       },
       set(value) {
-        this.$store.commit("quick/update_question_l", value);
-      },
-    },
-    question_m: {
-      get() {
-        return this.$store.state.quick.question_m;
-      },
-      set(value) {
-        this.$store.commit("quick/update_question_m", value);
-      },
-    },
-    text_f: {
-      get() {
-        return this.$store.state.quick.text_f;
-      },
-      set(value) {
-        this.$store.commit("quick/update_text_f", value);
+        this.$store.commit("quick/update_question_g", value);
       },
     },
   },
   methods: {
     nextStep() {
-      this.$router.push({ name: "stepEight" });
+      this.$router.push({ name: "stepEnd" });
     },
     backStep() {
       this.$router.push({ name: "stepSix" });

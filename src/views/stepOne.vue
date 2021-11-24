@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ToolbarAuth :name="'Design App'" />
+    <ToolbarAuth :name="'Noodopvolging'" />
     <div class="ma-0 pa-0">
       <v-row no-gutters>
         <v-col
@@ -36,38 +36,21 @@
               class="mb-5"
               :active="true"
             />
-            <ValidationObserver v-slot="{ invalid, validate, errors }">
-              <form ref="form">
-                <CustomDivider />
-                <div v-if="formal">
-                  <StatementText :statement="textIntro[1].textc" />
-                </div>
-                <div v-if="!formal">
-                  <StatementText :statement="textIntro[1].textcInf" />
-                </div>
-                <base-radio
-                  v-model="question_a"
-                  :error-messages="errors"
-                  rules="required"
-                  nrOptions="2"
-                  optionA="Ja, ik geef mijn klanten de mogelijkheid van verschillende kleurenschema's."
-                  optionB="Nee, een donker kleurenschema past niet binnen onze huisstijl."
-                ></base-radio>
-                <div v-if="question_a === 'ke2'">
-                  <StatementText
-                    :statement="'Vragen over een tweede kleurenschema worden overgeslagen.'"
-                  />
-                </div>
 
-                <v-row class="mt-10">
-                  <v-spacer />
-                  <btn-continue
-                    :onClick="nextStep"
-                    :disabled="invalid"
-                  ></btn-continue>
-                </v-row>
-              </form>
-            </ValidationObserver>
+            <form ref="form">
+              <CustomDivider />
+              <div v-if="formal">
+                <StatementText :statement="textIntro[1].textc" />
+              </div>
+              <div v-if="!formal">
+                <StatementText :statement="textIntro[1].textcInf" />
+              </div>
+              <ta-slider2 v-model="sl_a" />
+              <v-row class="mt-10">
+                <v-spacer />
+                <btn-continue :onClick="nextStep" />
+              </v-row>
+            </form>
             <CustomDivider />
             <div class="mt-10" />
             <step-text
@@ -119,36 +102,6 @@
               class="mb-5"
               :active="false"
             />
-            <step-text
-              :stepText="textIntro[10].header"
-              :number="10"
-              class="mb-5"
-              :active="false"
-            />
-            <step-text
-              :stepText="textIntro[11].header"
-              :number="11"
-              class="mb-5"
-              :active="false"
-            />
-            <step-text
-              :stepText="textIntro[12].header"
-              :number="12"
-              class="mb-5"
-              :active="false"
-            />
-            <step-text
-              :stepText="textIntro[13].header"
-              :number="13"
-              class="mb-5"
-              :active="false"
-            />
-            <step-text
-              :stepText="textIntro[14].header"
-              :number="14"
-              class="mb-5"
-              :active="false"
-            />
           </div>
         </v-col>
       </v-row>
@@ -169,12 +122,12 @@ export default {
     };
   },
   computed: {
-    question_a: {
+    sl_a: {
       get() {
-        return this.$store.state.quick.question_a;
+        return this.$store.state.quick.sl_a;
       },
       set(value) {
-        this.$store.commit("quick/update_question_a", value);
+        this.$store.commit("quick/update_sl_a", value);
       },
     },
   },
