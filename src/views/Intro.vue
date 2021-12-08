@@ -39,7 +39,7 @@
       <v-col cols="12" md="6">
         <div class="ma-5 pa-0">
           <vimeo-player
-            :video-id="textData.vimeo.intro"
+            :video-id="vimeo.intro"
             class="embed-container"
             :options="{ responsive: true }"
           ></vimeo-player>

@@ -122,9 +122,9 @@ export default {
     };
   },
   computed: {
-    question_a: {
+    question_b: {
       get() {
-        return this.$store.state.quick.question_a;
+        return this.$store.state.quick.question_b;
       },
     },
     question_c: {
@@ -138,7 +138,7 @@ export default {
   },
   methods: {
     nextStep() {
-      if (this.question_a === "ke1") {
+      if (this.question_b === "ke1") {
         this.$router.push({ name: "stepFive" });
       } else {
         this.$router.push({ name: "stepFour" });

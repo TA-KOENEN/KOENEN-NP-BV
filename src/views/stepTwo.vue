@@ -44,14 +44,14 @@
                   <StatementText :statement="textIntro[2].textbInf" />
                 </div>
                 <base-radio
-                  v-model="question_a"
+                  v-model="question_b"
                   :error-messages="errors"
                   rules="required"
                   nrOptions="2"
                   optionA="Ja"
                   optionB="Nee"
                 ></base-radio>
-                <div v-if="question_a === 'ke2'">
+                <div v-if="question_b === 'ke2'">
                   <div v-if="formal">
                     <StatementText
                       :statement="'De volgende vraag (juridische vertegenwoordiging) is niet voor u van toepassing en wordt overgeslagen'"
@@ -129,18 +129,18 @@ export default {
     };
   },
   computed: {
-    question_a: {
+    question_b: {
       get() {
-        return this.$store.state.quick.question_a;
+        return this.$store.state.quick.question_b;
       },
       set(value) {
-        this.$store.commit("quick/update_question_a", value);
+        this.$store.commit("quick/update_question_b", value);
       },
     },
   },
   methods: {
     nextStep() {
-      if (this.question_a === "ke1") {
+      if (this.question_b === "ke1") {
         this.$router.push({ name: "stepThree" });
       } else {
         this.$router.push({ name: "stepFour" });

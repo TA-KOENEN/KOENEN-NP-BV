@@ -105,9 +105,9 @@ export default {
     };
   },
   computed: {
-    question_a: {
+    question_b: {
       get() {
-        return this.$store.state.quick.question_a;
+        return this.$store.state.quick.question_b;
       },
     },
 
@@ -125,7 +125,7 @@ export default {
       this.$router.push({ name: "stepFive" });
     },
     backStep() {
-      if (this.question_a === "ke1") {
+      if (this.question_b === "ke1") {
         this.$router.push({ name: "stepThree" });
       } else {
         this.$router.push({ name: "stepTwo" });

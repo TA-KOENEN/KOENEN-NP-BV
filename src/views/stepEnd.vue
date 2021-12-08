@@ -89,11 +89,6 @@ export default {
     };
   },
   computed: {
-    question_a: {
-      get() {
-        return this.$store.state.quick.question_a;
-      },
-    },
     question_b: {
       get() {
         return this.$store.state.quick.question_b;
@@ -143,7 +138,6 @@ export default {
       console.log("gaat goed");
       const payload = {
         clientId: JSON.parse(localStorage.getItem("clientId")),
-        question_a: this.question_a,
         question_b: this.question_b,
         question_c: this.question_c,
         question_d: this.question_d,
