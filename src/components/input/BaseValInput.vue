@@ -4,7 +4,13 @@
     :rules="rules"
     v-slot="{ errors, valid }"
   >
+    <div class="mt-5" />
+    <h4 class="primary--text">{{ textA }}</h4>
+    <div class="caption info--text text-left">
+      {{ textB }}
+    </div>
     <v-text-field
+      color="accent"
       v-model="innerValue"
       :error-messages="errors"
       :success="valid"
@@ -12,6 +18,7 @@
       v-on="$listeners"
       outlined
       shaped
+      class="mt-5"
     ></v-text-field>
   </ValidationProvider>
 </template>
@@ -32,6 +39,14 @@ export default {
     // must be included in props
     value: {
       type: null,
+    },
+    textA: {
+      type: String,
+      default: null,
+    },
+    textB: {
+      type: String,
+      default: null,
     },
   },
   data: () => ({

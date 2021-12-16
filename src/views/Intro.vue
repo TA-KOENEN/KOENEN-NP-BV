@@ -46,7 +46,7 @@
 
           <br />
           <div v-if="formal">
-            Beste {{ firstNameClient }} {{ lastNameClient }}, <br />
+            Beste belangstellende, <br />
             <br />
             {{ textData.formal.text_a }}
             <br />
@@ -67,10 +67,12 @@
             <br />
             <br />
             <br />
-            {{ firstNameUser }} {{ lastNameUser }}<br />
+            {{ contactData.name }}<br />
+            {{ contactData.email }}<br />
+            {{ contactData.telephone }}<br />
           </div>
           <div v-if="!formal">
-            Beste {{ firstNameClient }} ,<br />
+            Beste belangstellende ,<br />
             <br />
             {{ textData.informal.text_a }}
             <br />
@@ -91,7 +93,9 @@
             <br />
             <br />
             <br />
-            {{ firstNameUser }} {{ lastNameUser }}<br />
+            {{ contactData.name }}<br />
+            {{ contactData.email }}<br />
+            {{ contactData.telephone }}<br />
           </div>
           <div class="text-end mr-15 mb-10 mt-15">
             <v-btn elevation="15" class="primary" @click="start">Ja</v-btn>
@@ -105,24 +109,20 @@
 
 <script>
 import vimeoData from "@/text/vimeo.json";
-import AuthService from "@/services/AuthService";
 import NotInt from "@/components/core/notInt";
 import textData from "@/text/textAintro.json";
+import contactData from "@/text/contact.json";
 
 export default {
   name: "Intro",
   components: { NotInt },
   data() {
     return {
-      companyName: null,
-      firstNameUser: null,
-      lastNameUser: null,
-      firstNameClient: null,
-      lastNameClient: null,
       formal: true,
       valid: true,
       vimeo: vimeoData,
       textData: textData,
+      contactData: contactData,
     };
   },
   methods: {
@@ -136,42 +136,18 @@ export default {
       });
     },
     start() {
-      this.$router.push({ name: "Login" });
+      this.$router.push({ name: "stepOne" });
     },
-    async end() {
-      // eslint-disable-next-line
-      console.log("stop");
-      const payloadLog = {
-        clientId: JSON.parse(localStorage.getItem("clientId")),
-      };
-      try {
-        // eslint-disable-next-line no-undef
-        await EventBus.$emit("notInt", true);
-        await this.sleep(3000);
-        await AuthService.notInt(payloadLog);
-        localStorage.removeItem("clientId");
-        localStorage.removeItem("firstNameClient");
-        localStorage.removeItem("lastNameClient");
-        localStorage.removeItem("emailClient");
-        localStorage.removeItem("firstNameUser");
-        localStorage.removeItem("lastNameUser");
-        localStorage.removeItem("formal");
-        this.$router.push({ path: "/Start" });
-      } catch (error) {
-        // eslint-disable-next-line no-undef
-        EventBus.$emit("errNotInt", true);
-      }
+    end() {
+      this.$router.push({ path: "/Start" });
     },
   },
+
   mounted() {
     const theme = localStorage.getItem("dark_theme");
     if (theme) {
       this.$vuetify.theme.dark = theme === "true";
     }
-    this.firstNameUser = JSON.parse(localStorage.getItem("firstNameUser"));
-    this.lastNameUser = JSON.parse(localStorage.getItem("lastNameUser"));
-    this.firstNameClient = JSON.parse(localStorage.getItem("firstNameClient"));
-    this.lastNameClient = JSON.parse(localStorage.getItem("lastNameClient"));
     this.formal = JSON.parse(localStorage.getItem("formal"));
   },
   computed: {},

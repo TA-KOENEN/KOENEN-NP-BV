@@ -17,7 +17,7 @@ import stepEnd from "@/views/stepEnd";
 import LoginSecond from "../views/LoginSecond";
 import Intro from "@/views/Intro";
 import Start from "@/views/Start";
-import store from "@/store";
+import Style from "@/views/Style";
 
 Vue.use(VueRouter);
 
@@ -31,6 +31,11 @@ const router = new VueRouter({
     }
   },
   routes: [
+    {
+      path: "/style",
+      name: "Style",
+      component: Style,
+    },
     {
       path: "/",
       name: "Start",
@@ -50,169 +55,71 @@ const router = new VueRouter({
       path: "/een",
       name: "stepOne",
       component: stepOne,
-      beforeEnter(to, from, next) {
-        if (store.state.auth.token) {
-          next();
-        } else {
-          next("/start");
-        }
-      },
     },
     {
       path: "/twee",
       name: "stepTwo",
       component: stepTwo,
-      beforeEnter(to, from, next) {
-        if (store.state.auth.token) {
-          next();
-        } else {
-          next("/start");
-        }
-      },
     },
     {
       path: "/drie",
       name: "stepThree",
       component: stepThree,
-      beforeEnter(to, from, next) {
-        if (store.state.auth.token) {
-          next();
-        } else {
-          next("/start");
-        }
-      },
     },
     {
       path: "/vier",
       name: "stepFour",
       component: stepFour,
-      beforeEnter(to, from, next) {
-        if (store.state.auth.token) {
-          next();
-        } else {
-          next("/start");
-        }
-      },
     },
     {
       path: "/vijf",
       name: "stepFive",
       component: stepFive,
-      beforeEnter(to, from, next) {
-        if (store.state.auth.token) {
-          next();
-        } else {
-          next("/start");
-        }
-      },
     },
     {
       path: "/zes",
       name: "stepSix",
       component: stepSix,
-      beforeEnter(to, from, next) {
-        if (store.state.auth.token) {
-          next();
-        } else {
-          next("/start");
-        }
-      },
     },
     {
       path: "/zeven",
       name: "stepSeven",
       component: stepSeven,
-      beforeEnter(to, from, next) {
-        if (store.state.auth.token) {
-          next();
-        } else {
-          next("/start");
-        }
-      },
     },
     {
       path: "/acht",
       name: "stepEight",
       component: stepEight,
-      beforeEnter(to, from, next) {
-        if (store.state.auth.token) {
-          next();
-        } else {
-          next("/start");
-        }
-      },
     },
     {
       path: "/negen",
       name: "stepNine",
       component: stepNine,
-      beforeEnter(to, from, next) {
-        if (store.state.auth.token) {
-          next();
-        } else {
-          next("/start");
-        }
-      },
     },
     {
       path: "/tien",
       name: "stepTen",
       component: stepTen,
-      beforeEnter(to, from, next) {
-        if (store.state.auth.token) {
-          next();
-        } else {
-          next("/start");
-        }
-      },
     },
     {
       path: "/elf",
       name: "stepEleven",
       component: stepEleven,
-      beforeEnter(to, from, next) {
-        if (store.state.auth.token) {
-          next();
-        } else {
-          next("/start");
-        }
-      },
     },
     {
       path: "/twaalf",
       name: "stepTwelve",
       component: stepTwelve,
-      beforeEnter(to, from, next) {
-        if (store.state.auth.token) {
-          next();
-        } else {
-          next("/start");
-        }
-      },
     },
     {
       path: "/dertien",
       name: "stepThirteen",
       component: stepThirteen,
-      beforeEnter(to, from, next) {
-        if (store.state.auth.token) {
-          next();
-        } else {
-          next("/start");
-        }
-      },
     },
     {
       path: "/einde",
       name: "stepEnd",
       component: stepEnd,
-      beforeEnter(to, from, next) {
-        if (store.state.auth.token) {
-          next();
-        } else {
-          next("/start");
-        }
-      },
     },
     {
       path: "*",

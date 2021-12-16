@@ -22,9 +22,10 @@
                 :text-e="textEnd.texte"
                 :text-f="textEnd.textf"
                 :text-g="textEnd.textg"
-                :firstName="firstNameUser"
-                :lastName="lastNameUser"
-                :websiteTeam="website_team"
+                :name="contactData.name"
+                :email="contactData.email"
+                :telephone="contactData.telephone"
+                :website="contactData.website"
               />
             </div>
             <div v-if="!formal">
@@ -37,9 +38,10 @@
                 :text-e="textEnd.texteInf"
                 :text-f="textEnd.textfInf"
                 :text-g="textEnd.textgInf"
-                :firstName="firstNameUser"
-                :lastName="lastNameUser"
-                :websiteTeam="website_team"
+                :name="contactData.name"
+                :email="contactData.email"
+                :telephone="contactData.telephone"
+                :website="contactData.website"
               />
             </div>
           </div>
@@ -53,10 +55,57 @@
               :active="true"
             />
             <CustomDivider />
-            <v-row class="mt-10 mb-10 justify-center">
-              <btn-report :on-click="getReport" />
-            </v-row>
-            <CustomDivider />
+            <ValidationObserver v-slot="{ invalid }">
+              <form ref="form">
+                <base-val-input
+                  :textA="'Voornaam'"
+                  :textB="'Verplicht veld'"
+                  :rules="'required|max:50'"
+                  :label="'Voornaam'"
+                  v-model="firstNameClient"
+                />
+                <base-val-input
+                  :textA="'Achternaam'"
+                  :textB="'Verplicht veld'"
+                  :rules="'required|max:150'"
+                  :label="'Achternaam'"
+                  v-model="lastNameClient"
+                />
+                <base-val-input
+                  :textA="'email'"
+                  :textB="'Verplicht veld'"
+                  :rules="'required|email'"
+                  :label="'email'"
+                  v-model="emailClient"
+                />
+                <base-val-input
+                  :textA="'Telefoon'"
+                  :textB="'Niet verplicht'"
+                  :rules="'max:25'"
+                  :label="'Telefoon'"
+                  v-model="telephoneClient"
+                />
+                <base-val-input
+                  :textA="'Bedrijfsnaam'"
+                  :textB="'Niet verplicht'"
+                  :rules="'max:150'"
+                  :label="'Bedrijfsnaam'"
+                  v-model="companyNameClient"
+                />
+                <base-val-input
+                  :textA="'Heeft u al een contactpersoon binnen onze organisatie'"
+                  :textB="'Zo ja wie, zo kunnen wij zorgen dat het op de juiste plek terecht komt.'"
+                  :rules="'max:150'"
+                  :label="'Contactpersoon'"
+                  v-model="contactClient"
+                />
+
+                <v-row class="mt-10 mb-10 justify-center">
+                  <btn-report :on-click="getReport" :disabled="invalid" />
+                </v-row>
+                <CustomDivider />
+              </form>
+            </ValidationObserver>
             <v-row class="mt-10 mb-10">
               <v-spacer />
               <btn-back :onClick="backStep" />
@@ -71,21 +120,28 @@
 <script>
 import textEind from "@/text/textEind.json";
 import textData from "@/text/textApp.json";
+import contactData from "@/text/contact.json";
 import ResultService from "@/services/ResultService";
-import AuthService from "@/services/AuthService";
+import BaseValInput from "@/components/input/BaseValInput";
 
 export default {
   name: "stepEnd",
-  components: {},
+  components: { BaseValInput },
   data() {
     return {
       textEnd: textEind,
+      contactData: contactData,
       textIntro: textData,
       formal: null,
-      firstNameUser: null,
-      lastNameUser: null,
-      clientId: null,
-      website_team: null,
+      firstNameClient: null,
+      lastNameClient: null,
+      emailClient: null,
+      telephoneClient: "",
+      companyNameClient: "",
+      contactClient: "",
+      team_id: 1,
+      user_id: 1,
+      style: "informeel",
     };
   },
   computed: {
@@ -136,8 +192,13 @@ export default {
     async getReport() {
       // eslint-disable-next-line
       console.log("gaat goed");
+      if (this.formal) {
+        this.style = "formeel";
+      }
+      if (!this.formal) {
+        this.style = "informeel";
+      }
       const payload = {
-        clientId: JSON.parse(localStorage.getItem("clientId")),
         question_b: this.question_b,
         question_c: this.question_c,
         question_d: this.question_d,
@@ -145,28 +206,28 @@ export default {
         question_f: this.question_f,
         question_g: this.question_g,
         sl_a: this.sl_a,
-      };
-      const payloadLog = {
-        clientId: JSON.parse(localStorage.getItem("clientId")),
+        emailClient: this.emailClient,
+        firstNameClient: this.firstNameClient,
+        lastNameClient: this.lastNameClient,
+        companyNameClient: this.companyNameClient,
+        telephoneClient: this.telephoneClient,
+        contactClient: this.contactClient,
+        team_id: this.team_id,
+        user_id: this.user_id,
+        style: this.style,
       };
       try {
         this.disableBtnReport = true;
         await ResultService.getReport(payload);
+        console.log("rapport verzonden");
         // eslint-disable-next-line no-undef
-        await EventBus.$emit("reportSend", true);
+        EventBus.$emit("reportSend", true);
 
-        await this.sleep(1000);
-        await AuthService.logout(payloadLog);
-        localStorage.removeItem("clientId");
-        localStorage.removeItem("firstNameClient");
-        localStorage.removeItem("lastNameClient");
-        localStorage.removeItem("emailClient");
-        localStorage.removeItem("firstNameUser");
-        localStorage.removeItem("lastNameUser");
+        await this.sleep(4000);
+        localStorage.removeItem("dark_theme");
+        localStorage.removeItem("guest");
         localStorage.removeItem("formal");
-        localStorage.removeItem("token");
-        localStorage.removeItem("website_team");
-        this.$router.push({ path: "/Start" });
+        await this.$router.push({ path: "/Start" });
       } catch (error) {
         // eslint-disable-next-line no-undef
         EventBus.$emit("errReport", true);

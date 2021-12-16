@@ -1,6 +1,5 @@
 <template>
   <v-container xs12 sm6 offset-sm3>
-    <error-start />
     <v-row justify="center">
       <div class="hoofd" @click="begin">
         <transition
@@ -52,95 +51,19 @@
 </template>
 
 <script>
-import ResultService from "@/services/ResultService";
-import errorStart from "@/components/core/errorStart";
 export default {
   name: "Start",
-  components: { errorStart },
+
   data() {
-    return {
-      firstNameClient: null,
-      lastNameClient: "test",
-      animated: false,
-      tokkie: null,
-      token: null,
-      email: null,
-      companyName: null,
-      website_team: null,
-      place: null,
-      firstNameUser: null,
-      lastNameUser: null,
-      emailUser: null,
-      telephoneUser: null,
-      error: false,
-      style: "formeel",
-    };
+    return {};
   },
 
   methods: {
-    async begin() {
-      // eslint-disable-next-line
-      console.log("gaat goed");
-
-      if (this.tokkie) {
-        try {
-          const payload = {
-            tokkie: this.tokkie,
-          };
-          const response = await ResultService.getStart(payload);
-          let app = this;
-          app.clientId = response.data.data.clientId;
-          app.firstNameClient = response.data.data.firstNameClient;
-          app.lastNameClient = response.data.data.lastNameClient;
-          app.emailClient = response.data.data.emailClient;
-          app.firstNameUser = response.data.data.firstNameUser;
-          app.lastNameUser = response.data.data.lastNameUser;
-          app.style = response.data.data.style;
-          app.website_team = response.data.data.website_team;
-          localStorage.setItem("clientId", JSON.stringify(this.clientId));
-          localStorage.setItem(
-            "firstNameClient",
-            JSON.stringify(this.firstNameClient)
-          );
-          localStorage.setItem(
-            "lastNameClient",
-            JSON.stringify(this.lastNameClient)
-          );
-          localStorage.setItem("emailClient", JSON.stringify(this.emailClient));
-          localStorage.setItem(
-            "firstNameUser",
-            JSON.stringify(this.firstNameUser)
-          );
-          localStorage.setItem(
-            "lastNameUser",
-            JSON.stringify(this.lastNameUser)
-          );
-          localStorage.setItem(
-            "website_team",
-            JSON.stringify(this.website_team)
-          );
-
-          if (this.style === "formeel") {
-            localStorage.setItem("formal", JSON.stringify(true));
-          }
-          if (this.style === "informeel") {
-            localStorage.setItem("formal", JSON.stringify(false));
-          }
-          this.$router.push({ name: "Intro" });
-          console.log("dataklant terug");
-        } catch (error) {
-          // eslint-disable-next-line no-undef
-          await EventBus.$emit("errStart", true);
-        }
-      } else {
-        // eslint-disable-next-line no-undef
-        await EventBus.$emit("errStart", true);
-      }
+    begin() {
+      this.$router.push({ name: "Style" });
     },
   },
-  mounted() {
-    this.tokkie = JSON.parse(localStorage.getItem("tokkie"));
-  },
+  mounted() {},
 
   computed: {
     // eslint-disable-next-line

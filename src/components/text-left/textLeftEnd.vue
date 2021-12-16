@@ -17,11 +17,13 @@
     {{ textE }}
     <br />
     <br />
-    {{ firstName }} {{ lastName }}
+    {{ name }}<br />
+    {{ email }}<br />
+    {{ telephone }}<br />
     <br />
     <br />
     {{ textF }}
-    {{ websiteTeam }}
+    {{ website }}
     <br />
     <br />
   </div>
@@ -39,9 +41,10 @@ export default {
     "textE",
     "textF",
     "textG",
-    "firstName",
-    "lastName",
-    "websiteTeam",
+    "name",
+    "email",
+    "telephone",
+    "website",
   ],
 };
 </script>

@@ -96,12 +96,6 @@
               class="mb-5"
               :active="false"
             />
-            <step-text
-              :stepText="textIntro[9].header"
-              :number="9"
-              class="mb-5"
-              :active="false"
-            />
           </div>
         </v-col>
       </v-row>
