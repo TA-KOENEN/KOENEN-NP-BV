@@ -223,7 +223,7 @@ export default {
         // eslint-disable-next-line no-undef
         EventBus.$emit("reportSend", true);
 
-        await this.sleep(4000);
+        await this.sleep(1000);
         localStorage.removeItem("dark_theme");
         localStorage.removeItem("guest");
         localStorage.removeItem("formal");
@@ -241,10 +241,6 @@ export default {
 
   mounted() {
     this.formal = JSON.parse(localStorage.getItem("formal"));
-    this.clientId = JSON.parse(localStorage.getItem("clientId"));
-    this.firstNameUser = JSON.parse(localStorage.getItem("firstNameUser"));
-    this.lastNameUser = JSON.parse(localStorage.getItem("lastNameUser"));
-    this.website_team = JSON.parse(localStorage.getItem("website_team"));
   },
 };
 </script>
