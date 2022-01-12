@@ -14,42 +14,48 @@
     "textaInf": "text",
     "textb": "text",
     "textbInf": "text",
-    "textc": "text",
-    "textcInf": "text!"
+    "textc": "max till f",
+    "textcInf": "max till f!"
   },
   {
-    "header": "Waarnemer of opvolger",
-    "headerInf": "Waarnemer of opvolger",
-    "texta": "In de situatie dat u plotseling niet aanwezig kunt zijn of zelfs permanent niet meer aanwezig kunt zijn, zal iemand anders uw rol in de onderneming over moeten nemen. Als dit van tijdelijke aard is, spreken we over waarneming. Als u definitief niet meer terugkomt in de onderneming, spreken we over opvolging. ",
-    "textaInf": "In de situatie dat je plotseling niet aanwezig kunt zijn of zelfs permanent niet meer aanwezig kunt zijn, zal iemand anders jouw rol in de onderneming over moeten nemen. Als dit van tijdelijke aard is, spreken we over waarneming. Als je definitief niet meer terugkomt in de onderneming, spreken we over opvolging. ",
-    "textb": "Heeft u een waarnemer of opvolger aangesteld?",
-    "textbInf": "Heb je een waarnemer of opvolger aangesteld?"
+    "header": "Aanspreekpunt",
+    "headerInf": "Aanspreekpunt",
+    "texta": "text",
+    "textaInf": "text",
+    "textb": "text",
+    "textbInf": "text",
+    "textc": "max till f",
+    "textcInf": "max till f!"
   },
   {
-    "header": "Juridische vertegenwoordiging",
-    "headerInf": "Juridische vertegenwoordiging",
-    "texta": "In uw afwezigheid zal uw waarnemer of opvolger de onderneming juridisch moeten kunnen vertegenwoordigen. Denk daarbij aan overeenkomsten met klanten en leveranciers, arbeidscontracten met medewerkers en inzicht c.q. toegang tot de zakelijke bankrekeningen en het uitvoeren van betalingen.",
-    "textaInf": "In jouw afwezigheid zal je waarnemer of opvolger de onderneming juridisch moeten kunnen vertegenwoordigen. Denk daarbij aan overeenkomsten met klanten en leveranciers, arbeidscontracten met medewerkers en inzicht c.q. toegang tot de zakelijke bankrekeningen en het uitvoeren van betalingen.",
-    "textb": "Is uw waarnemer of opvolger voldoende gemachtigd?",
-    "textbInf": "Is jouw waarnemer of opvolger voldoende gemachtigd?"
+    "header": "Waarnemer",
+    "headerInf": "Waarnemer",
+    "texta": "text",
+    "textaInf": "text",
+    "textb": "text",
+    "textbInf": "text",
+    "textc": "max till f",
+    "textcInf": "max till f!"
   },
   {
-    "header": "Mogelijke opvolger",
-    "headerInf": "Mogelijke opvolger",
-    "texta": "U geeft aan dat u geen waarnemer of opvolger heeft aangesteld.",
-    "textaInf": "Je geeft aan dat je geen waarnemer of opvolger hebt aangesteld.",
-    "textb": "Heeft u iemand in uw gezin, familie of bedrijf die geschikt en bereid is om als waarnemer of opvolger op te treden?",
-    "textbInf": "Heb je iemand in je gezin, familie of bedrijf die geschikt en bereid is om als waarnemer of opvolger op te treden?"
+    "header": "Opvolger",
+    "headerInf": "Opvolger",
+    "texta": "text",
+    "textaInf": "text",
+    "textb": "text",
+    "textbInf": "text",
+    "textc": "max till f",
+    "textcInf": "max till f!"
   },
   {
-    "header": "Bedrijfsstrategie",
-    "headerInf": "Bedrijfsstrategie",
-    "texta": "In de situatie dat u definitief niet terugkeert in de onderneming, zal de onderneming uiteindelijk in andere handen overgaan of wellicht zelfs in het uiterste geval haar activiteiten moeten staken. ",
-    "textaInf": "In de situatie dat je definitief niet terugkeert in de onderneming, zal de onderneming uiteindelijk in andere handen overgaan of wellicht zelfs in het uiterste geval haar activiteiten moeten staken. ",
-    "textb": "Voor uw opvolger en gezin is het van essentieel belang om te weten wat uw wensen zijn als u zelf niet meer betrokken kunt zijn bij uw onderneming. Allereerst: wat is de bedrijfsstrategie en is deze bedrijfsstrategie bij alle betrokkenen bekend?",
-    "textbInf": "Voor jouw opvolger en gezin is het van essentieel belang om te weten wat jouw wensen zijn als je zelf niet meer betrokken kunt zijn bij jouw onderneming. Allereerst: wat is de bedrijfsstrategie en is deze bedrijfsstrategie bij alle betrokkenen bekend?",
-    "textc": "Heeft u een uitgewerkt business plan voor uw onderneming?",
-    "textcInf": "Heb je een uitgewerkt business plan voor jouw onderneming?"
+    "header": "Einde",
+    "headerInf": "Einde",
+    "texta": "text",
+    "textaInf": "text",
+    "textb": "text",
+    "textbInf": "text",
+    "textc": "max till f",
+    "textcInf": "max till f!"
   },
   {
     "header": "Eigendomsstrategie",

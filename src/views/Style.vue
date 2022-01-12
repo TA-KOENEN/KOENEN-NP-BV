@@ -43,10 +43,14 @@
         </div>
         <v-row class="ml-15 mt-15 mr-15">
           <div>
-            Beste belangstellende, <br /><br />
+            Beste {{ firstNameClient }} {{ lastNameClient }}, <br /><br />
             Voordat we verder gaan, kunt u / kan je aangeven wat uw / jouw
             voorkeur heeft?<br />
-            Onze rapportage en vraagstelling kunnen wij hier dan op aansluiten.
+            Onze rapportage en vraagstelling kunnen wij hier dan op
+            aansluiten.<br /><br />
+            Verder kan met de knop voor een donker of licht kleurenschema worden
+            gekozen. Dit kan eventueel later nog gewijzigd worden met de knop
+            rechtsboven.
           </div>
         </v-row>
         <v-row class="ml-15 mr-15 mt-15">
@@ -54,11 +58,19 @@
             v-model="style"
             rules="required"
             nrOptions="2"
-            optionA="MIjn voorkeur gaat uit naar een formele stijl."
+            optionA="Mijn voorkeur gaat uit naar een formele stijl."
             optionB="Mijn voorkeur gaat uit naar een informele stijl."
           ></base-radio>
         </v-row>
-
+        <v-row class="ml-15 mt-15 mr-15">
+          <div>
+            Bla bla bla <br /><br />
+            {{ companyNameTeam }}<br />
+            {{ firstNameUser }} {{ lastNameUser }}<br />
+            {{ emailUser }}<br />
+            {{ telephoneUser }}<br />
+          </div>
+        </v-row>
         <v-row justify="end" class="mr-8">
           <v-btn elevation="15" class="primary ma-16" @click="start"
             >Verder</v-btn
@@ -76,6 +88,13 @@ export default {
   data() {
     return {
       style: null,
+      firstNameClient: null,
+      lastNameClient: null,
+      firstNameUser: null,
+      lastNameUser: null,
+      emailUser: null,
+      telephoneUser: null,
+      companyNameTeam: null,
     };
   },
   methods: {
@@ -89,10 +108,18 @@ export default {
       } else {
         localStorage.setItem("formal", JSON.stringify(false));
       }
-      this.$router.push({ name: "Intro" });
+      this.$router.push({ name: "Login" });
     },
   },
-  mounted() {},
+  mounted() {
+    this.firstNameClient = JSON.parse(localStorage.getItem("firstNameClient"));
+    this.lastNameClient = JSON.parse(localStorage.getItem("lastNameClient"));
+    this.firstNameUser = JSON.parse(localStorage.getItem("firstNameUser"));
+    this.lastNameUser = JSON.parse(localStorage.getItem("lastNameUser"));
+    this.emailUser = JSON.parse(localStorage.getItem("emailUser"));
+    this.telephoneUser = JSON.parse(localStorage.getItem("telephoneUser"));
+    this.companyNameTeam = JSON.parse(localStorage.getItem("companyNameTeam"));
+  },
 
   computed: {},
 };

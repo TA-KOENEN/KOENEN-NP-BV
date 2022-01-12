@@ -1,6 +1,6 @@
 <template>
   <v-btn
-    color="accent"
+    color="primary"
     small
     class="mb-5 mr-8"
     @click="onClick"

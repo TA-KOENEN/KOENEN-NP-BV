@@ -1,0 +1,63 @@
+[
+  {
+    "id": 0
+  },
+  {
+   "id": 1,
+   "text": "Met wie kan binnen de onderneming contact worden opgenomen als de ondernemer door een persoonlijke crisissituatie wordt getroffen?",
+   "textAppForm": "Met wie kan binnen uw onderneming contact worden opgenomen als u door een persoonlijke crisissituatie wordt getroffen?",
+   "textAppInf": "Met wie kan binnen jouw onderneming contact worden opgenomen als je door een persoonlijke crisissituatie wordt getroffen?",
+   "commentApp": true,
+   "nrNotes": 1,
+   "noteAppFormA": "Een vaste contactpersoon in uw organisatie betekent dat snel gehandeld kan worden en direct de juiste personen kunnen worden geïnformeerd.",
+   "noteAppFormB": "",
+   "noteAppFormC": "",
+   "noteAppInfA": "Een vaste contactpersoon in jouw organisatie betekent dat snel gehandeld kan worden en direct de juiste personen kunnen worden geïnformeerd.",
+   "noteAppInfB": "",
+   "noteAppInfC": ""
+
+ },
+ {
+  "id": 2,
+  "text": "Op basis van welke juridisch document is de waarnemer gemachtigd te handelen?",
+  "label": "Handelen",
+  "textAppForm": "Op basis van welk juridisch document is uw waarnemer gemachtigd om namens uw onderneming te handelen?",
+  "textAppInf": "Op basis van welk juridisch document is uw waarnemer gemachtigd om namens jouw onderneming te handelen?",
+  "commentApp": false,
+  "nrNotes": 1,
+  "noteAppFormA": "",
+  "noteAppFormB": "",
+  "noteAppFormC": "",
+  "noteAppInfA": "",
+  "noteAppInfB": "",
+  "noteAppInfC": ""
+ },
+ {
+  "id": 3,
+  "text": "Op basis van welke juridisch document is de opvolger gemachtigd te handelen namens de onderneming?",
+  "textAppForm": "Op basis van welke juridisch document is de opvolger gemachtigd te handelen namens de onderneming?",
+  "textAppInf": "Op basis van welke juridisch document is de opvolger gemachtigd te handelen namens de onderneming?",
+  "commentApp": false,
+  "nrNotes": 1,
+  "noteAppFormA": "",
+  "noteAppFormB": "",
+  "noteAppFormC": "",
+  "noteAppInfA": "",
+  "noteAppInfB": "",
+  "noteAppInfC": ""
+ },
+ {
+  "id": 4,
+  "text": "Indien de ondernemer wenst dat een extern directeur wordt aangetrokken om de onderneming te leiden, aan welk profiel dient deze extern directeur te voldoen?",
+  "textAppForm": "Als u voor deze situatie een extern directeur wilt aanstellen, aan welk profiel dient deze extern directeur dan te voldoen?",
+  "textAppInf": "Als je voor deze situatie een extern directeur wilt aanstellen, aan welk profiel dient deze extern directeur dan te voldoen?",
+  "commentApp": true,
+  "nrNotes": 1,
+  "noteAppFormA": "Niemand kent de eisen aan uw rol in de onderneming beter dan uzelf. Het grote voordeel van het vooraf beschrijven van het profiel is dat geen tijd verloren gaat in de werving en selectie van kandidaten.",
+  "noteAppFormB": "",
+  "noteAppFormC": "",
+  "noteAppInfA": "Niemand kent de eisen aan jouw rol in de onderneming beter dan jijzelf. Het grote voordeel van het vooraf beschrijven van het profiel is dat geen tijd verloren gaat in de werving en selectie van kandidaten.",
+  "noteAppInfB": "",
+  "noteAppInfC": ""
+ }
+]

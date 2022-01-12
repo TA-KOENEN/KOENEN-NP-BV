@@ -10,7 +10,10 @@ export default {
   data() {
     return {};
   },
-  created() {},
+  created() {
+    this.tokkie = this.$route.query.name;
+    localStorage.setItem("tokkie", JSON.stringify(this.tokkie));
+  },
 };
 </script>
 <style>
@@ -19,6 +22,6 @@ body {
   overflow-x: hidden;
 }
 .full-page {
-  height: 250vh;
+  height: 300vh;
 }
 </style>

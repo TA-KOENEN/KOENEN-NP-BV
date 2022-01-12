@@ -9,10 +9,11 @@ export const state = {
   loading: false,
   error: null,
   stepone: false,
-  steptwo: false,
+  steptwo: localStorage.getItem("stepTwo") || false,
   stepfamily: false,
   token: localStorage.getItem("token") || "",
   family: null,
+
 };
 
 export const mutations = {
@@ -53,11 +54,16 @@ export const actions = {
       localStorage.removeItem("clientId");
       localStorage.removeItem("firstNameClient");
       localStorage.removeItem("lastNameClient");
-      localStorage.removeItem("emailClient");
+      localStorage.removeItem("companyName");
       localStorage.removeItem("firstNameUser");
       localStorage.removeItem("lastNameUser");
+      localStorage.removeItem("emailUser");
+      localStorage.removeItem("telephoneUser");
+      localStorage.removeItem("companyNameTeam");
+      localStorage.removeItem("websiteTeam");
       localStorage.removeItem("formal");
       localStorage.removeItem("token");
+
       router.push({ path: "/Start" });
     });
   },
@@ -84,23 +90,11 @@ export const actions = {
       localStorage.setItem("token", response.data.token);
       // axios.defaults.headers.common['Authorization'] = response.data.token
       commit("SET_STEPTWO", true);
+      localStorage.setItem("stepTwo", JSON.stringify(true));
       commit("SET_LOADING", false);
     } catch (error) {
       commit("SET_LOADING", false);
       commit("SET_STEPTWO", false);
-      commit("SET_ERROR", getError(error));
-    }
-  },
-  async loginFam({ commit }, payload) {
-    commit("SET_LOADING", true);
-    try {
-      const response = await AuthService.loginFam(payload);
-      commit("SET_FAMILY", response.data);
-      commit("SET_STEPFAMILY", true);
-      commit("SET_LOADING", false);
-    } catch (error) {
-      commit("SET_LOADING", false);
-      commit("SET_STEPFAMILY", false);
       commit("SET_ERROR", getError(error));
     }
   },

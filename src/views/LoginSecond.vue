@@ -99,6 +99,7 @@ export default {
   components: { FlashMessage, newCode },
   data() {
     return {
+      clientId: null,
       firstNameClient: null,
       lastNameClient: null,
       emailClient: null,
@@ -134,14 +135,15 @@ export default {
     },
     async login() {
       let payload = {
-        email: this.emailClient,
+        clientId: this.clientId,
         token: this.securityCode,
+        tokkie: this.tokkie,
       };
       this.error = null;
       try {
         await this.$store.dispatch("auth/loginB", payload);
         if (this.stepTwo) {
-          this.$router.push({ name: "stepOne" });
+          this.$router.push({ name: "Modules" });
         } else {
           this.errorBtn = true;
           const error = Error(
@@ -156,6 +158,8 @@ export default {
     },
   },
   mounted() {
+    this.clientId = JSON.parse(localStorage.getItem("clientId"));
+    this.tokkie = JSON.parse(localStorage.getItem("tokkie"));
     this.firstNameClient = JSON.parse(localStorage.getItem("firstNameClient"));
     this.lastNameClient = JSON.parse(localStorage.getItem("lastNameClient"));
     this.emailClient = JSON.parse(localStorage.getItem("emailClient"));

@@ -1,23 +1,22 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import stepOne from "@/views/stepOne.vue";
-import stepTwo from "@/views/stepTwo.vue";
-import stepThree from "@/views/stepThree";
-import stepFour from "@/views/stepFour";
-import stepFive from "@/views/stepFive";
-import stepSix from "@/views/stepSix";
-import stepSeven from "@/views/stepSeven";
-import stepEight from "@/views/stepEight";
-import stepNine from "@/views/stepNine";
-import stepTen from "@/views/stepTen";
-import stepEleven from "@/views/stepEleven";
-import stepTwelve from "@/views/stepTwelve";
-import stepThirteen from "@/views/stepThirteen";
-import stepEnd from "@/views/stepEnd";
+
+import Start from "@/views/Start";
 import LoginSecond from "../views/LoginSecond";
 import Intro from "@/views/Intro";
-import Start from "@/views/Start";
 import Style from "@/views/Style";
+import Modules from "@/views/Modules";
+
+const startModuleA = () =>
+  import("@/views/moduleA/start" /* webpackChunkName: "moduleAstart" */);
+const stepAModuleA = () =>
+  import("@/views/moduleA/stepA" /* webpackChunkName: "moduleAstepA" */);
+const stepBModuleA = () =>
+  import("@/views/moduleA/stepB" /* webpackChunkName: "moduleAstepB" */);
+const stepCModuleA = () =>
+  import("@/views/moduleA/stepC" /* webpackChunkName: "moduleAstepC" */);
+const endModuleA = () =>
+  import("@/views/moduleA/stepEnd" /* webpackChunkName: "moduleAstepEnd" */);
 
 Vue.use(VueRouter);
 
@@ -42,6 +41,11 @@ const router = new VueRouter({
       component: Start,
     },
     {
+      path: "/modules",
+      name: "Modules",
+      component: Modules,
+    },
+    {
       path: "/intro",
       name: "Intro",
       component: Intro,
@@ -52,79 +56,41 @@ const router = new VueRouter({
       component: LoginSecond,
     },
     {
-      path: "/een",
-      name: "stepOne",
-      component: stepOne,
-    },
-    {
-      path: "/twee",
-      name: "stepTwo",
-      component: stepTwo,
-    },
-    {
-      path: "/drie",
-      name: "stepThree",
-      component: stepThree,
-    },
-    {
-      path: "/vier",
-      name: "stepFour",
-      component: stepFour,
-    },
-    {
-      path: "/vijf",
-      name: "stepFive",
-      component: stepFive,
-    },
-    {
-      path: "/zes",
-      name: "stepSix",
-      component: stepSix,
-    },
-    {
-      path: "/zeven",
-      name: "stepSeven",
-      component: stepSeven,
-    },
-    {
-      path: "/acht",
-      name: "stepEight",
-      component: stepEight,
-    },
-    {
-      path: "/negen",
-      name: "stepNine",
-      component: stepNine,
-    },
-    {
-      path: "/tien",
-      name: "stepTen",
-      component: stepTen,
-    },
-    {
-      path: "/elf",
-      name: "stepEleven",
-      component: stepEleven,
-    },
-    {
-      path: "/twaalf",
-      name: "stepTwelve",
-      component: stepTwelve,
-    },
-    {
-      path: "/dertien",
-      name: "stepThirteen",
-      component: stepThirteen,
-    },
-    {
-      path: "/einde",
-      name: "stepEnd",
-      component: stepEnd,
-    },
-    {
       path: "*",
       component: Start,
       name: "Start",
+    },
+    {
+      path: "/module-a-start",
+      component: startModuleA,
+      name: "module-a-start",
+    },
+    {
+      path: "/module-a-step-a",
+      component: stepAModuleA,
+      name: "module-a-step-a",
+    },
+    {
+      path: "/module-a-step-b",
+      component: stepBModuleA,
+      name: "module-a-step-b",
+    },
+    {
+      path: "/module-a-step-c",
+      component: stepCModuleA,
+      name: "module-a-step-c",
+    },
+    {
+      path: "/module-a-end",
+      component: endModuleA,
+      name: "module-a-end",
+      beforeEnter(to, from, next) {
+        if (localStorage.stepTwo) {
+          next();
+        } else {
+          next("/start");
+        }
+      },
     },
   ],
 });

@@ -1,45 +1,63 @@
 <template>
-  <div>
-    <report />
-    <logout />
-    <v-toolbar dark class="primary">
-      <!--    <v-toolbar dark :src="require('@/assets/core/alleenlijn.jpg')">-->
-      <v-toolbar-title class="ml-15">{{ name }}</v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn outlined small color="secondary" @click="logout">Logout</v-btn>
-      <v-btn icon @click="toggle_dark_mode">
-        <v-icon>mdi-theme-light-dark</v-icon>
-      </v-btn>
-    </v-toolbar>
-  </div>
+  <v-dialog v-model="innerValue" max-width="500px" v-on="$listeners">
+    <v-card>
+      <v-card-title>Stoppen</v-card-title>
+      <v-card-text>
+        Wilt u stoppen en later verder gaan, terug naar het overzicht van alle
+        modules. Klik sluit om dit venster te sluiten.
+      </v-card-text>
+      <v-card-actions>
+        <v-btn color="accent" text @click="goChange">Sluit</v-btn>
+        <v-spacer></v-spacer>
+        <v-btn color="primary" text @click="goStop()">Stop</v-btn>
+        <v-btn color="secondary" text @click="goModules()">Modules</v-btn>
+      </v-card-actions>
+    </v-card>
+  </v-dialog>
 </template>
 
 <script>
-import Report from "@/components/core/report";
-import { mapGetters } from "vuex";
 import authService from "@/services/AuthService";
 
 export default {
-  name: "Toolbar",
-  props: ["name"],
-  components: { Report },
+  name: "stopElement",
+  props: {
+    value: {
+      type: Boolean,
+    },
+  },
   data() {
     return {
-      theme: null,
+      innerValue: "",
     };
   },
+  watch: {
+    // Handles internal model changes.
+    innerValue(newVal) {
+      this.$emit("input", newVal);
+    },
+    // Handles external model changes.
+    value(newVal) {
+      this.innerValue = newVal;
+    },
+  },
+  created() {
+    if (this.value) {
+      this.innerValue = this.value;
+    }
+  },
+
   methods: {
+    goChange() {
+      this.innerValue = false;
+    },
+
     sleep(ms) {
       return new Promise((resolve) => {
         setTimeout(resolve, ms);
       });
     },
-
-    toggle_dark_mode: function () {
-      this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
-      localStorage.setItem("dark_theme", this.$vuetify.theme.dark.toString());
-    },
-    async logout() {
+    async goStop() {
       // eslint-disable-next-line no-undef
       await EventBus.$emit("logoutApp", true);
       await this.sleep(2000);
@@ -62,16 +80,11 @@ export default {
       localStorage.removeItem("websiteTeam");
       this.$router.push({ path: "/" });
     },
-  },
-  mounted() {
-    const theme = localStorage.getItem("dark_theme");
-    if (theme) {
-      this.$vuetify.theme.dark = theme === "true";
-    }
-  },
-  computed: {
-    ...mapGetters("auth", ["email"]),
+    goModules() {
+      this.$router.push({ name: "Modules" });
+    },
   },
 };
 </script>
+
 <style scoped></style>

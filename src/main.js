@@ -18,6 +18,9 @@ import BtnCont from "@/components/buttons/BtnCont";
 Vue.component("btn-continue", BtnCont);
 import BtnBack from "@/components/buttons/BtnBack";
 Vue.component("btn-back", BtnBack);
+import BtnStop from "@/components/buttons/BtnStop";
+Vue.component("btn-stop", BtnStop);
+
 import BtnReport from "@/components/buttons/BtnReport";
 Vue.component("btn-report", BtnReport);
 
@@ -41,7 +44,7 @@ import textLeft from "@/components/text-left/textLeft";
 Vue.component("text-left", textLeft);
 import TextLeftEnd from "@/components/text-left/textLeftEnd";
 Vue.component("text-left-end", TextLeftEnd);
-import StatementText from "@/components/StatementText";
+import StatementText from "@/components/statementText";
 Vue.component("StatementText", StatementText);
 import StepText from "@/components/stepText";
 Vue.component("step-text", StepText);
@@ -49,6 +52,16 @@ import ErrorReport from "@/components/core/errorReport";
 Vue.component("error-report", ErrorReport);
 import Report from "@/components/core/report";
 Vue.component("report", Report);
+import Logout from "@/components/core/logout";
+Vue.component("Logout", Logout);
+import BaseValInput from "@/components/input/BaseValInput";
+Vue.component("BaseValInput", BaseValInput);
+import Saving from "@/components/core/saving";
+Vue.component("Saving", Saving);
+import stopElement from "@/components/core/stopElement";
+Vue.component("stop-element", stopElement);
+import endElement from "@/components/core/endElement";
+Vue.component("end-element", endElement);
 
 new Vue({
   router,

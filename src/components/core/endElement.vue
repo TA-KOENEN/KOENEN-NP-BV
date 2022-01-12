@@ -1,31 +1,42 @@
 <template>
   <div>
-    <report />
-    <logout />
-    <v-toolbar dark class="primary">
-      <!--    <v-toolbar dark :src="require('@/assets/core/alleenlijn.jpg')">-->
-      <v-toolbar-title class="ml-15">{{ name }}</v-toolbar-title>
-      <v-spacer></v-spacer>
-      <v-btn outlined small color="secondary" @click="logout">Logout</v-btn>
-      <v-btn icon @click="toggle_dark_mode">
-        <v-icon>mdi-theme-light-dark</v-icon>
-      </v-btn>
-    </v-toolbar>
+    <div v-if="formal">
+      <h3 class="primary--text">Uw rapportage is onderweg.</h3>
+      <br />
+      Let op deze rapportage kan in uw spambox terecht komen.<br />
+      U kan nu direct verder gaan met een volgende module of stoppen en later
+      verder gaan.
+    </div>
+    <div v-if="!formal">
+      <h3 class="primary--text">Jouw rapportage is onderweg.</h3>
+      <br />
+      Let op deze rapportage kan in je spambox terecht komen.<br />
+      Je kan nu direct verder gaan met een volgende module of stoppen en later
+      verder gaan.
+    </div>
+
+    <v-row no-gutters class="mt-5">
+      <v-col cols="1" />
+      <v-col cols="4">
+        <v-btn large block color="primary" @click="goStop">STOP</v-btn>
+      </v-col>
+      <v-col cols="2" />
+      <v-col cols="4">
+        <v-btn large block color="accent" @click="goOn">Verder</v-btn>
+      </v-col>
+      <v-col />
+    </v-row>
   </div>
 </template>
 
 <script>
-import Report from "@/components/core/report";
-import { mapGetters } from "vuex";
 import authService from "@/services/AuthService";
 
 export default {
-  name: "Toolbar",
-  props: ["name"],
-  components: { Report },
+  name: "endElement",
   data() {
     return {
-      theme: null,
+      formal: true,
     };
   },
   methods: {
@@ -35,11 +46,7 @@ export default {
       });
     },
 
-    toggle_dark_mode: function () {
-      this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
-      localStorage.setItem("dark_theme", this.$vuetify.theme.dark.toString());
-    },
-    async logout() {
+    async goStop() {
       // eslint-disable-next-line no-undef
       await EventBus.$emit("logoutApp", true);
       await this.sleep(2000);
@@ -62,16 +69,14 @@ export default {
       localStorage.removeItem("websiteTeam");
       this.$router.push({ path: "/" });
     },
+    goOn() {
+      this.$router.push({ name: "Modules" });
+    },
   },
   mounted() {
-    const theme = localStorage.getItem("dark_theme");
-    if (theme) {
-      this.$vuetify.theme.dark = theme === "true";
-    }
-  },
-  computed: {
-    ...mapGetters("auth", ["email"]),
+    this.formal = JSON.parse(localStorage.getItem("formal"));
   },
 };
 </script>
+
 <style scoped></style>

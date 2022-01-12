@@ -51,20 +51,94 @@
 </template>
 
 <script>
+import ResultService from "@/services/ResultService";
+
 export default {
   name: "Start",
 
   data() {
-    return {};
+    return {
+      tokkie: "",
+    };
   },
 
   methods: {
-    begin() {
-      this.$router.push({ name: "Style" });
+    async begin() {
+      // eslint-disable-next-line
+      console.log("gaat goed");
+
+      if (this.tokkie) {
+        console.log("zijn we hier");
+        try {
+          const payload = {
+            tokkie: this.tokkie,
+          };
+          const response = await ResultService.getStart(payload);
+          let app = this;
+          app.clientId = response.data.data.clientId;
+          app.firstNameClient = response.data.data.firstNameClient;
+          app.lastNameClient = response.data.data.lastNameClient;
+          app.firstNameUser = response.data.data.firstNameUser;
+          app.lastNameUser = response.data.data.lastNameUser;
+          app.emailUser = response.data.data.emailUser;
+          app.telephoneUser = response.data.data.telephoneUser;
+          app.websiteTeam = response.data.data.websiteTeam;
+          app.companyNameTeam = response.data.data.companyNameTeam;
+          app.moduleFour = response.data.data.moduleFour;
+          app.companyName = response.data.data.nameCompany;
+          app.pass_token = response.data.data.password_np_sec;
+          localStorage.setItem("clientId", JSON.stringify(this.clientId));
+          localStorage.setItem("pass_token", JSON.stringify(this.pass_token));
+          localStorage.setItem(
+            "firstNameClient",
+            JSON.stringify(this.firstNameClient)
+          );
+          localStorage.setItem(
+            "lastNameClient",
+            JSON.stringify(this.lastNameClient)
+          );
+          localStorage.setItem("companyName", JSON.stringify(this.companyName));
+          localStorage.setItem(
+            "firstNameUser",
+            JSON.stringify(this.firstNameUser)
+          );
+          localStorage.setItem(
+            "lastNameUser",
+            JSON.stringify(this.lastNameUser)
+          );
+          localStorage.setItem("emailUser", JSON.stringify(this.emailUser));
+          localStorage.setItem(
+            "telephoneUser",
+            JSON.stringify(this.telephoneUser)
+          );
+          localStorage.setItem(
+            "companyNameTeam",
+            JSON.stringify(this.companyNameTeam)
+          );
+          localStorage.setItem("moduleFour", JSON.stringify(this.moduleFour));
+          localStorage.setItem("websiteTeam", JSON.stringify(this.websiteTeam));
+
+          this.$router.push({ name: "Style" });
+        } catch (error) {
+          // eslint-disable-next-line no-undef
+          await EventBus.$emit("errStart", true);
+        }
+      } else {
+        // eslint-disable-next-line no-undef
+        await EventBus.$emit("errStart", true);
+      }
     },
   },
-  mounted() {},
 
+  created() {
+    this.tokkie = JSON.parse(localStorage.getItem("tokkie"));
+    if (this.tokkie !== undefined) {
+      console.log("do nothing");
+    } else {
+      this.tokkie = this.$route.query.name;
+      localStorage.setItem("tokkie", JSON.stringify(this.tokkie));
+    }
+  },
   computed: {
     // eslint-disable-next-line
     imageHeight() {
