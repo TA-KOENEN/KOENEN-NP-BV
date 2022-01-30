@@ -1,0 +1,33 @@
+[
+  {
+    "id": 0
+  },
+  {
+    "id": 1,
+    "text": "Wat zijn de voornaamste redenen tot staking",
+    "textAppForm": "Wat zijn uw voornaamste redenen om te adviseren de bedrijfsactiviteiten te staken in de situatie dat u niet meer kunt ondernemen:",
+    "textAppInform": "Wat zijn jouw voornaamste redenen om te adviseren de bedrijfsactiviteiten te staken in de situatie dat je niet meer kunt ondernemen:",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  },
+  {
+    "id": 2,
+    "text": "Wat zijn de voornaamste aandachtspunten bij staking van de activiteiten ten aanzien van:",
+    "textAppForm": "Wat zijn uw voornaamste aandachtspunten bij staking van de activiteiten ten aanzien van:",
+    "textAppInform": "Wat zijn jouw voornaamste aandachtspunten bij staking van de activiteiten ten aanzien van:",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  }
+]

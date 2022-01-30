@@ -1,0 +1,61 @@
+[
+  {
+    "id": 0
+  },
+  {
+   "id": 1,
+   "text": "Welke medewerker heeft (potentieel) interesse in de overname van de onderneming?",
+   "textAppForm": "Welke medewerker heeft (potentieel) interesse in de overname van de onderneming?",
+   "textAppInform": "Welke medewerker heeft (potentieel) interesse in de overname van de onderneming?",
+   "commentApp": false,
+   "nrNotes": 1,
+   "noteAppFormA": "",
+   "noteAppFormB": "",
+   "noteAppFormC": "",
+   "noteAppInfA": "",
+   "noteAppInfB": "",
+   "noteAppInfC": ""
+ },
+ {
+  "id": 2,
+  "text": "U kunt de namen van maximaal 3 medewerkers vastleggen.",
+  "textAppForm": "U kunt de namen van maximaal 3 medewerkers vastleggen.",
+  "textAppInform": "Je kunt de namen van maximaal 3 medewerkers vastleggen.",
+  "commentApp": false,
+  "nrNotes": 1,
+  "noteAppFormA": "",
+  "noteAppFormB": "",
+  "noteAppFormC": "",
+  "noteAppInfA": "",
+  "noteAppInfB": "",
+  "noteAppInfC": ""
+ },
+ {
+  "id": 3,
+  "text": "Toelichting op de gesprekken",
+  "textAppForm": "Toelichting op de gesprekken",
+  "textAppInform": "Toelichting op de gesprekken",
+  "commentApp": false,
+  "nrNotes": 1,
+  "noteAppFormA": "",
+  "noteAppFormB": "",
+  "noteAppFormC": "",
+  "noteAppInfA": "",
+  "noteAppInfB": "",
+  "noteAppInfC": ""
+ },
+ {
+  "id": 4,
+  "text": "Toelichting op de interesse in overname",
+  "textAppForm": "Toelichting op de interesse in overname",
+  "textAppInform": "Toelichting op de interesse in overname",
+  "commentApp": false,
+  "nrNotes": 1,
+  "noteAppFormA": "",
+  "noteAppFormB": "",
+  "noteAppFormC": "",
+  "noteAppInfA": "",
+  "noteAppInfB": "",
+  "noteAppInfC": ""
+ }
+]

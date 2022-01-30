@@ -66,6 +66,85 @@
                 </v-list-item-action>
               </v-list-item>
               <v-divider></v-divider>
+              <v-list-item @click="goModB">
+                <v-list-item-content>
+                  <header-module text="Voortzetting door familie" />
+                  <sub-header-module
+                    text="Is opvolging door familie een mogelijkheid (klik om te
+                    starten)"
+                  />
+                </v-list-item-content>
+                <v-list-item-action>
+                  <v-list-item-action-text>status</v-list-item-action-text>
+                  <status-icon :finish="planSingle.finishModBpartA" />
+                </v-list-item-action>
+              </v-list-item>
+              <v-divider></v-divider>
+              <v-list-item @click="goModC">
+                <v-list-item-content>
+                  <header-module text="Voortzetting door medewerkers" />
+                  <sub-header-module
+                    text="Is opvolging door medewerkers een mogelijkheid (klik om te
+                    starten)"
+                  />
+                </v-list-item-content>
+                <v-list-item-action>
+                  <v-list-item-action-text>status</v-list-item-action-text>
+                  <status-icon :finish="planSingle.finishModCpartA" />
+                  <status-icon :finish="planSingle.finishModCpartB" />
+                  <status-icon :finish="planSingle.finishModCpartC" />
+                </v-list-item-action>
+              </v-list-item>
+              <v-divider></v-divider>
+              <v-list-item @click="goModD">
+                <v-list-item-content>
+                  <header-module text="Verkoop aan een externe partij" />
+                  <sub-header-module
+                    text="Is verkoop aan een externe partij een mogelijkheid (klik om te
+                    starten)"
+                  />
+                </v-list-item-content>
+                <v-list-item-action>
+                  <v-list-item-action-text>status</v-list-item-action-text>
+                  <status-icon :finish="planSingle.finishModDpartA" />
+                  <status-icon :finish="planSingle.finishModDpartB" />
+                  <status-icon :finish="planSingle.finishModDpartC" />
+                  <status-icon :finish="planSingle.finishModDpartD" />
+                </v-list-item-action>
+              </v-list-item>
+              <v-divider></v-divider>
+              <v-list-item @click="goModE">
+                <v-list-item-content>
+                  <header-module text="Staken activiteiten" />
+                  <sub-header-module
+                    text="Is staken van de onderneming gewenst? (klik om te
+                    starten)"
+                  />
+                </v-list-item-content>
+                <v-list-item-action>
+                  <v-list-item-action-text>status</v-list-item-action-text>
+                  <status-icon :finish="planSingle.finishModEpartA" />
+                </v-list-item-action>
+              </v-list-item>
+              <v-divider></v-divider>
+              <v-list-item @click="goModF">
+                <v-list-item-content>
+                  <header-module text="Structuur" />
+                  <sub-header-module
+                    text="Structuur van de onderneming (klik om te
+                    starten)"
+                  />
+                </v-list-item-content>
+                <v-list-item-action>
+                  <v-list-item-action-text>status</v-list-item-action-text>
+                  <status-icon :finish="planSingle.finishModFpartA" />
+                  <status-icon :finish="planSingle.finishModFpartB" />
+                  <status-icon :finish="planSingle.finishModFpartC" />
+                  <status-icon :finish="planSingle.finishModFpartD" />
+                </v-list-item-action>
+              </v-list-item>
+              <v-divider></v-divider>
+
               <v-list-item>
                 <v-list-item-content>
                   <v-list-item-title>Twee</v-list-item-title>
@@ -121,6 +200,21 @@ export default {
   methods: {
     goModA() {
       this.$router.push({ name: "module-a-start" });
+    },
+    goModB() {
+      this.$router.push({ name: "module-b-start" });
+    },
+    goModC() {
+      this.$router.push({ name: "module-c-start" });
+    },
+    goModD() {
+      this.$router.push({ name: "module-d-start" });
+    },
+    goModE() {
+      this.$router.push({ name: "module-e-start" });
+    },
+    goModF() {
+      this.$router.push({ name: "module-f-start" });
     },
   },
   computed: {

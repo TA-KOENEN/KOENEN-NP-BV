@@ -1,0 +1,102 @@
+[
+  {
+    "id": 0
+  },
+  {
+    "id": 1,
+    "text": "De contactgegevens van deze marktpartij:",
+    "textAppForm": "De contactgegevens van deze marktpartij:",
+    "textAppInform": "De contactgegevens van deze marktpartij:",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  },
+  {
+    "id": 2,
+    "text": "Toelichting op de (potentiële) interesse van deze marktpartij:",
+    "textAppForm": "Toelichting op de (potentiële) interesse van deze marktpartij:",
+    "textAppInform": "Toelichting op de (potentiële) interesse van deze marktpartij:",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  },
+  {
+    "id": 3,
+    "text": "De contactgegevens van deze marktpartij:",
+    "textAppForm": "De contactgegevens van deze marktpartij:",
+    "textAppInform": "De contactgegevens van deze marktpartij:",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  },
+  {
+    "id": 4,
+    "text": "Toelichting op de (potentiële) interesse van deze marktpartij:",
+    "textAppForm": "Toelichting op de (potentiële) interesse van deze marktpartij:",
+    "textAppInform": "Toelichting op de (potentiële) interesse van deze marktpartij:",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  },
+  {
+    "id": 5,
+    "text": "De contactgegevens van deze marktpartij:",
+    "textAppForm": "De contactgegevens van deze marktpartij:",
+    "textAppInform": "De contactgegevens van deze marktpartij:",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  },
+  {
+    "id": 6,
+    "text": "Toelichting op de (potentiële) interesse van deze marktpartij:",
+    "textAppForm": "Toelichting op de (potentiële) interesse van deze marktpartij:",
+    "textAppInform": "Toelichting op de (potentiële) interesse van deze marktpartij:",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  },
+  {
+    "id": 7,
+    "text": "U kunt de gegevens van maximaal 2 marktpartijen vastleggen",
+    "textAppForm": "U kunt de gegevens van maximaal 2 marktpartijen vastleggen",
+    "textAppInform": "Je kunt de gegevens van maximaal 2 marktgegevens vastleggen",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfC": ""
+  }
+]

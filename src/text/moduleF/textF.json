@@ -1,0 +1,103 @@
+[
+  {
+    "id": 0
+  },
+  {
+    "id": 1,
+    "text": "De bedrijfsactiviteiten van deze BV:",
+    "textAppForm": "De bedrijfsgegevens van deze BV:",
+    "textAppInform": "De bedrijfsgegevens van deze BV:",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  },
+  {
+    "id": 2,
+    "text": "Gegevens van de BV onder of naast de BV in dit Noodplan",
+    "textAppForm": "Gegevens van de BV onder of naast de BV in dit Noodplan",
+    "textAppInform": "Gegevens van de BV onder of naast de BV in dit Noodplan",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  },
+  {
+    "id": 3,
+    "text": "Gegevens van de BV onder of naast de BV in dit Noodplan",
+    "textAppForm": "Gegevens van de BV onder of naast de BV in dit Noodplan",
+    "textAppInform": "Gegevens van de BV onder of naast de BV in dit Noodplan",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  },
+  {
+    "id": 4,
+    "text": "Gegevens van de BV onder of naast de BV in dit Noodplan",
+    "textAppForm": "Gegevens van de BV onder of naast de BV in dit Noodplan",
+    "textAppInform": "Gegevens van de BV onder of naast de BV in dit Noodplan",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  },
+  {
+    "id": 5,
+    "text": "U kunt de gegevens van maximaal 5 BV's onder of naast de BV in dit Noodplan vastleggen.",
+    "textAppForm": "U kunt de gegevens van maximaal 5 BV's onder of naast de BV in dit Noodplan vastleggen. Meer nodig, neem contact met ons op.",
+    "textAppInform": "Je kunt de gegevens van maximaal 5 BV's onder of naast de BV in dit Noodplan vastleggen. Meer nodig, neem contact met ons op.",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "Heeft u behoefte om meer gegevens in te voeren neem dan contact met ons op.",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "Heb je de behoefte om meer gegevens in te voeren neem dan contact met ons op.",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  },
+  {
+    "id": 6,
+    "text": "De aandelen in deze tussenholding worden aangehouden door een Personal Holding evt via een tussenliggende entiteit (bij StAK).",
+    "textAppForm": "De aandelen in deze tussenholding worden aangehouden door een Personal Holding evt via een tussenliggende entiteit (bij StAK).",
+    "textAppInform": "De aandelen in deze tussenholding worden aangehouden door een Personal Holding evt via een tussenliggende entiteit (bij StAK).",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  },
+  {
+    "id": 7,
+    "text": "De aandelen in deze tussenholding worden aangehouden door een Personal Holding.",
+    "textAppForm": "De aandelen in deze tussenholding worden aangehouden door een Personal Holding.",
+    "textAppInform": "De aandelen in deze tussenholding worden aangehouden door een Personal Holding.",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  }
+]

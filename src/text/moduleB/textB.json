@@ -1,0 +1,98 @@
+[
+  {
+    "id": 0
+  },
+  {
+   "id": 1,
+   "text": "Welke medewerker heeft (potentieel) interesse in de overname van de onderneming?",
+   "textAppForm": "Welke medewerker heeft (potentieel) interesse in de overname van de onderneming?",
+   "textAppInform": "Welke medewerker heeft (potentieel) interesse in de overname van de onderneming?",
+   "commentApp": false,
+   "nrNotes": 1,
+   "noteAppFormA": "",
+   "noteAppFormB": "",
+   "noteAppFormC": "",
+   "noteAppInfA": "",
+   "noteAppInfC": ""
+ },
+ {
+  "id": 2,
+  "text": "U kunt de namen van maximaal 3 medewerkers vastleggen",
+  "textAppForm": "U kunt de namen van maximaal 3 medewerkers vastleggen",
+  "textAppInform": "Je kunt de namen van maximaal 3 medewerkers vastleggen",
+  "commentApp": false,
+  "nrNotes": 1,
+  "noteAppFormA": "",
+  "noteAppFormB": "",
+  "noteAppFormC": "",
+  "noteAppInfA": "",
+  "noteAppInfC": ""
+ },
+ {
+  "id": 3,
+  "text": "Wat zijn de contactgegevens van deze marktpartij?",
+  "textAppForm": "Wat zijn de contactgegevens van deze marktpartij?",
+  "textAppInform": "Wat zijn de contactgegevens van deze marktpartij?",
+  "commentApp": false,
+  "nrNotes": 1,
+  "noteAppFormA": "",
+  "noteAppFormB": "",
+  "noteAppFormC": "",
+  "noteAppInfA": "",
+  "noteAppInfB": "",
+  "noteAppInfC": ""
+ },
+ {
+  "id": 4,
+  "text": "Wat zijn de contactgegevens van deze marktpartij?",
+  "textAppForm": "Wat zijn de contactgegevens van deze marktpartij?",
+  "textAppInform": "Wat zijn de contactgegevens van deze marktpartij?",
+  "commentApp": false,
+  "nrNotes": 1,
+  "noteAppFormA": "",
+  "noteAppFormB": "",
+  "noteAppFormC": "",
+  "noteAppInfA": "",
+  "noteAppInfB": "",
+  "noteAppInfC": ""
+ },
+ {
+  "id": 5,
+  "text": "U kunt de gegevens van maximaal 2 marktpartijen vastleggen",
+  "textAppForm": "U kunt de gegevens van maximaal 2 marktpartijen vastleggen",
+  "textAppInform": "Je kunt de gegevens van maximaal 2 marktgegevens vastleggen",
+  "commentApp": false,
+  "nrNotes": 1,
+  "noteAppFormA": "",
+  "noteAppFormB": "",
+  "noteAppFormC": "",
+  "noteAppInfA": "",
+  "noteAppInfC": ""
+  },
+  {
+  "id": 6,
+  "text": "Wat zijn de voornaamste aandachtspunten bij staking van de activiteiten ten aanzien van:",
+  "textAppForm": "Wat zijn uw voornaamste aandachtspunten bij staking van de activiteiten ten aanzien van:",
+  "textAppInform": "Wat zijn jouw voornaamste aandachtspunten bij staking van de activiteiten ten aanzien van:",
+  "commentApp": false,
+  "nrNotes": 1,
+  "noteAppFormA": "",
+  "noteAppFormB": "",
+  "noteAppFormC": "",
+  "noteAppInfA": "",
+  "noteAppInfC": ""
+  },
+  {
+  "id": 7,
+  "text": "Wat zijn de gegevens van deze adviseur",
+  "textAppForm": "Wat zijn de gegevens van uw adviseur?",
+  "textAppInform": "Wat zijn de gegevens van jouw adviseur?",
+  "commentApp": false,
+  "nrNotes": 1,
+  "noteAppFormA": "",
+  "noteAppFormB": "",
+  "noteAppFormC": "",
+  "noteAppInfA": "",
+  "noteAppInfC": ""
+  }
+]

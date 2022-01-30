@@ -9,6 +9,13 @@ const stepCModuleA = () =>
 const endModuleA = () =>
   import("@/views/moduleA/stepEnd" /* webpackChunkName: "moduleAstepEnd" */);
 
+const startModuleB = () =>
+  import("@/views/moduleB/start" /* webpackChunkName: "moduleBstart" */);
+const stepAModuleB = () =>
+  import("@/views/moduleB/stepA" /* webpackChunkName: "moduleBstepA" */);
+const endModuleB = () =>
+  import("@/views/moduleB/stepEnd" /* webpackChunkName: "moduleBstepEnd" */);
+
 const routes = [
   {
     path: "module-a-start",
@@ -34,6 +41,21 @@ const routes = [
     path: "module-a-end",
     component: endModuleA,
     name: "module-a-end",
+  },
+  {
+    path: "module-b-start",
+    component: startModuleB,
+    name: "module-b-start",
+  },
+  {
+    path: "module-b-step-a",
+    component: stepAModuleB,
+    name: "module-b-step-a",
+  },
+  {
+    path: "module-b-end",
+    component: endModuleB,
+    name: "module-b-end",
   },
 ];
 export default routes;

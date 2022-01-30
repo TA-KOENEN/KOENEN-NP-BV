@@ -1,6 +1,6 @@
 <template>
-  <div class="flex">
-    <div class="stelling">
+  <div>
+    <div class="accent--text">
       {{ text }}
       <v-icon v-if="note" color="primary" dark @click.stop="showToel = true"
         >mdi-chat</v-icon
