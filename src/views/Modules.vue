@@ -144,7 +144,71 @@
                 </v-list-item-action>
               </v-list-item>
               <v-divider></v-divider>
-
+              <v-list-item @click="goModG">
+                <v-list-item-content>
+                  <header-module text="Mede-eigenaren" />
+                  <sub-header-module
+                    text="Is er sprake van mede-eigenaren (klik om te
+                    starten)"
+                  />
+                </v-list-item-content>
+                <v-list-item-action>
+                  <v-list-item-action-text>status</v-list-item-action-text>
+                  <status-icon :finish="planSingle.finishModGpartA" />
+                  <status-icon :finish="planSingle.finishModGpartB" />
+                  <status-icon :finish="planSingle.finishModGpartC" />
+                </v-list-item-action>
+              </v-list-item>
+              <v-divider></v-divider>
+              <v-list-item @click="goModH">
+                <v-list-item-content>
+                  <header-module text="Bedrijfsstrategie" />
+                  <sub-header-module
+                    text="Essentiële elementen van de bedrijfsstrategie (klik om te
+                    starten)"
+                  />
+                </v-list-item-content>
+                <v-list-item-action>
+                  <v-list-item-action-text>status</v-list-item-action-text>
+                  <status-icon :finish="planSingle.finishModHpartA" />
+                  <status-icon :finish="planSingle.finishModHpartB" />
+                  <status-icon :finish="planSingle.finishModHpartC" />
+                </v-list-item-action>
+              </v-list-item>
+              <v-divider></v-divider>
+              <v-list-item @click="goModI">
+                <v-list-item-content>
+                  <header-module text="Finance en IT" />
+                  <sub-header-module
+                    text="Administratie en IT systemen (klik om te
+                    starten)"
+                  />
+                </v-list-item-content>
+                <v-list-item-action>
+                  <v-list-item-action-text>status</v-list-item-action-text>
+                  <status-icon :finish="planSingle.finishModIpartA" />
+                  <status-icon :finish="planSingle.finishModIpartB" />
+                  <status-icon :finish="planSingle.finishModIpartC" />
+                  <status-icon :finish="planSingle.finishModIpartC" />
+                </v-list-item-action>
+              </v-list-item>
+              <v-divider></v-divider>
+              <v-list-item @click="goModJ">
+                <v-list-item-content>
+                  <header-module text="Rol ondernemer" />
+                  <sub-header-module
+                    text="Rol van de ondernemer in de organisatie (klik om te
+                    starten)"
+                  />
+                </v-list-item-content>
+                <v-list-item-action>
+                  <v-list-item-action-text>status</v-list-item-action-text>
+                  <status-icon :finish="planSingle.finishModJpartA" />
+                  <status-icon :finish="planSingle.finishModJpartB" />
+                  <status-icon :finish="planSingle.finishModJpartC" />
+                </v-list-item-action>
+              </v-list-item>
+              <v-divider></v-divider>
               <v-list-item>
                 <v-list-item-content>
                   <v-list-item-title>Twee</v-list-item-title>
@@ -215,6 +279,18 @@ export default {
     },
     goModF() {
       this.$router.push({ name: "module-f-start" });
+    },
+    goModG() {
+      this.$router.push({ name: "module-g-start" });
+    },
+    goModH() {
+      this.$router.push({ name: "module-h-start" });
+    },
+    goModI() {
+      this.$router.push({ name: "module-i-start" });
+    },
+    goModJ() {
+      this.$router.push({ name: "module-j-start" });
     },
   },
   computed: {

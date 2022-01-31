@@ -1,0 +1,75 @@
+[
+  {
+    "id": 0
+  },
+  {
+    "id": 1,
+    "text": "De belangrijkste doelstellingen volgens de ondernemer:",
+    "textAppForm": "Wat zijn volgens u de belangrijkste doelstellingen?",
+    "textAppInform": "Wat zijn volgens jou de belangrijkste doelstellingen?",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  },
+  {
+    "id": 2,
+    "text": "Geef een toelichting:",
+    "textAppForm": "Geef een toelichting:",
+    "textAppInform": "Geef een toelichting:",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  },
+  {
+    "id": 3,
+    "text": "De gegevens van deze strategische partner:",
+    "textAppForm": "De gegevens van deze strategische partner:",
+    "textAppInform": "De gegevens van deze strategische partner:",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  },
+  {
+    "id": 4,
+    "text": "De gegevens van deze strategische partner:",
+    "textAppForm": "De gegevens van deze strategische partner:",
+    "textAppInform": "De gegevens van deze strategische partner:",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  },
+  {
+    "id": 5,
+    "text": "Er kunnen maximaal twee strategische partijen worden vastgelegd.",
+    "textAppForm": "Er kunnen maximaal twee strategische partijen worden vastgelegd.",
+    "textAppInform": "Er kunnen maximaal twee strategische partijen worden vastgelegd.",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  }
+]

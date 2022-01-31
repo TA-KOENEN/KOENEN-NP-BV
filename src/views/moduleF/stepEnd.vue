@@ -12,18 +12,18 @@
           <div class="ma-10">
             <div v-if="formal">
               <text-left
-                :head-text="textAppLeft[6].header"
-                :text-a="textAppLeft[6].texta"
-                :text-b="textAppLeft[6].textb"
-                :text-c="textAppLeft[6].textc"
+                :head-text="textAppLeft[9].header"
+                :text-a="textAppLeft[9].texta"
+                :text-b="textAppLeft[9].textb"
+                :text-c="textAppLeft[9].textc"
               />
             </div>
             <div v-if="!formal">
               <text-left
-                :head-text="textAppLeft[6].headerInf"
-                :text-a="textAppLeft[6].textaInf"
-                :text-b="textAppLeft[6].textbInf"
-                :text-c="textAppLeft[6].textcInf"
+                :head-text="textAppLeft[9].headerInf"
+                :text-a="textAppLeft[9].textaInf"
+                :text-b="textAppLeft[9].textbInf"
+                :text-c="textAppLeft[9].textcInf"
               />
             </div>
           </div>
@@ -31,8 +31,8 @@
         <v-col cols="12" md="6" class="rightPanel justify-center">
           <div class="ma-10">
             <step-text
-              :stepText="textAppRight[6].header"
-              :number="5"
+              :stepText="textAppRight[9].header"
+              :number="8"
               class="mb-5"
               :active="false"
             />

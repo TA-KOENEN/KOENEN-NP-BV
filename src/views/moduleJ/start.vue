@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ToolbarAuth :name="'Opvolging door medewerkers'" />
+    <ToolbarAuth :name="'Rol van de ondernemer'" />
     <div class="ma-0 pa-0">
       <v-row no-gutters>
         <v-col
@@ -37,7 +37,7 @@
               :active="true"
             />
             <vimeo-player
-              :video-id="vimeo.moduleC"
+              :video-id="vimeo.moduleH"
               class="embed-container"
               :options="{ responsive: true }"
             ></vimeo-player>
@@ -83,8 +83,8 @@
 </template>
 
 <script>
-import textAppLeft from "@/text/moduleC/textAppLeftC.json";
-import textAppRight from "@/text/moduleC/textAppRightC.json";
+import textAppLeft from "@/text/moduleJ/textAppLeftJ.json";
+import textAppRight from "@/text/moduleJ/textAppRightJ.json";
 import vimeoData from "@/text/vimeo.json";
 import { mapGetters } from "vuex";
 export default {
@@ -102,7 +102,7 @@ export default {
   methods: {
     nextStep() {
       console.log("next Step works");
-      this.$router.push({ name: "module-c-step-a" });
+      this.$router.push({ name: "module-j-step-a" });
     },
     stopThis() {
       this.dialogStop = true;

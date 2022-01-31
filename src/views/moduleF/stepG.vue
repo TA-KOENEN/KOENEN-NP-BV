@@ -15,18 +15,18 @@
           <div class="ma-10">
             <div v-if="formal">
               <text-left
-                :head-text="textAppLeft[4].header"
-                :text-a="textAppLeft[4].texta"
-                :text-b="textAppLeft[4].textb"
-                :text-c="textAppLeft[4].textc"
+                :head-text="textAppLeft[8].header"
+                :text-a="textAppLeft[8].texta"
+                :text-b="textAppLeft[8].textb"
+                :text-c="textAppLeft[8].textc"
               />
             </div>
             <div v-if="!formal">
               <text-left
-                :head-text="textAppLeft[4].headerInf"
-                :text-a="textAppLeft[4].textaInf"
-                :text-b="textAppLeft[4].textbInf"
-                :text-c="textAppLeft[4].textcInf"
+                :head-text="textAppLeft[8].headerInf"
+                :text-a="textAppLeft[8].textaInf"
+                :text-b="textAppLeft[8].textbInf"
+                :text-c="textAppLeft[8].textcInf"
               />
             </div>
           </div>
@@ -34,8 +34,8 @@
         <v-col cols="12" md="6" class="rightPanel justify-center">
           <div class="ma-10">
             <step-text
-              :stepText="textAppRight[4].header"
-              :number="4"
+              :stepText="textAppRight[8].header"
+              :number="7"
               class="mb-5"
               :active="true"
             />
@@ -320,14 +320,8 @@
             <CustomDivider />
             <div class="mt-10" />
             <step-text
-              :stepText="textAppRight[5].header"
-              :number="5"
-              class="mb-5"
-              :active="false"
-            />
-            <step-text
-              :stepText="textAppRight[6].header"
-              :number="5"
+              :stepText="textAppRight[9].header"
+              :number="8"
               class="mb-5"
               :active="false"
             />

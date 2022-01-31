@@ -8,8 +8,8 @@
     "textbInf": "Not in use"
   },
   {
-    "header": "Structuur",
-    "headerInf": "Structuur",
+    "header": "Intro",
+    "headerInf": "Intro",
     "texta": "text",
     "textaInf": "text",
     "textb": "text",
@@ -18,8 +18,8 @@
     "textcInf": "max till f!"
   },
   {
-    "header": "Activiteit",
-    "headerInf": "Activiteit",
+    "header": "Zakelijke rekeningen",
+    "headerInf": "Zakelijke rekeningen",
     "texta": "text",
     "textaInf": "text",
     "textb": "text",
@@ -28,8 +28,8 @@
     "textcInf": "max till f!"
   },
   {
-    "header": "Holding",
-    "headerInf": "Holding",
+    "header": "Administratieve processen",
+    "headerInf": "Administratieve processen",
     "texta": "text",
     "textaInf": "text",
     "textb": "text",
@@ -38,8 +38,8 @@
     "textcInf": "max till f!"
   },
   {
-    "header": "Dochter/deelneming 1",
-    "headerInf": "Dochter/deelneming 1",
+    "header": "IT",
+    "headerInf": "IT",
     "texta": "text",
     "textaInf": "text",
     "textb": "text",
@@ -48,38 +48,8 @@
     "textcInf": "max till f!"
   },
   {
-    "header": "Dochter/deelneming 2",
-    "headerInf": "Dochter/deelneming 2",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
-  },
-  {
-    "header": "Dochter/deelneming 3",
-    "headerInf": "Dochter/deelneming 3",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
-  },
-  {
-    "header": "Dochter/deelneming 4",
-    "headerInf": "Dochter/deelneming 4",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
-  },
-  {
-    "header": "Dochter/deelneming 5",
-    "headerInf": "Dochter/deelneming 5",
+    "header": "Documenten",
+    "headerInf": "Documenten",
     "texta": "text",
     "textaInf": "text",
     "textb": "text",

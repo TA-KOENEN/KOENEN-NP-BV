@@ -1,24 +1,30 @@
 [
   {
-    "header": "not in use",
-    "text_a": "",
-    "text_b": "",
-    "text_c": ""
+    "header": "not in use"
   },
   {
-    "header": "Intro"
+    "header": "Structuur"
   },
   {
     "header": "Activiteiten"
   },
   {
-    "header": "Marktpartij 1"
+    "header": "Holding"
   },
   {
-    "header": "Marktpartij 2"
+    "header": "Dochter/deelneming 1"
   },
   {
-    "header": "Marktpartij 3"
+    "header": "Dochter/deelneming 2"
+  },
+  {
+    "header": "Dochter/deelneming 3"
+  },
+  {
+    "header": "Dochter/deelneming 4"
+  },
+  {
+    "header": "Dochter/deelneming 5"
   },
   {
     "header": "Einde"

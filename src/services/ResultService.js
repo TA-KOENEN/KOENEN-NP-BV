@@ -74,6 +74,46 @@ export default {
       },
     });
   },
+  saveDataG(id, payload) {
+    const token = localStorage.getItem("token");
+    return axios.post(`/saveDataBV_moduleG/${id}`, payload, {
+      baseURL: process.env.VUE_APP_API_URL,
+      headers: {
+        Accept: "Application/json",
+        Authorization: `Bearer ` + token,
+      },
+    });
+  },
+  saveDataH(id, payload) {
+    const token = localStorage.getItem("token");
+    return axios.post(`/saveDataBV_moduleH/${id}`, payload, {
+      baseURL: process.env.VUE_APP_API_URL,
+      headers: {
+        Accept: "Application/json",
+        Authorization: `Bearer ` + token,
+      },
+    });
+  },
+  saveDataI(id, payload) {
+    const token = localStorage.getItem("token");
+    return axios.post(`/saveDataBV_moduleI/${id}`, payload, {
+      baseURL: process.env.VUE_APP_API_URL,
+      headers: {
+        Accept: "Application/json",
+        Authorization: `Bearer ` + token,
+      },
+    });
+  },
+  saveDataJ(id, payload) {
+    const token = localStorage.getItem("token");
+    return axios.post(`/saveDataBV_moduleJ/${id}`, payload, {
+      baseURL: process.env.VUE_APP_API_URL,
+      headers: {
+        Accept: "Application/json",
+        Authorization: `Bearer ` + token,
+      },
+    });
+  },
   getReportA(id) {
     const token = localStorage.getItem("token");
     return axios.get(`/getReportBV_moduleA/${id}`, {
@@ -127,6 +167,46 @@ export default {
   getReportF(id) {
     const token = localStorage.getItem("token");
     return axios.get(`/getReportBV_moduleF/${id}`, {
+      baseURL: process.env.VUE_APP_API_URL,
+      headers: {
+        Accept: "Application/json",
+        Authorization: `Bearer ` + token,
+      },
+    });
+  },
+  getReportG(id) {
+    const token = localStorage.getItem("token");
+    return axios.get(`/getReportBV_moduleG/${id}`, {
+      baseURL: process.env.VUE_APP_API_URL,
+      headers: {
+        Accept: "Application/json",
+        Authorization: `Bearer ` + token,
+      },
+    });
+  },
+  getReportH(id) {
+    const token = localStorage.getItem("token");
+    return axios.get(`/getReportBV_moduleH/${id}`, {
+      baseURL: process.env.VUE_APP_API_URL,
+      headers: {
+        Accept: "Application/json",
+        Authorization: `Bearer ` + token,
+      },
+    });
+  },
+  getReportI(id) {
+    const token = localStorage.getItem("token");
+    return axios.get(`/getReportBV_moduleI/${id}`, {
+      baseURL: process.env.VUE_APP_API_URL,
+      headers: {
+        Accept: "Application/json",
+        Authorization: `Bearer ` + token,
+      },
+    });
+  },
+  getReportJ(id) {
+    const token = localStorage.getItem("token");
+    return axios.get(`/getReportBV_moduleJ/${id}`, {
       baseURL: process.env.VUE_APP_API_URL,
       headers: {
         Accept: "Application/json",

@@ -1,0 +1,75 @@
+[
+  {
+    "id": 0
+  },
+  {
+    "id": 1,
+    "text": "Noteer de gegevens van de eerste mede-eigenaar",
+    "textAppForm": "Noteer de gegevens van de eerste mede-eigenaar",
+    "textAppInform": "Noteer de gegevens van de eerste mede-eigenaar",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  },
+  {
+    "id": 2,
+    "text": "Noteer de gegevens van de tweede mede-eigenaar",
+    "textAppForm": "Noteer de gegevens van de tweede mede-eigenaar",
+    "textAppInform": "Noteer de gegevens van de tweede mede-eigenaar",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  },
+  {
+    "id": 3,
+    "text": "Noteer de gegevens van de derde mede-eigenaar",
+    "textAppForm": "Noteer de gegevens van de derde mede-eigenaar",
+    "textAppInform": "Noteer de gegevens van de derde mede-eigenaar",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  },
+  {
+    "id": 4,
+    "text": "U kunt de gegevens van maximaal 3 mede-eigenaren vastleggen",
+    "textAppForm": "U kunt de gegevens van maximaal 3 mede-eigenaren vastleggen",
+    "textAppInform": "U kunt de gegevens van maximaal 3 mede-eigenaren vastleggen",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  },
+  {
+    "id": 5,
+    "text": "Geef een toelichting op welke afspraken nog met mede-eigenaren gemaakt moeten worden:",
+    "textAppForm": "Geef een toelichting op welke afspraken nog met mede-eigenaren gemaakt moeten worden:",
+    "textAppInform": "Geef een toelichting op welke afspraken nog met mede-eigenaren gemaakt moeten worden:",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  }
+]

@@ -75,6 +75,52 @@ const stepGModuleF = () =>
 const endModuleF = () =>
   import("@/views/moduleF/stepEnd" /* webpackChunkName: "moduleFstepEnd" */);
 
+const startModuleG = () =>
+  import("@/views/moduleG/start" /* webpackChunkName: "moduleGstart" */);
+const stepAModuleG = () =>
+  import("@/views/moduleG/stepA" /* webpackChunkName: "moduleGstepA" */);
+const stepBModuleG = () =>
+  import("@/views/moduleG/stepB" /* webpackChunkName: "moduleGstepB" */);
+const stepCModuleG = () =>
+  import("@/views/moduleG/stepC" /* webpackChunkName: "moduleGstepC" */);
+const endModuleG = () =>
+  import("@/views/moduleG/stepEnd" /* webpackChunkName: "moduleGstepEnd" */);
+
+const startModuleH = () =>
+  import("@/views/moduleH/start" /* webpackChunkName: "moduleHstart" */);
+const stepAModuleH = () =>
+  import("@/views/moduleH/stepA" /* webpackChunkName: "moduleHstepA" */);
+const stepBModuleH = () =>
+  import("@/views/moduleH/stepB" /* webpackChunkName: "moduleHstepB" */);
+const stepCModuleH = () =>
+  import("@/views/moduleH/stepC" /* webpackChunkName: "moduleHstepC" */);
+const endModuleH = () =>
+  import("@/views/moduleH/stepEnd" /* webpackChunkName: "moduleHstepEnd" */);
+
+const startModuleI = () =>
+  import("@/views/moduleI/start" /* webpackChunkName: "moduleIstart" */);
+const stepAModuleI = () =>
+  import("@/views/moduleI/stepA" /* webpackChunkName: "moduleIstepA" */);
+const stepBModuleI = () =>
+  import("@/views/moduleI/stepB" /* webpackChunkName: "moduleIstepB" */);
+const stepCModuleI = () =>
+  import("@/views/moduleI/stepC" /* webpackChunkName: "moduleIstepC" */);
+const stepDModuleI = () =>
+  import("@/views/moduleI/stepD" /* webpackChunkName: "moduleIstepD" */);
+const endModuleI = () =>
+  import("@/views/moduleI/stepEnd" /* webpackChunkName: "moduleIstepEnd" */);
+
+const startModuleJ = () =>
+  import("@/views/moduleJ/start" /* webpackChunkName: "moduleJstart" */);
+const stepAModuleJ = () =>
+  import("@/views/moduleJ/stepA" /* webpackChunkName: "moduleJstepA" */);
+const stepBModuleJ = () =>
+  import("@/views/moduleJ/stepB" /* webpackChunkName: "moduleJstepB" */);
+const stepCModuleJ = () =>
+  import("@/views/moduleJ/stepC" /* webpackChunkName: "moduleJstepC" */);
+const endModuleJ = () =>
+  import("@/views/moduleJ/stepEnd" /* webpackChunkName: "moduleJstepEnd" */);
+
 Vue.use(VueRouter);
 
 const router = new VueRouter({
@@ -292,6 +338,139 @@ const router = new VueRouter({
       path: "/module-f-end",
       component: endModuleF,
       name: "module-f-end",
+      beforeEnter(to, from, next) {
+        if (localStorage.stepTwo) {
+          next();
+        } else {
+          next("/start");
+        }
+      },
+    },
+    {
+      path: "/module-g-start",
+      component: startModuleG,
+      name: "module-g-start",
+    },
+    {
+      path: "/module-g-step-a",
+      component: stepAModuleG,
+      name: "module-g-step-a",
+    },
+    {
+      path: "/module-g-step-b",
+      component: stepBModuleG,
+      name: "module-g-step-b",
+    },
+    {
+      path: "/module-g-step-c",
+      component: stepCModuleG,
+      name: "module-g-step-c",
+    },
+    {
+      path: "/module-g-end",
+      component: endModuleG,
+      name: "module-g-end",
+      beforeEnter(to, from, next) {
+        if (localStorage.stepTwo) {
+          next();
+        } else {
+          next("/start");
+        }
+      },
+    },
+    {
+      path: "/module-h-start",
+      component: startModuleH,
+      name: "module-h-start",
+    },
+    {
+      path: "/module-h-step-a",
+      component: stepAModuleH,
+      name: "module-h-step-a",
+    },
+    {
+      path: "/module-h-step-b",
+      component: stepBModuleH,
+      name: "module-h-step-b",
+    },
+    {
+      path: "/module-h-step-c",
+      component: stepCModuleH,
+      name: "module-h-step-c",
+    },
+    {
+      path: "/module-h-end",
+      component: endModuleH,
+      name: "module-h-end",
+      beforeEnter(to, from, next) {
+        if (localStorage.stepTwo) {
+          next();
+        } else {
+          next("/start");
+        }
+      },
+    },
+    {
+      path: "/module-i-start",
+      component: startModuleI,
+      name: "module-i-start",
+    },
+    {
+      path: "/module-i-step-a",
+      component: stepAModuleI,
+      name: "module-i-step-a",
+    },
+    {
+      path: "/module-i-step-b",
+      component: stepBModuleI,
+      name: "module-i-step-b",
+    },
+    {
+      path: "/module-i-step-c",
+      component: stepCModuleI,
+      name: "module-i-step-c",
+    },
+    {
+      path: "/module-i-step-d",
+      component: stepDModuleI,
+      name: "module-i-step-d",
+    },
+    {
+      path: "/module-i-end",
+      component: endModuleI,
+      name: "module-i-end",
+      beforeEnter(to, from, next) {
+        if (localStorage.stepTwo) {
+          next();
+        } else {
+          next("/start");
+        }
+      },
+    },
+    {
+      path: "/module-j-start",
+      component: startModuleJ,
+      name: "module-j-start",
+    },
+    {
+      path: "/module-j-step-a",
+      component: stepAModuleJ,
+      name: "module-j-step-a",
+    },
+    {
+      path: "/module-j-step-b",
+      component: stepBModuleJ,
+      name: "module-j-step-b",
+    },
+    {
+      path: "/module-j-step-c",
+      component: stepCModuleJ,
+      name: "module-j-step-c",
+    },
+    {
+      path: "/module-j-end",
+      component: endModuleJ,
+      name: "module-j-end",
       beforeEnter(to, from, next) {
         if (localStorage.stepTwo) {
           next();

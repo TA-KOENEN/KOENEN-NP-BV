@@ -1,0 +1,48 @@
+[
+  {
+    "id": 0
+  },
+  {
+    "id": 1,
+    "text": "Noteer hier de gegevens van het accountantskantoor voor deze BV.",
+    "textAppForm": "Noteer hier de gegevens van het accountantskantoor voor deze BV.",
+    "textAppInform": "Noteer hier de gegevens van het accountantskantoor voor deze BV.",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  },
+  {
+    "id": 2,
+    "label": "Toelichting",
+    "text": "Geef een toelichting op de autorisatie voor IT systeembeheer:",
+    "textAppForm": "Geef een toelichting op de autorisatie voor IT systeembeheer:",
+    "textAppInform": "Geef een toelichting op de autorisatie voor IT systeembeheer:",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  },
+  {
+    "id": 3,
+    "text": "Waar zijn de volgende documenten te vinden?",
+    "textAppForm": "Waar zijn de volgende documenten te vinden?",
+    "textAppInform": "Waar zijn de volgende documenten te vinden?",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  }
+]

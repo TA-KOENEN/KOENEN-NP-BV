@@ -1,0 +1,103 @@
+[
+  {
+    "id": 0
+  },
+  {
+    "id": 1,
+    "text": "Wat zijn volgens de ondernemer de 3 belangrijkste aandachtspunten bij het leiden van de onderneming?",
+    "textAppForm": "Wat zijn volgens u de 3 belangrijkste aandachtspunten bij het leiden van de onderneming?",
+    "textAppInform": "Wat zijn volgens jou de 3 belangrijkste aandachtspunten bij het leiden van de onderneming?",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  },
+  {
+    "id": 2,
+    "text": "Beschrijf de activiteiten met betrekking tot inkoop",
+    "textAppForm": "Beschrijf de activiteiten met betrekking tot inkoop",
+    "textAppInform": "Beschrijf de activiteiten met betrekking tot inkoop",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  },
+  {
+    "id": 3,
+    "text": "Beschrijf de activiteiten met betrekking tot productie",
+    "textAppForm": "Beschrijf de activiteiten met betrekking tot inkoop",
+    "textAppInform": "Beschrijf de activiteiten met betrekking tot inkoop",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  },
+  {
+    "id": 4,
+    "text": "Beschrijf de activiteiten met betrekking tot logistiek",
+    "textAppForm": "Beschrijf de activiteiten met betrekking tot inkoop",
+    "textAppInform": "Beschrijf de activiteiten met betrekking tot inkoop",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  },
+  {
+    "id": 5,
+    "text": "Beschrijf de activiteiten met betrekking tot marketing, verkoop en service",
+    "textAppForm": "Beschrijf de activiteiten met betrekking tot inkoop",
+    "textAppInform": "Beschrijf de activiteiten met betrekking tot inkoop",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  },
+  {
+    "id": 6,
+    "text": "Beschrijf de activiteiten met betrekking tot vernieuwing en innovatie",
+    "textAppForm": "Beschrijf de activiteiten met betrekking tot inkoop",
+    "textAppInform": "Beschrijf de activiteiten met betrekking tot inkoop",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  },
+  {
+    "id": 7,
+    "text": "Beschrijf de activiteiten met betrekking tot projecten of overige werkzaamheden",
+    "textAppForm": "Beschrijf de activiteiten met betrekking tot inkoop",
+    "textAppInform": "Beschrijf de activiteiten met betrekking tot inkoop",
+    "commentApp": false,
+    "nrNotes": 1,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": ""
+  }
+]

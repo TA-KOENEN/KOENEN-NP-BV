@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ToolbarAuth :name="'Opvolging door medewerkers'" />
+    <ToolbarAuth :name="'Finance en IT'" />
     <div class="ma-0 pa-0">
       <v-row no-gutters>
         <v-col
@@ -12,18 +12,18 @@
           <div class="ma-10">
             <div v-if="formal">
               <text-left
-                :head-text="textAppLeft[5].header"
-                :text-a="textAppLeft[5].texta"
-                :text-b="textAppLeft[5].textb"
-                :text-c="textAppLeft[5].textc"
+                :head-text="textAppLeft[6].header"
+                :text-a="textAppLeft[6].texta"
+                :text-b="textAppLeft[6].textb"
+                :text-c="textAppLeft[6].textc"
               />
             </div>
             <div v-if="!formal">
               <text-left
-                :head-text="textAppLeft[5].headerInf"
-                :text-a="textAppLeft[5].textaInf"
-                :text-b="textAppLeft[5].textbInf"
-                :text-c="textAppLeft[5].textcInf"
+                :head-text="textAppLeft[6].headerInf"
+                :text-a="textAppLeft[6].textaInf"
+                :text-b="textAppLeft[6].textbInf"
+                :text-c="textAppLeft[6].textcInf"
               />
             </div>
           </div>
@@ -31,10 +31,10 @@
         <v-col cols="12" md="6" class="rightPanel justify-center">
           <div class="ma-10">
             <step-text
-              :stepText="textAppRight[5].header"
+              :stepText="textAppRight[6].header"
               :number="5"
               class="mb-5"
-              :active="true"
+              :active="false"
             />
 
             <!--informal-->
@@ -65,10 +65,10 @@
 </template>
 
 <script>
-import textAppLeft from "@/text/moduleA/textAppLeftA.json";
-import textAppRight from "@/text/moduleA/textAppRightA.json";
-import Questions from "@/text/moduleA/moduleA.json";
-import ExtraText from "@/text/moduleA/textA.json";
+import textAppLeft from "@/text/moduleI/textAppLeftI.json";
+import textAppRight from "@/text/moduleI/textAppRightI.json";
+import Questions from "@/text/moduleI/moduleI.json";
+import ExtraText from "@/text/moduleI/textI.json";
 import { mapGetters } from "vuex";
 import resultService from "@/services/ResultService";
 
@@ -77,6 +77,7 @@ export default {
 
   data() {
     return {
+
       disableBtn: false,
       reportSend: false,
       dialogStop: false,
@@ -93,13 +94,14 @@ export default {
     },
 
     goBack() {
-      this.$router.push({ name: "module-c-step-c" });
+      this.$router.push({ name: "module-i-step-d" });
     },
+
     getReport() {
       this.disableBtn = true;
       const clientId = JSON.parse(localStorage.getItem("pass_token"));
       resultService
-        .getReportC(clientId)
+        .getReportI(clientId)
         .then(() => {
           this.disableBtn = false;
         })

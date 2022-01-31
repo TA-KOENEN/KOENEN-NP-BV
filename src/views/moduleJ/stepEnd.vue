@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ToolbarAuth :name="'Opvolging door medewerkers'" />
+    <ToolbarAuth :name="'Rol van de ondernemer'" />
     <div class="ma-0 pa-0">
       <v-row no-gutters>
         <v-col
@@ -93,13 +93,13 @@ export default {
     },
 
     goBack() {
-      this.$router.push({ name: "module-c-step-c" });
+      this.$router.push({ name: "module-j-step-c" });
     },
     getReport() {
       this.disableBtn = true;
       const clientId = JSON.parse(localStorage.getItem("pass_token"));
       resultService
-        .getReportC(clientId)
+        .getReportH(clientId)
         .then(() => {
           this.disableBtn = false;
         })

@@ -341,9 +341,28 @@
 
             <CustomDivider />
             <div class="mt-10" />
+
             <step-text
               :stepText="textAppRight[6].header"
               :number="5"
+              class="mb-5"
+              :active="false"
+            />
+            <step-text
+              :stepText="textAppRight[7].header"
+              :number="6"
+              class="mb-5"
+              :active="false"
+            />
+            <step-text
+              :stepText="textAppRight[8].header"
+              :number="7"
+              class="mb-5"
+              :active="false"
+            />
+            <step-text
+              :stepText="textAppRight[9].header"
+              :number="8"
               class="mb-5"
               :active="false"
             />
