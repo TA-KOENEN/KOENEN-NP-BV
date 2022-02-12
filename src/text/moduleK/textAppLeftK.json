@@ -1,0 +1,51 @@
+[
+  {
+    "header": "Not in use",
+    "headerInf": "Not in use",
+    "texta": "Not in use",
+    "textaInf": "Not in use",
+    "textb": "Not in use",
+    "textbInf": "Not in use"
+  },
+  {
+    "header": "Introductie",
+    "headerInf": "Introductie",
+    "texta": "Als uw waarnemer zult u waarschijnlijk iemand binnen uw onderneming benoemen. Uw opvolger kan echter van buiten uw onderneming komen, bijvoorbeeld uw levenspartner of één van uw kinderen.",
+    "textaInf": "Als jouw waarnemer zul je waarschijnlijk iemand binnen jouw onderneming benoemen. Jouw opvolger kan echter van buiten jouw onderneming komen, bijvoorbeeld jouw levenspartner of één van jouw kinderen.",
+    "textb": "Als iemand niet bekend is met de organisatie en de mensen die daar deel van uitmaken, is het fijn om vooraf 'steunpilaren' te hebben benoemd voor uw opvolger.",
+    "textbInf": "Als iemand niet bekend is met de organisatie en de mensen die daar deel van uitmaken, is het fijn om vooraf 'steunpilaren' te hebben benoemd voor jouw opvolger.",
+    "textc": "In deze module legt u vast welke managers en (sleutel)medewerkers voor uw opvolger belangrijk zijn als support.",
+    "textcInf": "In deze module leg je vast welke managers en (sleutel)medewerkers voor jouw opvolger belangrijk zijn als support."
+  },
+  {
+    "header": "Management",
+    "headerInf": "Management",
+    "texta": "Noteer hier de namen van de managers die voor uw opvolger als 'steunpilaar' kunnen fungeren.",
+    "textaInf": "Noteer hier de namen van de managers die voor jouw opvolger als 'steunpilaar' kunnen fungeren.",
+    "textb": "",
+    "textbInf": "",
+    "textc": "",
+    "textcInf": ""
+  },
+  {
+    "header": "Medewerkers",
+    "headerInf": "Medewerkers",
+    "texta": "Noteer hier de namen van die medewerkers die voor uw opvolger van essentieel belang zijn om te betrekken, aangezien zij cruciaal zijn voor de bedrijfscontinuïteit.",
+    "textaInf": "Noteer hier de namen van die medewerkers die voor jouw opvolger van essentieel belang zijn om te betrekken, aangezien zij cruciaal zijn voor de bedrijfscontinuïteit.",
+    "textb": "",
+    "textbInf": "",
+    "textc": "",
+    "textcInf": ""
+  },
+  {
+    "header": "Einde",
+    "headerInf": "Einde",
+    "texta": "U bent aan het einde gekomen van deze module. Wilt u uw antwoorden nog bekijken of veranderen? Gebruik de knop TERUG.",
+    "textaInf": "Je bent aan het einde gekomen van deze module. Wil je je antwoorden nog bekijken of veranderen? Gebruik de knop TERUG. ",
+    "textb": "Met de knop BEWAAR legt u uw antwoorden vast en vormt dit de basis voor het rapport dat wij voor u opstellen.",
+    "textbInf": "Met de knop BEWAAR leg je je antwoorden vast en vormt dit de basis voor het rapport dat wij voor je opstellen.",
+    "textc": "Dit rapport stellen wij op als u alle modules heeft ingevuld. ",
+    "textcInf": "Dit rapport stellen wij op als je alle modules hebt ingevuld."
+  }
+
+]

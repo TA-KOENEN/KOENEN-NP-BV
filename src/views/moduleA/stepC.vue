@@ -716,8 +716,11 @@ export default {
       text_c: "",
       text_d: "",
 
-      finishModApartC: true,
       finishModA: true,
+      finishModApartA: true,
+      finishModApartB: true,
+      finishModApartC: true,
+      finishModApartD: true,
       saving: false,
     };
   },
@@ -731,6 +734,8 @@ export default {
     },
     saveItem() {
       console.log("next Step works");
+      this.finishModApartC = true;
+      this.finishModA = true;
       this.saving = true;
       const clientId = JSON.parse(localStorage.getItem("pass_token"));
       const payload = {
@@ -752,8 +757,11 @@ export default {
         text_b: this.text_b,
         text_c: this.text_c,
         text_d: this.text_d,
-        finishModA: this.finishModA,
+        finishModApartA: this.finishModApartA,
+        finishModApartB: this.finishModApartB,
         finishModApartC: this.finishModApartC,
+        finishModApartD: this.finishModApartD,
+        finishModA: this.finishModA,
       };
       resultService
         .saveDataA(clientId, payload)
@@ -794,6 +802,11 @@ export default {
     this.text_b = this.planSingle.a_bv.text_b;
     this.text_c = this.planSingle.a_bv.text_c;
     this.text_d = this.planSingle.a_bv.text_d;
+    this.finishModApartA = this.planSingle.finishModApartA;
+    this.finishModApartB = this.planSingle.finishModApartB;
+    this.finishModApartC = this.planSingle.finishModApartC;
+    this.finishModApartD = this.planSingle.finishModApartD;
+    this.finishModA = this.planSingle.finishModA;
   },
 };
 </script>

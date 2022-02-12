@@ -285,6 +285,11 @@ export default {
     this.question_a = this.planSingle.d_bv.question_a;
     this.text_a = this.planSingle.d_bv.text_a;
     this.text_b = this.planSingle.d_bv.text_b;
+    this.finishModD = this.planSingle.finishModD;
+    this.finishModCpartA = this.planSingle.finishModCpartA;
+    this.finishModCpartB = this.planSingle.finishModCpartB;
+    this.finishModCpartC = this.planSingle.finishModCpartC;
+    this.finishModCpartD = this.planSingle.finishModCpartD;
   },
 };
 </script>

@@ -855,8 +855,11 @@ export default {
       question_v: "",
       question_w: "",
       question_x: "",
-      finishModHpartC: true,
-      finishModH: true,
+      finishModHpartA: true,
+      finishModHpartB: false,
+      finishModHpartC: false,
+      finishModHpartD: false,
+      finishModH: false,
       saving: false,
     };
   },
@@ -869,7 +872,8 @@ export default {
       this.$router.push({ name: "module-h-step-b" });
     },
     saveItem() {
-      console.log("next Step works");
+      this.finishModHpartC = true;
+      this.finishModH = true;
       this.saving = true;
       const clientId = JSON.parse(localStorage.getItem("pass_token"));
       const payload = {
@@ -891,8 +895,11 @@ export default {
         question_v: this.question_v,
         question_w: this.question_w,
         question_x: this.question_x,
-        finishModH: this.finishModH,
+        finishModHpartA: this.finishModHpartA,
+        finishModHpartB: this.finishModHpartB,
         finishModHpartC: this.finishModHpartC,
+        finishModHpartD: this.finishModHpartD,
+        finishModH: this.finishModH,
       };
       resultService
         .saveDataH(clientId, payload)
@@ -933,6 +940,11 @@ export default {
     this.question_v = this.planSingle.h_bv.question_v;
     this.question_w = this.planSingle.h_bv.question_w;
     this.question_x = this.planSingle.h_bv.question_x;
+    this.finishModH = this.planSingle.finishModH;
+    this.finishModHpartA = this.planSingle.finishModHpartA;
+    this.finishModHpartB = this.planSingle.finishModHpartB;
+    this.finishModHpartC = this.planSingle.finishModHpartC;
+    this.finishModHpartD = this.planSingle.finishModHpartD;
   },
 };
 </script>

@@ -8,33 +8,33 @@
     "textbInf": "Not in use"
   },
   {
-    "header": "Intro",
-    "headerInf": "Intro",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "header": "Introductie",
+    "headerInf": "Introductie",
+    "texta": "Als u plotseling wegvalt, dan kan het zijn dat uw onderneming niet levensvatbaar is zonder uw inbreng. Dit komt vaak voor bij ondernemingen die zich in de pioniersfase bevinden. De organisatie, vaak enkele medewerkers, leunt zwaar op de kennis, ervaring en competenties van de ondernemer.",
+    "textaInf": "Als je plotseling wegvalt, dan kan het zijn dat jouw onderneming niet levensvatbaar is zonder jouw inbreng. Dit komt vaak voor bij ondernemingen die zich in de pioniersfase bevinden. De organisatie, vaak enkele medewerkers, leunt zwaar op de kennis, ervaring en competenties van de ondernemer.",
+    "textb": "Als dit het geval is, dan is het verstandig om uw opvolger de opdracht te geven de bedrijfsactiviteiten te staken.",
+    "textbInf": "Als dit het geval is, dan is het verstandig om je opvolger de opdracht te geven de bedrijfsactiviteiten te staken.",
+    "textc": "",
+    "textcInf": ""
   },
   {
     "header": "Staking activiteiten",
     "headerInf": "Staking activiteiten",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "texta": "Als staking van de bedrijfsactiviteiten voor u een reële optie is, dan kunt u in de vervolgvragen uw aandachtspunten weergeven.",
+    "textaInf": "Als staking van de bedrijfsactiviteiten voor jou een reële optie is, dan kun je in de vervolgvragen jouw aandachtspunten weergeven.",
+    "textb": "Als staking van de bedrijfsactiviteiten voor u geen reële optie is, dan kunt onderstaande vraag met NEE beantwoorden. U krijgt geen vervolgvragen en kunt de module dan snel afronden.",
+    "textbInf": "Als staking van de bedrijfsactiviteiten voor jou geen reële optie is, dan kunt onderstaande vraag met NEE beantwoorden. Je krijgt geen vervolgvragen en kunt de module dan snel afronden.",
+    "textc": "",
+    "textcInf": ""
   },
   {
     "header": "Einde",
     "headerInf": "Einde",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "texta": "U bent aan het einde gekomen van deze module. Wilt u uw antwoorden nog bekijken of veranderen? Gebruik de knop TERUG.",
+    "textaInf": "Je bent aan het einde gekomen van deze module. Wil je je antwoorden nog bekijken of veranderen? Gebruik de knop TERUG. ",
+    "textb": "Met de knop BEWAAR legt u uw antwoorden vast en vormt dit de basis voor het rapport dat wij voor u opstellen.",
+    "textbInf": "Met de knop BEWAAR leg je je antwoorden vast en vormt dit de basis voor het rapport dat wij voor je opstellen.",
+    "textc": "Dit rapport stellen wij op als u alle modules heeft ingevuld. ",
+    "textcInf": "Dit rapport stellen wij op als je alle modules hebt ingevuld."
   }
 ]

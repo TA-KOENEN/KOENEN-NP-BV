@@ -8,43 +8,63 @@
     "textbInf": "Not in use"
   },
   {
-    "header": "Intro",
-    "headerInf": "Intro",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "header": "Introductie",
+    "headerInf": "Introductie",
+    "texta": "Deze module helpt u om uw waarnemer en opvolger te informeren over uw rol in de onderneming. Hierdoor wordt zichtbaar welke taken en verantwoordelijkheden u heeft. Binnen het management en eventueel binnen het primaire proces.",
+    "textaInf": "Deze module helpt je om jouw waarnemer en opvolger te informeren over jouw rol in de onderneming. Hierdoor wordt zichtbaar welke taken en verantwoordelijkheden je hebt. Binnen het management en eventueel binnen het primaire proces.",
+    "textb": "Door deze informatie over te dragen, weten uw waarnemer en opvolger welke taken en verantwoordelijkheden overgenomen moeten worden in uw afwezigheid. Het overzicht kan u ook ondersteunen om te bepalen welke taken u wilt delegeren aan uw medewerkers.",
+    "textbInf": "Door deze informatie over te dragen, weten jouw waarnemer en opvolger welke taken en verantwoordelijkheden overgenomen moeten worden in jouw afwezigheid. Het overzicht kan je ook ondersteunen om te bepalen welke taken je wil delegeren aan jouw medewerkers.",
+    "textc": "Deze module brengt achtereenvolgens in kaart of sprake is van een management team, welke rol u heeft in het management, op basis van welke managementinformatie gestuurd wordt en wat uw rol in de operatie is.",
+    "textcInf": "Deze module brengt achtereenvolgens in kaart of sprake is van een management team, welke rol u heeft in het management, op basis van welke managementinformatie gestuurd wordt en wat uw rol in de operatie is."
   },
   {
-    "header": "Rol in MT",
-    "headerInf": "Rol in MT",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "header": "Management",
+    "headerInf": "Management",
+    "texta": "Belangrijk is om vast te stellen of u samen met andere managers de leiding heeft of dat u zelfstandig en rechtstreeks uw medewerkers aanstuurt.",
+    "textaInf": "Belangrijk is om vast te stellen of je samen met andere managers de leiding hebt of dat je zelfstandig en rechtstreeks jouw medewerkers aanstuurt.",
+    "textb": "",
+    "textbInf": "",
+    "textc": "",
+    "textcInf": ""
+  },
+  {
+    "header": "Rol in management team",
+    "headerInf": "Rol in management team",
+    "texta": "Als u een rol heeft in een management team, brengt dit onderdeel in kaart welke rol dit is.",
+    "textaInf": "Als u een rol heeft in een management team, brengt dit onderdeel in kaart welke rol dit is.",
+    "textb": "Als u niet in het management betrokken bent, dan kunt u dit hier ook aangeven.",
+    "textbInf": "Als je niet in het management betrokken bent, dan kun je dit hier ook aangeven.",
+    "textc": "",
+    "textcInf": ""
+  },
+  {
+    "header": "Managementinformatie",
+    "headerInf": "Managementinformatie",
+    "texta": "Voor uw waarnemer en opvolger is het belangrijk om te weten op basis van welke informatie u de onderneming stuurt. Heeft u toegang tot managementinformatie?",
+    "textaInf": "Voor uw waarnemer en opvolger is het belangrijk om te weten op basis van welke informatie u de onderneming stuurt. Heeft u toegang tot managementinformatie?",
+    "textb": "Mocht er (nog) geen managementinformatie voorhanden zijn, wat zijn dan uw belangrijkste aandachtspunten in de aansturing van de operatie?",
+    "textbInf": "Mocht er (nog) geen managementinformatie voorhanden zijn, wat zijn dan jouw belangrijkste aandachtspunten in de aansturing van de operatie?",
+    "textc": "",
+    "textcInf": ""
   },
   {
     "header": "Rol binnen operatie",
     "headerInf": "Rol binnen operatie",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "texta": "Dit onderdeel brengt uw taken en verantwoordelijkheden met betrekking tot een aantal functionele gebieden in uw onderneming in kaart.",
+    "textaInf": "Dit onderdeel brengt jouw taken en verantwoordelijkheden met betrekking tot een aantal functionele gebieden in jouw onderneming in kaart.",
+    "textb": "Het gaat hier bij taken en verantwoordelijkheden die verder gaan dan de algehele aansturing van het functionele gebied. Bijvoorbeeld bent u volledig of deels verantwoordelijk voor de contacten met leveranciers voor de inkoop?",
+    "textbInf": "Het gaat hier bij taken en verantwoordelijkheden die verder gaan dan de algehele aansturing van het functionele gebied. Bijvoorbeeld ben je volledig of deels verantwoordelijk voor de contacten met leveranciers voor de inkoop?",
+    "textc": "Deze inventarisatie helpt uw waarnemer en opvolger om direct taken en verantwoordelijkheden over te nemen.",
+    "textcInf": "Deze inventarisatie helpt uw waarnemer en opvolger om direct taken en verantwoordelijkheden over te nemen."
   },
   {
     "header": "Einde",
     "headerInf": "Einde",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "texta": "U bent aan het einde gekomen van deze module. Wilt u uw antwoorden nog bekijken of veranderen? Gebruik de knop TERUG.",
+    "textaInf": "Je bent aan het einde gekomen van deze module. Wil je je antwoorden nog bekijken of veranderen? Gebruik de knop TERUG. ",
+    "textb": "Met de knop BEWAAR legt u uw antwoorden vast en vormt dit de basis voor het rapport dat wij voor u opstellen.",
+    "textbInf": "Met de knop BEWAAR leg je je antwoorden vast en vormt dit de basis voor het rapport dat wij voor je opstellen.",
+    "textc": "Dit rapport stellen wij op als u alle modules heeft ingevuld. ",
+    "textcInf": "Dit rapport stellen wij op als je alle modules hebt ingevuld."
   }
 ]

@@ -249,7 +249,11 @@ export default {
       question_h: "",
       question_i: "",
       text_c: "",
-      finishModCpartB: true,
+      finishModCpartA: false,
+      finishModCpartB: false,
+      finishModCpartC: false,
+      finishModCpartD: false,
+      finishModC: false,
       saving: false,
     };
   },
@@ -263,6 +267,7 @@ export default {
     },
     saveItem() {
       console.log("next Step works");
+      this.finishModCpartB = true;
       this.saving = true;
       const clientId = JSON.parse(localStorage.getItem("pass_token"));
       const payload = {
@@ -270,7 +275,11 @@ export default {
         question_h: this.question_h,
         question_i: this.question_i,
         text_c: this.text_c,
+        finishModCpartA: this.finishModCpartA,
         finishModCpartB: this.finishModCpartB,
+        finishModCpartC: this.finishModCpartC,
+        finishModCpartD: this.finishModCpartD,
+        finishModC: this.finishModC,
       };
       resultService
         .saveDataC(clientId, payload)
@@ -297,6 +306,11 @@ export default {
     this.question_h = this.planSingle.c_bv.question_h;
     this.question_i = this.planSingle.c_bv.question_i;
     this.text_c = this.planSingle.c_bv.text_c;
+    this.finishModC = this.planSingle.finishModC;
+    this.finishModCpartA = this.planSingle.finishModCpartA;
+    this.finishModCpartB = this.planSingle.finishModCpartB;
+    this.finishModCpartC = this.planSingle.finishModCpartC;
+    this.finishModCpartD = this.planSingle.finishModCpartD;
   },
 };
 </script>

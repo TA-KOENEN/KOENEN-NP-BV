@@ -137,7 +137,10 @@
                         planSingle.question_a === 'ke2')
                     "
                   >
-                    <StatementText :text="'Personal holding'" class="mb-5" />
+                    <StatementText
+                      :text="'Personal holding'"
+                      class="mb-5 mt-5"
+                    />
 
                     <div
                       v-if="
@@ -630,8 +633,6 @@ export default {
         .then(() => {
           this.saving = false;
           if (this.question_e === "ke1") {
-            this.$router.push({ name: "module-f-step-c" });
-          } else if (this.planSingle.question_i === "ke1") {
             this.$router.push({ name: "module-f-step-c" });
           } else {
             this.$router.push({ name: "module-f-end" });

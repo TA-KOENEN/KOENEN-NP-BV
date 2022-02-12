@@ -1,0 +1,98 @@
+[
+  {
+    "header": "Uw gegevens",
+    "headerInf": "Jouw gegevens",
+    "text": "Uw gegevens zoals deze worden opgenomen in het rapport",
+    "InfText": "Jouw gegevens zoals deze worden opgenomen in het rapport"
+  },
+  {
+    "header": "Uw waarnemer en opvolger",
+    "headerInf": "Jouw waarnemer en opvolger",
+    "text": "De gegevens van uw waarnemer en opvolger",
+    "InfText": "De gegevens van jouw waarnemer en opvolger"
+  },
+  {
+    "header": "Scenario: Voortzetting door uw familie",
+    "headerInf": "Scenario: Voortzetting door jouw familie",
+    "text": "Is opvolging door uw familie een reëel scenario?",
+    "InfText": "Is opvolging door jouw familie een reëel scenario?"
+  },
+  {
+    "header": "Scenario: Voortzetting door uw medewerkers",
+    "headerInf": "Scenario: Voortzetting door jouw medewerkers",
+    "text": "Is opvolging door uw medewerkers een reëel scenario?",
+    "InfText": "Is opvolging door jouw medewerkers een reëel scenario?"
+  },
+  {
+    "header": "Scenario: Verkoop aan een externe partij",
+    "headerInf": "Scenario: Verkoop aan een externe partij",
+    "text": "Is verkoop aan een externe partij reëel?",
+    "InfText": "Is verkoop aan een externe partij reëel?"
+  },
+  {
+    "header": "Scenario: Staken activiteiten",
+    "headerInf": "Scenario: Staken activiteiten",
+    "text": "Is het beter om de onderneming te beëindigen?",
+    "InfText": "Is het beter om de onderneming te beëindingen?"
+  },
+  {
+    "header": "Structuur",
+    "headerInf": "Structuur",
+    "text": "Wat is de juridische structuur?",
+    "InfText": "Wat is de juridische structuur?"
+  },
+  {
+    "header": "Mede-eigenaren",
+    "headerInf": "Mede-eigenaren",
+    "text": "Met wie werkt u samen?",
+    "InfText": "Met wie werk je samen?"
+  },
+  {
+    "header": "Bedrijfsstrategie",
+    "headerInf": "Bedrijfsstrategie",
+    "text": "Wat zijn de ondernemingsdoelen en -strategie?",
+    "InfText": "Wat zijn de ondernemingsdoelen en -strategie?"
+  },
+  {
+    "header": "Finance en IT",
+    "headerInf": "Finance en IT informeel",
+    "text": "Hoe is Finance en IT georganiseerd?",
+    "InfText": "Hoe is Finance en IT georganiseerd?"
+  },
+  {
+    "header": "Uw rol",
+    "headerInf": "Jouw rol",
+    "text": "Uw taken en verantwoordelijkheden",
+    "InfText": "Jouw taken en verantwoordelijkheden"
+  },
+  {
+    "header": "Management en medewerkers",
+    "headerInf": "Management en medewerkers",
+    "text": "Wie zijn de steunpilaren in de organisatie?",
+    "InfText": "Wie zijn de steunpilaren in de organisatie?"
+  },
+  {
+    "header": "Leveranciers ",
+    "headerInf": "Leveranciers",
+    "text": "Welke leveranciers zijn essentieel?",
+    "InfText": "Welke leveranciers zijn essentieel?"
+  },
+  {
+    "header": "Klanten ",
+    "headerInf": "Klanten",
+    "text": "Welke klanten zijn essentieel?",
+    "InfText": "Welke klanten zijn essentieel?"
+  },
+  {
+    "header": "Adviseurs",
+    "headerInf": "Adviseurs",
+    "text": "Welke adviseurs zijn essentieel?",
+    "InfText": "Welke adviseurs zijn essentieel?"
+  },
+  {
+    "header": "Klaar met de modules?",
+    "headerInf": "Klaar met de modules?",
+    "text": "Laat het ons weten! Dan starten wij met uw Noodplan.",
+    "InfText": "Laat het ons weten! Dan starten wij met jouw Noodplan."
+  }
+]

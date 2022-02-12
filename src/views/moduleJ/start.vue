@@ -37,7 +37,7 @@
               :active="true"
             />
             <vimeo-player
-              :video-id="vimeo.moduleH"
+              :video-id="vimeo.moduleJ"
               class="embed-container"
               :options="{ responsive: true }"
             ></vimeo-player>

@@ -8,63 +8,63 @@
     "textbInf": "Not in use"
   },
   {
-    "header": "Intro",
-    "headerInf": "Intro",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "header": "Introductie",
+    "headerInf": "Introductie",
+    "texta": "Wij ervaren dat bij kleinere MKB (familie)bedrijven waar de ondernemer verantwoordelijk is voor Finance en IT, dat bij zijn plotselinge wegvallen, deze ondernemingen in de problemen kunnen komen.",
+    "textaInf": "Wij ervaren dat bij kleinere MKB (familie)bedrijven waar de ondernemer verantwoordelijk is voor Finance en IT, dat bij zijn plotselinge wegvallen, deze ondernemingen in de problemen kunnen komen.",
+    "textb": "Heeft u zelf geen verantwoordelijkheid voor Finance en IT én zijn er medewerkers voor deze functies aangesteld, dan kunt u deze module heel beperkt invullen. Mogelijk dat u de toegang en autorisatie van de zakelijke bankrekeningen wel in kaart wilt brengen. Daarnaast kunt u in deze module aangeven waar belangrijke documenten te vinden zijn.",
+    "textbInf": "Heb je zelf geen verantwoordelijkheid voor Finance en IT én zijn er medewerkers voor deze functies aangesteld, dan kun je deze module heel beperkt invullen. Mogelijk dat je de toegang en autorisatie van de zakelijke bankrekeningen wel in kaart wil brengen. Daarnaast kun je in deze module aangeven waar belangrijke documenten te vinden zijn.",
+    "textc": "Bent u zelf wel verantwoordelijk voor Finance en IT, dan helpt deze module u om eventuele kwetsbaarheden in kaart te brengen, bijvoorbeeld bij de toegang tot IT-systemen. ",
+    "textcInf": "Ben je zelf wel verantwoordelijk voor Finance en IT, dan helpt deze module je om eventuele kwetsbaarheden in kaart te brengen, bijvoorbeeld bij de toegang tot IT-systemen. "
   },
   {
-    "header": "Zakelijke rekeningen",
-    "headerInf": "Zakelijke rekeningen",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "header": "Zakelijke bankrekeningen",
+    "headerInf": "Zakelijke bankrekeningen",
+    "texta": "De toegang en autorisatie voor het doen van betalingen bij online bankieren is een kwetsbaar punt voor elke MKB onderneming. Als ondernemer wil je controle houden over bijvoorbeeld de uitgaande betalingen, maar tegelijkertijd kun je jezelf niet onmisbaar maken. ",
+    "textaInf": "De toegang en autorisatie voor het doen van betalingen bij online bankieren is een kwetsbaar punt voor elke MKB onderneming. Als ondernemer wil je controle houden over bijvoorbeeld de uitgaande betalingen, maar tegelijkertijd kun je jezelf niet onmisbaar maken.",
+    "textb": "Dat kan namelijk betekenen dat als u plotseling wegvalt, niemand de autorisatie heeft om betalingen uit te voeren. Dat leidt tot problemen met bijvoorbeeld leveranciers, salaris- en belastingbetalingen. ",
+    "textbInf": "Dat kan namelijk betekenen dat als u plotseling wegvalt, niemand de autorisatie heeft om betalingen uit te voeren. Dat leidt tot problemen met bijvoorbeeld leveranciers, salaris- en belastingbetalingen.",
+    "textc": "De toegang tot de zakelijke bankrekeningen en de autorisatie tot het geven van betaalopdrachten dient u dus in samenspraak met uw bank goed te regelen.",
+    "textcInf": "De toegang tot de zakelijke bankrekeningen en de autorisatie tot het geven van betaalopdrachten dien je dus in samenspraak met jouw bank goed te regelen."
   },
   {
     "header": "Administratieve processen",
     "headerInf": "Administratieve processen",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "texta": "In dit onderdeel kunt u vastleggen hoe bepaalde administratieve processen zijn georganiseerd, zodat uw waarnemer en opvolger hiervan op de hoogte zijn.",
+    "textaInf": "In dit onderdeel kunt u vastleggen hoe bepaalde administratieve processen zijn georganiseerd, zodat uw waarnemer en opvolger hiervan op de hoogte zijn.",
+    "textb": "",
+    "textbInf": "",
+    "textc": "",
+    "textcInf": ""
   },
   {
     "header": "IT",
     "headerInf": "IT",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "texta": "Zonder toegang tot de bedrijfssystemen, kunnen uw medewerkers hun activiteiten niet goed uitvoeren. Dat maakt dat de wijze waarop u het IT-systeembeheer heeft georganiseerd en uw rol daarin, van cruciaal belang zijn voor de bedrijfscontinuïteit.",
+    "textaInf": "Zonder toegang tot de bedrijfssystemen, kunnen jouw medewerkers hun activiteiten niet goed uitvoeren. Dat maakt dat de wijze waarop je het IT-systeembeheer hebt georganiseerd en jouw rol daarin, van cruciaal belang zijn voor de bedrijfscontinuïteit.",
+    "textb": "Het verdient dus uw aandacht om dit onderdeel goed te beschrijven, als u verwacht dat er kwetsbaarheden optreden bij uw plotselinge afwezigheid.",
+    "textbInf": "Het verdient dus jouw aandacht om dit onderdeel goed te beschrijven, als je verwacht dat er kwetsbaarheden optreden bij jouw plotselinge afwezigheid.",
+    "textc": "",
+    "textcInf": ""
   },
   {
     "header": "Documenten",
     "headerInf": "Documenten",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "texta": "In dit onderdeel beschrijft u waar u belangrijke documenten voor uw waarnemer en opvolger bewaard. Deze documenten kunt u zowel fysiek als digitaal opslaan.",
+    "textaInf": "In dit onderdeel beschrijf je waar je belangrijke documenten voor jouw waarnemer en opvolger bewaard. Deze documenten kun je zowel fysiek als digitaal opslaan.",
+    "textb": "Voor uw waarnemer of opvolger kan toegang tot deze documenten noodzakelijk zijn, bijvoorbeeld het aandelenregister van deze BV bij verkoop van de aandelen.",
+    "textbInf": "Voor jouw waarnemer of opvolger kan toegang tot deze documenten noodzakelijk zijn, bijvoorbeeld het aandelenregister van deze BV bij verkoop van de aandelen.",
+    "textc": "Met betrekking tot logins en wachtwoorden voor online platforms, toegangscodes tot fysieke ruimtes, etc. adviseren wij u dit vast te leggen bij een digitale aanbieder zoals LastPass of 1Password.",
+    "textcInf": "Met betrekking tot logins en wachtwoorden voor online platforms, toegangscodes tot fysieke ruimtes, etc. adviseren wij je dit vast te leggen bij een digitale aanbieder zoals LastPass of 1Password."
   },
   {
     "header": "Einde",
     "headerInf": "Einde",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "texta": "U bent aan het einde gekomen van deze module. Wilt u uw antwoorden nog bekijken of veranderen? Gebruik de knop TERUG.",
+    "textaInf": "Je bent aan het einde gekomen van deze module. Wil je je antwoorden nog bekijken of veranderen? Gebruik de knop TERUG. ",
+    "textb": "Met de knop BEWAAR legt u uw antwoorden vast en vormt dit de basis voor het rapport dat wij voor u opstellen.",
+    "textbInf": "Met de knop BEWAAR leg je je antwoorden vast en vormt dit de basis voor het rapport dat wij voor je opstellen.",
+    "textc": "Dit rapport stellen wij op als u alle modules heeft ingevuld. ",
+    "textcInf": "Dit rapport stellen wij op als je alle modules hebt ingevuld."
   }
 ]

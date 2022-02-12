@@ -302,7 +302,11 @@ export default {
       question_p: "",
       question_q: "",
       text_a: "",
-      finishModIpartC: true,
+      finishModIpartA: true,
+      finishModIpartB: false,
+      finishModIpartC: false,
+      finishModIpartD: false,
+      finishModI: false,
       saving: false,
     };
   },
@@ -315,7 +319,7 @@ export default {
       this.$router.push({ name: "module-i-step-b" });
     },
     saveItem() {
-      console.log("next Step works");
+      this.finishModIpartC = true;
       this.saving = true;
       const clientId = JSON.parse(localStorage.getItem("pass_token"));
 
@@ -325,7 +329,11 @@ export default {
         question_p: this.question_p,
         question_q: this.question_q,
         text_a: this.text_a,
+        finishModIpartA: this.finishModIpartA,
+        finishModIpartB: this.finishModIpartB,
         finishModIpartC: this.finishModIpartC,
+        finishModIpartD: this.finishModIpartD,
+        finishModI: this.finishModI,
       };
       resultService
         .saveDataI(clientId, payload)
@@ -353,6 +361,11 @@ export default {
     this.question_p = this.planSingle.i_bv.question_p;
     this.question_q = this.planSingle.i_bv.question_q;
     this.text_a = this.planSingle.i_bv.text_a;
+    this.finishModI = this.planSingle.finishModI;
+    this.finishModIpartA = this.planSingle.finishModIpartA;
+    this.finishModIpartB = this.planSingle.finishModIpartB;
+    this.finishModIpartC = this.planSingle.finishModIpartC;
+    this.finishModIpartD = this.planSingle.finishModIpartD;
   },
 };
 </script>

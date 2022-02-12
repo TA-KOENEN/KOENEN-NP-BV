@@ -3,8 +3,16 @@
     <v-card>
       <v-card-title>Stoppen</v-card-title>
       <v-card-text>
-        Wilt u stoppen en later verder gaan, terug naar het overzicht van alle
-        modules. Klik sluit om dit venster te sluiten.
+        <div v-if="formal">
+          Wilt u stoppen om later verder te gaan, kies STOP. Wilt u terug naar
+          het overzicht van alle modules, kies MODULES. Om dit venster te
+          sluiten, kies SLUIT.
+        </div>
+        <div v-if="!formal">
+          Wil je stoppen om later verder te gaan, kies STOP. Wil je terug naar
+          het overzicht van alle modules, kies MODULES. Om dit venster te
+          sluiten, kies SLUIT.
+        </div>
       </v-card-text>
       <v-card-actions>
         <v-btn color="accent" text @click="goChange">Sluit</v-btn>
@@ -29,6 +37,7 @@ export default {
   data() {
     return {
       innerValue: "",
+      formal: true,
     };
   },
   watch: {
@@ -83,6 +92,9 @@ export default {
     goModules() {
       this.$router.push({ name: "Modules" });
     },
+  },
+  mounted() {
+    this.formal = JSON.parse(localStorage.getItem("formal"));
   },
 };
 </script>

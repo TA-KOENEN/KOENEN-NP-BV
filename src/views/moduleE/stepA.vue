@@ -629,6 +629,9 @@ export default {
       text_i: "",
       finishModE: true,
       finishModEpartA: true,
+      finishModEpartB: true,
+      finishModEpartC: true,
+      finishModEpartD: true,
       saving: false,
     };
   },
@@ -638,9 +641,14 @@ export default {
     },
 
     goBack() {
-      this.$router.push({ name: "module-b-start" });
+      this.$router.push({ name: "module-e-start" });
     },
     saveItem() {
+      this.finishModE = true;
+      this.finishModEpartA = true;
+      this.finishModEpartB = true;
+      this.finishModEpartC = true;
+      this.finishModEpartD = true;
       console.log("next Step works");
       this.saving = true;
       const clientId = JSON.parse(localStorage.getItem("pass_token"));
@@ -665,6 +673,9 @@ export default {
         text_i: this.text_i,
         finishModE: this.finishModE,
         finishModEpartA: this.finishModEpartA,
+        finishModEpartB: this.finishModEpartB,
+        finishModEpartC: this.finishModEpartC,
+        finishModEpartD: this.finishModEpartD,
       };
       resultService
         .saveDataE(clientId, payload)
@@ -705,6 +716,11 @@ export default {
     this.text_g = this.planSingle.e_bv.text_g;
     this.text_h = this.planSingle.e_bv.text_h;
     this.text_i = this.planSingle.e_bv.text_i;
+    this.finishModE = this.planSingle.finishModE;
+    this.finishModEpartA = this.planSingle.finishModEpartA;
+    this.finishModEpartB = this.planSingle.finishModEpartB;
+    this.finishModEpartC = this.planSingle.finishModEpartC;
+    this.finishModEpartD = this.planSingle.finishModEpartD;
   },
 };
 </script>

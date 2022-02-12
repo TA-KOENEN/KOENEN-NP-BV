@@ -53,7 +53,7 @@
                   />
 
                   <base-radio
-                    v-model="question_c"
+                    v-model="question_f"
                     :error-messages="errors"
                     rules="required"
                     v-bind:nrOptions="statement[6].nrOptions"
@@ -63,44 +63,49 @@
                     v-bind:optionD="statement[6].optionD"
                   />
 
-                  <div v-if="question_c === 'ke1'">
-                    <StatementText
-                      :text="statement[7].questionAppForm"
-                      :note="statement[7].commentApp"
-                      :nr-notes="statement[7].nrNotes"
-                      :noteA="statement[7].noteAppFormA"
-                      :noteB="statement[7].noteAppFormB"
-                      :noteC="statement[7].noteAppFormC"
-                      class="mb-5"
-                    />
+                  <StatementText
+                    :text="statement[7].questionAppForm"
+                    :note="statement[7].commentApp"
+                    :nr-notes="statement[7].nrNotes"
+                    :noteA="statement[7].noteAppFormA"
+                    :noteB="statement[7].noteAppFormB"
+                    :noteC="statement[7].noteAppFormC"
+                    class="mb-5"
+                  />
 
-                    <BaseValInput
-                      rules="max:150"
-                      v-model="question_d"
-                      v-bind:label="statement[7].label"
-                    />
+                  <base-radio
+                    v-model="question_g"
+                    :error-messages="errors"
+                    rules="required"
+                    v-bind:nrOptions="statement[7].nrOptions"
+                    v-bind:optionA="statement[7].optionA"
+                    v-bind:optionB="statement[7].optionB"
+                    v-bind:optionC="statement[7].optionC"
+                    v-bind:optionD="statement[7].optionD"
+                  />
 
-                    <StatementText
-                      :text="statement[8].questionAppForm"
-                      :note="statement[8].commentApp"
-                      :nr-notes="statement[8].nrNotes"
-                      :noteA="statement[8].noteAppFormA"
-                      :noteB="statement[8].noteAppFormB"
-                      :noteC="statement[8].noteAppFormC"
-                      class="mb-5"
-                    />
+                  <StatementText
+                    :text="statement[8].questionAppForm"
+                    :note="statement[8].commentApp"
+                    :nr-notes="statement[8].nrNotes"
+                    :noteA="statement[8].noteAppFormA"
+                    :noteB="statement[8].noteAppFormB"
+                    :noteC="statement[8].noteAppFormC"
+                    class="mb-5"
+                  />
 
-                    <base-radio
-                      v-model="question_e"
-                      :error-messages="errors"
-                      rules="required"
-                      v-bind:nrOptions="statement[8].nrOptions"
-                      v-bind:optionA="statement[8].optionA"
-                      v-bind:optionB="statement[8].optionB"
-                      v-bind:optionC="statement[8].optionC"
-                      v-bind:optionD="statement[8].optionD"
-                    />
+                  <base-radio
+                    v-model="question_h"
+                    :error-messages="errors"
+                    rules="required"
+                    v-bind:nrOptions="statement[8].nrOptions"
+                    v-bind:optionA="statement[8].optionA"
+                    v-bind:optionB="statement[8].optionB"
+                    v-bind:optionC="statement[8].optionC"
+                    v-bind:optionD="statement[8].optionD"
+                  />
 
+                  <div v-if="question_h === 'ke1'">
                     <StatementText
                       :text="statement[9].questionAppForm"
                       :note="statement[9].commentApp"
@@ -112,7 +117,7 @@
                     />
 
                     <base-radio
-                      v-model="question_f"
+                      v-model="question_i"
                       :error-messages="errors"
                       rules="required"
                       v-bind:nrOptions="statement[9].nrOptions"
@@ -122,21 +127,23 @@
                       v-bind:optionD="statement[9].optionD"
                     />
 
-                    <StatementText
-                      :text="statement[10].questionAppForm"
-                      :note="statement[10].commentApp"
-                      :nr-notes="statement[10].nrNotes"
-                      :noteA="statement[10].noteAppFormA"
-                      :noteB="statement[10].noteAppFormB"
-                      :noteC="statement[10].noteAppFormC"
-                      class="mb-5"
-                    />
+                    <div v-if="question_i === 'ke1'">
+                      <StatementText
+                        :text="statement[10].questionAppForm"
+                        :note="statement[10].commentApp"
+                        :nr-notes="statement[10].nrNotes"
+                        :noteA="statement[10].noteAppFormA"
+                        :noteB="statement[10].noteAppFormB"
+                        :noteC="statement[10].noteAppFormC"
+                        class="mb-5"
+                      />
 
-                    <base-val-area
-                      rules="max:500"
-                      v-model="text_d"
-                      v-bind:label="statement[10].label"
-                    />
+                      <BaseValInput
+                        rules="max:150"
+                        v-model="question_j"
+                        v-bind:label="statement[10].label"
+                      />
+                    </div>
                   </div>
                 </div>
                 <!--informal-->
@@ -152,7 +159,7 @@
                   />
 
                   <base-radio
-                    v-model="question_c"
+                    v-model="question_f"
                     :error-messages="errors"
                     rules="required"
                     v-bind:nrOptions="statement[6].nrOptions"
@@ -162,44 +169,49 @@
                     v-bind:optionD="statement[6].optionD"
                   />
 
-                  <div v-if="question_c === 'ke1'">
-                    <StatementText
-                      :text="statement[7].questionAppInform"
-                      :note="statement[7].commentApp"
-                      :nr-notes="statement[7].nrNotes"
-                      :noteA="statement[7].noteAppInfA"
-                      :noteB="statement[7].noteAppInfB"
-                      :noteC="statement[7].noteAppInfC"
-                      class="mb-5"
-                    />
+                  <StatementText
+                    :text="statement[7].questionAppInform"
+                    :note="statement[7].commentApp"
+                    :nr-notes="statement[7].nrNotes"
+                    :noteA="statement[7].noteAppInfA"
+                    :noteB="statement[7].noteAppInfB"
+                    :noteC="statement[7].noteAppInfC"
+                    class="mb-5"
+                  />
 
-                    <BaseValInput
-                      rules="max:150"
-                      v-model="question_d"
-                      v-bind:label="statement[7].label"
-                    />
+                  <base-radio
+                    v-model="question_g"
+                    :error-messages="errors"
+                    rules="required"
+                    v-bind:nrOptions="statement[7].nrOptions"
+                    v-bind:optionA="statement[7].optionA"
+                    v-bind:optionB="statement[7].optionB"
+                    v-bind:optionC="statement[7].optionC"
+                    v-bind:optionD="statement[7].optionD"
+                  />
 
-                    <StatementText
-                      :text="statement[8].questionAppInform"
-                      :note="statement[8].commentApp"
-                      :nr-notes="statement[8].nrNotes"
-                      :noteA="statement[8].noteAppInfA"
-                      :noteB="statement[8].noteAppInfB"
-                      :noteC="statement[8].noteAppInfC"
-                      class="mb-5"
-                    />
+                  <StatementText
+                    :text="statement[8].questionAppInform"
+                    :note="statement[8].commentApp"
+                    :nr-notes="statement[8].nrNotes"
+                    :noteA="statement[8].noteAppInfA"
+                    :noteB="statement[8].noteAppInfB"
+                    :noteC="statement[8].noteAppInfC"
+                    class="mb-5"
+                  />
 
-                    <base-radio
-                      v-model="question_e"
-                      :error-messages="errors"
-                      rules="required"
-                      v-bind:nrOptions="statement[8].nrOptions"
-                      v-bind:optionA="statement[8].optionA"
-                      v-bind:optionB="statement[8].optionB"
-                      v-bind:optionC="statement[8].optionC"
-                      v-bind:optionD="statement[8].optionD"
-                    />
+                  <base-radio
+                    v-model="question_h"
+                    :error-messages="errors"
+                    rules="required"
+                    v-bind:nrOptions="statement[8].nrOptions"
+                    v-bind:optionA="statement[8].optionA"
+                    v-bind:optionB="statement[8].optionB"
+                    v-bind:optionC="statement[8].optionC"
+                    v-bind:optionD="statement[8].optionD"
+                  />
 
+                  <div v-if="question_h === 'ke1'">
                     <StatementText
                       :text="statement[9].questionAppInform"
                       :note="statement[9].commentApp"
@@ -211,7 +223,7 @@
                     />
 
                     <base-radio
-                      v-model="question_f"
+                      v-model="question_i"
                       :error-messages="errors"
                       rules="required"
                       v-bind:nrOptions="statement[9].nrOptions"
@@ -221,21 +233,23 @@
                       v-bind:optionD="statement[9].optionD"
                     />
 
-                    <StatementText
-                      :text="statement[10].questionAppInform"
-                      :note="statement[10].commentApp"
-                      :nr-notes="statement[10].nrNotes"
-                      :noteA="statement[10].noteAppInfA"
-                      :noteB="statement[10].noteAppInfB"
-                      :noteC="statement[10].noteAppInfC"
-                      class="mb-5"
-                    />
+                    <div v-if="question_i === 'ke1'">
+                      <StatementText
+                        :text="statement[10].questionAppInform"
+                        :note="statement[10].commentApp"
+                        :nr-notes="statement[10].nrNotes"
+                        :noteA="statement[10].noteAppInfA"
+                        :noteB="statement[10].noteAppInfB"
+                        :noteC="statement[10].noteAppInfC"
+                        class="mb-5"
+                      />
 
-                    <base-val-area
-                      rules="max:500"
-                      v-model="text_d"
-                      v-bind:label="statement[10].label"
-                    />
+                      <BaseValInput
+                        rules="max:150"
+                        v-model="question_j"
+                        v-bind:label="statement[10].label"
+                      />
+                    </div>
                   </div>
                 </div>
                 <v-row class="mt-10">
@@ -260,6 +274,12 @@
             />
             <step-text
               :stepText="textAppRight[5].header"
+              :number="5"
+              class="mb-5"
+              :active="false"
+            />
+            <step-text
+              :stepText="textAppRight[6].header"
               :number="5"
               class="mb-5"
               :active="false"
@@ -292,12 +312,16 @@ export default {
       statement: Questions,
       textData: ExtraText,
       formal: null,
-      question_c: "",
-      question_d: "",
-      question_e: "",
       question_f: "",
-      text_d: "",
+      question_g: "",
+      question_h: "",
+      question_i: "",
+      question_j: "",
+      finishModJ: false,
+      finishModJpartA: true,
       finishModJpartB: true,
+      finishModJpartC: false,
+      finishModJpartD: false,
       saving: false,
     };
   },
@@ -314,12 +338,16 @@ export default {
       this.saving = true;
       const clientId = JSON.parse(localStorage.getItem("pass_token"));
       const payload = {
-        question_c: this.question_c,
-        question_d: this.question_d,
-        question_e: this.question_e,
         question_f: this.question_f,
-        text_d: this.text_d,
+        question_g: this.question_g,
+        question_h: this.question_h,
+        question_i: this.question_i,
+        question_j: this.question_j,
+        finishModJpartA: this.finishModJpartA,
         finishModJpartB: this.finishModJpartB,
+        finishModJpartC: this.finishModJpartC,
+        finishModJpartD: this.finishModJpartD,
+        finishModJ: this.finishModJ,
       };
       resultService
         .saveDataJ(clientId, payload)
@@ -342,11 +370,16 @@ export default {
   },
   mounted() {
     this.formal = JSON.parse(localStorage.getItem("formal"));
-    this.question_c = this.planSingle.h_bv.question_c;
-    this.question_d = this.planSingle.h_bv.question_d;
-    this.question_e = this.planSingle.h_bv.question_e;
-    this.question_f = this.planSingle.h_bv.question_f;
-    this.text_d = this.planSingle.h_bv.text_d;
+    this.question_f = this.planSingle.j_bv.question_f;
+    this.question_g = this.planSingle.j_bv.question_g;
+    this.question_h = this.planSingle.j_bv.question_h;
+    this.question_i = this.planSingle.j_bv.question_i;
+    this.question_j = this.planSingle.j_bv.question_j;
+    this.finishModJ = this.planSingle.finishModJ;
+    this.finishModJpartA = this.planSingle.finishModJpartA;
+    this.finishModJpartB = this.planSingle.finishModJpartB;
+    this.finishModJpartC = this.planSingle.finishModJpartC;
+    this.finishModJpartD = this.planSingle.finishModJpartD;
   },
 };
 </script>

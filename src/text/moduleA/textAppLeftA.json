@@ -10,88 +10,52 @@
   {
     "header": "Noodopvolging",
     "headerInf": "Noodopvolging",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "texta": "Stel, door een ziekte of ongeval kunt u plotseling niet meer zelfstandig handelen. U ligt ziek op bed of in het ziekenhuis of nog erger, u komt te overlijden. Wie neemt in uw onderneming uw rol over?",
+    "textaInf": "Stel, door een ziekte of ongeval kun je plotseling niet meer zelfstandig handelen. Je ligt ziek op bed of in het ziekenhuis of nog erger, je komt te overlijden. Wie neemt in de onderneming jouw rol over?",
+    "textb": "Uw plotselinge afwezigheid kan vergaande consequenties hebben voor uw onderneming en vermogen. Het Noodplan helpt u om de impact hiervan zoveel mogelijk te beperken.",
+    "textbInf": "Jouw plotselinge afwezigheid kan vergaande consequenties hebben voor jouw onderneming en vermogen. Het Noodplan helpt je om de impact hiervan zoveel mogelijk te beperken.",
+    "textc": "Deze module gaat in de eerste maatregel die u kunt nemen: het benoemen van personen die u vertrouwt dat zij uw rol in de onderneming kunnen overnemen.",
+    "textcInf": "Deze module gaat in de eerste maatregel die je kunt nemen: het benoemen van personen die je vertrouwt dat zij jouw rol in de onderneming kunnen overnemen."
   },
   {
     "header": "Aanspreekpunt",
     "headerInf": "Aanspreekpunt",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "texta": "Als eerste: op het moment dat u getroffen wordt door een ongeval of ziekte, moet het voor uw levenspartner en/of kinderen duidelijk zijn met wie zij binnen uw onderneming contact kunnen opnemen.",
+    "textaInf": "Als eerste: op het moment dat je getroffen wordt door een ongeval of ziekte, moet het voor jouw levenspartner en/of kinderen duidelijk zijn met wie zij binnen jouw onderneming contact kunnen opnemen.",
+    "textb": "U heeft de mogelijkheid om de gegevens van een contactpersoon te noteren.",
+    "textbInf": "Je hebt de mogelijkheid om de gegevens van een contactpersoon te noteren.",
+    "textc": "",
+    "textcInf": ""
   },
   {
     "header": "Waarnemer",
     "headerInf": "Waarnemer",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "texta": "Als u tijdelijk door ziekte of een ongeval niet kunt ondernemen, dan dient iemand anders in uw onderneming uw rol tijdelijk waar te nemen. Vaak benoemen ondernemers een lid van het management tot hun waarnemer. ",
+    "textaInf": "Als je tijdelijk door ziekte of een ongeval niet kunt ondernemen, dan dient iemand anders in jouw onderneming jouw rol tijdelijk waar te nemen. Vaak benoemen ondernemers een lid van het management tot hun waarnemer. ",
+    "textb": "Waarneming wil zeggen dat uw waarnemer uw taken en verantwoordelijkheden in de dagelijkse operatie en aansturing van de onderneming overneemt. Belangrijk is dat uw waarnemer bevoegd is om namens de onderneming te handelen. ",
+    "textbInf": "Waarneming wil zeggen dat jouw waarnemer jouw taken en verantwoordelijkheden in de dagelijkse operatie en aansturing van de onderneming overneemt. Belangrijk is dat jouw waarnemer bevoegd is om namens de onderneming te handelen. ",
+    "textc": "",
+    "textcInf": ""
   },
   {
     "header": "Opvolger",
     "headerInf": "Opvolger",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "texta": "Als u door ziekte of ongeval niet meer kunt terugkeren, dan heeft u iemand nodig die uw volledige rol als ondernemer kan overnemen. Niet alleen in de dagelijkse bedrijfsvoering, maar ook in de rol van eigenaar en bestuurder. Als zodanig behartigt deze opvolger de belangen van uw gezin in de onderneming. Uw opvolger kent dan ook meer bevoegdheden, zoals de bevoegdheid om de onderneming te verkopen, mocht dat uw wens zijn.",
+    "textaInf": "Als je door ziekte of ongeval niet meer kunt terugkeren, dan heb je iemand nodig die jouw volledige rol als ondernemer kan overnemen. Niet alleen in de dagelijkse bedrijfsvoering, maar ook in de rol van eigenaar en bestuurder. Als zodanig behartigt deze opvolger de belangen van jouw gezin in de onderneming. Jouw opvolger kent dan ook meer bevoegdheden, zoals de bevoegdheid om de onderneming te verkopen, mocht dat jouw wens zijn.",
+    "textb": "Uw waarnemer kan ook uw opvolger zijn, maar u kunt er ook voor iemand anders kiezen. Ook voor uw opvolger geldt dat er sprake moet zijn van een juridische bevoegdheid om namens de onderneming te handelen. ",
+    "textbInf": "Jouw waarnemer kan ook jouw opvolger zijn, maar je kunt er ook voor iemand anders kiezen. Ook voor jouw opvolger geldt dat er sprake moet zijn van een juridische bevoegdheid om namens de onderneming te handelen. ",
+    "textc": "In de situatie dat u bijvoorbeeld een kind als opvolger wil benoemen, maar hij/zij is niet beschikbaar als opvolger (studie, leeftijd, etc.), dan kunt u aan het einde van deze vragen nog een alternatief kiezen om de periode totdat hij/zij wel beschikbaar is te overbruggen.",
+    "textcInf": "In de situatie dat je bijvoorbeeld een kind als opvolger wil benoemen, maar hij/zij is niet beschikbaar als opvolger (studie, leeftijd, etc.), dan kun je aan het einde van deze vragen nog een alternatief kiezen om de periode totdat hij/zij wel beschikbaar is te overbruggen."
   },
   {
     "header": "Einde",
     "headerInf": "Einde",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
-  },
-  {
-    "header": "Eigendomsstrategie",
-    "headerInf": "Eigendomsstrategie",
-    "texta": "Ten tweede: als u zelf geen leiding meer kunt geven aan uw onderneming, wat dient uw gezin/nabestaanden te doen met het eigendom in de onderneming? Wilt u dat de onderneming wordt voorgezet binnen het gezin/familie, wordt verkocht aan een medewerker of een derde partij of dient de onderneming te worden gestaakt?",
-    "textaInf": "Ten tweede: als je zelf geen leiding meer kunt geven aan jouw onderneming, wat dient jouw gezin/nabestaanden te doen met het eigendom in de onderneming? Wil je dat de onderneming wordt voorgezet binnen het gezin/familie, wordt verkocht aan een medewerker of een derde partij of dient de onderneming te worden gestaakt?",
-    "textb": "Heeft u uw wensen over het eigendom in het bedrijf vastgelegd?",
-    "textbInf": "Heb je je wensen over het eigendom in het bedrijf vastgelegd?"
-  },
-  {
-    "header": "Zorg voor het gezin",
-    "headerInf": "Zorg voor het gezin",
-    "texta": "In de situatie dat u niet meer verder kunt met de onderneming, wilt u uw gezin beschermen tegen de gevolgen hiervan. Vanuit financieel oogpunt wilt u bijvoorbeeld het verlies aan inkomen voor een belangrijk deel of zelfs volledig willen compenseren. ",
-    "textaInf": "In de situatie dat je niet meer verder kunt met de onderneming, wilt je jouw gezin beschermen tegen de gevolgen hiervan. Vanuit financieel oogpunt wil je bijvoorbeeld het verlies aan inkomen voor een belangrijk deel of zelfs volledig willen compenseren. ",
-    "textb": "Dat vraagt om een aantal financiële maatregelen, zowel binnen de onderneming als in privé. Zodat uw gezin of nabestaanden gevrijwaard zijn van financiële problemen.",
-    "textbInf": "Dat vraagt om een aantal financiële maatregelen, zowel binnen de onderneming als in privé. Zodat jouw gezin of nabestaanden gevrijwaard zijn van financiële problemen.",
-    "textc": "Mocht u iets overkomen, heeft u dan alles goed geregeld voor uw gezin?",
-    "textcInf": "Mocht je iets overkomen, heb je dan alles goed geregeld voor jouw gezin?"
-  },
-  {
-    "header": "Einde",
-    "headerInf": "Einde",
-    "texta": "U bent aan het einde gekomen van deze vragenlijst. Wilt u uw antwoorden nog bekijken of veranderen? Gebruik de knop TERUG.",
-    "textaInf": "Je bent aan het einde gekomen van deze vragenlijst. Wil je je antwoorden nog bekijken of veranderen? Gebruik de knop TERUG. ",
-    "textb": "Met de knop RAPPORTAGE kunt u een rapport opvragen, waarin de vragen en uw antwoorden staan. Aan de hand van uw antwoorden hebben wij informatie zoals tips voor u aan het rapport toegevoegd.",
-    "textbInf": "Met de knop RAPPORTAGE kun je een rapport opvragen, waarin de vragen en jouw antwoorden staan. Aan de hand van jouw antwoorden hebben wij informatie zoals tips voor je aan het rapport toegevoegd.",
-    "textc": "U heeft in kort tijdsbestek een aantal vragen over noodopvolging ingevuld. Ik kan mij voorstellen dat u verdere vragen heeft. In ons volgende overleg zal ik de resultaten van deze Personal QuickScan met u bespreken. ",
-    "textcInf": "Je hebt in kort tijdsbestek een aantal vragen over noodopvolging ingevuld. Ik kan mij voorstellen dat je verdere vragen heeft. In ons volgende overleg zal ik de resultaten van deze Personal QuickScan met je bespreken. ",
-    "textd": "Hebt u tussentijds vragen? Bel mij gerust.",
-    "textdInf": "Heb je tussentijds vragen? Bel mij gerust.",
-    "texte": "Met vriendelijke groet,",
-    "texteInf": "Met vriendelijke groet,",
-    "textf": "Wij gaan op een zorgvuldige wijze met uw gegevens om. Kijk voor al onze voorwaarden op onze website!",
-    "textfInf": "Wij gaan op een zorgvuldige wijze met je gegevens om. Kijk voor al onze voorwaarden op onze website!",
-    "textg": "www.trustedaccountant.nl",
-    "textgInf": "www.trustedaccountant.nl"
+    "texta": "U bent aan het einde gekomen van deze module. Wilt u uw antwoorden nog bekijken of veranderen? Gebruik de knop TERUG.",
+    "textaInf": "Je bent aan het einde gekomen van deze module. Wil je je antwoorden nog bekijken of veranderen? Gebruik de knop TERUG. ",
+    "textb": "Met de knop BEWAAR legt u uw antwoorden vast en vormt dit de basis voor het rapport dat wij voor u opstellen.",
+    "textbInf": "Met de knop BEWAAR leg je je antwoorden vast en vormt dit de basis voor het rapport dat wij voor je opstellen.",
+    "textc": "Dit rapport stellen wij op als u alle modules heeft ingevuld. ",
+    "textcInf": "Dit rapport stellen wij op als je alle modules hebt ingevuld."
   },
   {
     "header": "",

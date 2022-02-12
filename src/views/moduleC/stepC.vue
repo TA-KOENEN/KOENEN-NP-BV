@@ -78,7 +78,7 @@
                   </div>
                 </div>
                 <!--informal-->
-                <div v-if="formal">
+                <div v-if="!formal">
                   <div v-if="question_a === 'ke1'">
                     <StatementText
                       :text="statement[13].questionAppInform"
@@ -164,8 +164,11 @@ export default {
       question_a: "",
       text_b: "",
       text_d: "",
-      finishModCpartC: true,
-      finishModC: true,
+      finishModCpartA: false,
+      finishModCpartB: false,
+      finishModCpartC: false,
+      finishModCpartD: false,
+      finishModC: false,
       saving: false,
     };
   },
@@ -183,13 +186,18 @@ export default {
     },
     saveItem() {
       console.log("next Step works");
+      this.finishModCpartC = true;
+      this.finishModC = true;
       this.saving = true;
       const clientId = JSON.parse(localStorage.getItem("pass_token"));
       const payload = {
         text_b: this.text_b,
         text_d: this.text_d,
-        finishModC: this.finishModC,
+        finishModCpartA: this.finishModCpartA,
+        finishModCpartB: this.finishModCpartB,
         finishModCpartC: this.finishModCpartC,
+        finishModCpartD: this.finishModCpartD,
+        finishModC: this.finishModC,
       };
       resultService
         .saveDataC(clientId, payload)
@@ -215,6 +223,11 @@ export default {
     this.question_a = this.planSingle.c_bv.question_a;
     this.text_b = this.planSingle.c_bv.text_b;
     this.text_d = this.planSingle.c_bv.text_d;
+    this.finishModC = this.planSingle.finishModC;
+    this.finishModCpartA = this.planSingle.finishModCpartA;
+    this.finishModCpartB = this.planSingle.finishModCpartB;
+    this.finishModCpartC = this.planSingle.finishModCpartC;
+    this.finishModCpartD = this.planSingle.finishModCpartD;
   },
 };
 </script>

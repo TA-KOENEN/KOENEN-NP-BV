@@ -12,18 +12,18 @@
           <div class="ma-10">
             <div v-if="formal">
               <text-left
-                :head-text="textAppLeft[5].header"
-                :text-a="textAppLeft[5].texta"
-                :text-b="textAppLeft[5].textb"
-                :text-c="textAppLeft[5].textc"
+                :head-text="textAppLeft[6].header"
+                :text-a="textAppLeft[6].texta"
+                :text-b="textAppLeft[6].textb"
+                :text-c="textAppLeft[6].textc"
               />
             </div>
             <div v-if="!formal">
               <text-left
-                :head-text="textAppLeft[5].headerInf"
-                :text-a="textAppLeft[5].textaInf"
-                :text-b="textAppLeft[5].textbInf"
-                :text-c="textAppLeft[5].textcInf"
+                :head-text="textAppLeft[6].headerInf"
+                :text-a="textAppLeft[6].textaInf"
+                :text-b="textAppLeft[6].textbInf"
+                :text-c="textAppLeft[6].textcInf"
               />
             </div>
           </div>
@@ -31,8 +31,8 @@
         <v-col cols="12" md="6" class="rightPanel justify-center">
           <div class="ma-10">
             <step-text
-              :stepText="textAppRight[5].header"
-              :number="5"
+              :stepText="textAppRight[6].header"
+              :number="6"
               class="mb-5"
               :active="true"
             />
@@ -65,10 +65,10 @@
 </template>
 
 <script>
-import textAppLeft from "@/text/moduleA/textAppLeftA.json";
-import textAppRight from "@/text/moduleA/textAppRightA.json";
-import Questions from "@/text/moduleA/moduleA.json";
-import ExtraText from "@/text/moduleA/textA.json";
+import textAppLeft from "@/text/moduleJ/textAppLeftJ.json";
+import textAppRight from "@/text/moduleJ/textAppRightJ.json";
+import Questions from "@/text/moduleJ/moduleJ.json";
+import ExtraText from "@/text/moduleJ/textJ.json";
 import { mapGetters } from "vuex";
 import resultService from "@/services/ResultService";
 
@@ -84,6 +84,7 @@ export default {
       textAppRight: textAppRight,
       statement: Questions,
       textData: ExtraText,
+      question_d: "",
       formal: null,
     };
   },
@@ -93,13 +94,17 @@ export default {
     },
 
     goBack() {
-      this.$router.push({ name: "module-j-step-c" });
+      if (this.question_d === "ke1") {
+        this.$router.push({ name: "module-j-step-a" });
+      } else {
+        this.$router.push({ name: "module-j-step-d" });
+      }
     },
     getReport() {
       this.disableBtn = true;
       const clientId = JSON.parse(localStorage.getItem("pass_token"));
       resultService
-        .getReportH(clientId)
+        .finishModJ(clientId)
         .then(() => {
           this.disableBtn = false;
         })
@@ -114,6 +119,7 @@ export default {
   created() {},
   mounted() {
     this.formal = JSON.parse(localStorage.getItem("formal"));
+    this.question_d = this.planSingle.j_bv.question_d;
   },
 };
 </script>

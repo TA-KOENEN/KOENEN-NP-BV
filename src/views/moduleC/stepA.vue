@@ -340,7 +340,11 @@ export default {
       question_d: "",
       question_e: "",
       question_f: "",
-      finishModCpartA: true,
+      finishModCpartA: false,
+      finishModCpartB: false,
+      finishModCpartC: false,
+      finishModCpartD: false,
+      finishModC: false,
       saving: false,
     };
   },
@@ -355,6 +359,10 @@ export default {
     saveItem() {
       console.log("next Step works");
       this.saving = true;
+      this.finishModCpartA = true;
+      if (this.question_a === "ke2") {
+        this.finishModCpartB = true;
+      }
       const clientId = JSON.parse(localStorage.getItem("pass_token"));
       const payload = {
         question_a: this.question_a,
@@ -364,6 +372,10 @@ export default {
         question_e: this.question_e,
         question_f: this.question_f,
         finishModCpartA: this.finishModCpartA,
+        finishModCpartB: this.finishModCpartB,
+        finishModCpartC: this.finishModCpartC,
+        finishModCpartD: this.finishModCpartD,
+        finishModC: this.finishModC,
       };
       resultService
         .saveDataC(clientId, payload)
@@ -396,6 +408,11 @@ export default {
     this.question_d = this.planSingle.c_bv.question_d;
     this.question_e = this.planSingle.c_bv.question_e;
     this.question_f = this.planSingle.c_bv.question_f;
+    this.finishModC = this.planSingle.finishModC;
+    this.finishModCpartA = this.planSingle.finishModCpartA;
+    this.finishModCpartB = this.planSingle.finishModCpartB;
+    this.finishModCpartC = this.planSingle.finishModCpartC;
+    this.finishModCpartD = this.planSingle.finishModCpartD;
   },
 };
 </script>

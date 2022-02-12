@@ -8,64 +8,66 @@
     "textbInf": "Not in use"
   },
   {
-    "header": "Intro",
-    "headerInf": "Intro",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "header": "Introductie",
+    "headerInf": "Introductie",
+    "texta": "Een derde optie om de toekomst van uw onderneming veilig te stellen, is om een marktpartij bereid te vinden de onderneming te kopen.",
+    "textaInf": "Een derde optie om de toekomst van jouw onderneming veilig te stellen, is om een marktpartij bereid te vinden de onderneming te kopen.",
+    "textb": "Voor een concurrent of ketenpartner kan uw onderneming mogelijk een aantrekkelijke aanvulling zijn op het eigen bedrijf.",
+    "textbInf": "Voor een concurrent of ketenpartner kan jouw onderneming mogelijk een aantrekkelijke aanvulling zijn het eigen bedrijf.",
+    "textc": "Door de (potentiële) interesse van zo'n marktpartij vast te leggen, geeft u uw opvolger essentiële informatie waardoor de verkoop van uw onderneming aanzienlijk versneld kan worden.",
+    "textcInf": "Door de (potentiële) interesse van zo'n marktpartij vast te leggen, geef je jouw opvolger essentiële informatie waardoor de verkoop van jouw onderneming aanzienlijk versneld kan worden.",
+    "textd":"LET OP: werkt u in uw onderneming samen met andere eigenaren, dan heeft u mogelijk afspraken gemaakt met hen over de situatie bij noodopvolging. Deze afspraken kunnen haaks staan op dit scenario.",
+    "textdInf": "LET OP: werk je in jouw onderneming samen met andere eigenaren, dan heb je mogelijk afspraken gemaakt met hen over de situatie bij noodopvolging. Deze afspraken kunnen haaks staan op dit scenario."
   },
   {
-    "header": "Verkoop aan externe partij",
-    "headerInf": "Verkoop aan externe partij",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "header": "Verkoop aan een externe partij",
+    "headerInf": "Verkoop aan een externe partij",
+    "texta": "Als u de (potentiële) interesse van een marktpartij kent en een eventuele verkoop aan die marktpartij als reëel acht, dan kunt u in de vervolgvragen de informatie hierover vastleggen.",
+    "textaInf": "Als je de (potentiële) interesse van een marktpartij kent en een eventuele verkoop aan die marktpartij als reëel acht, dan kun je in de vervolgvragen de informatie hierover vastleggen.",
+    "textb": "Als u deze optie niet reëel acht, dan krijgt u geen vervolgvragen in deze module en kunt u de module direct afsluiten. U kunt wel de motivatie van uw keuze toelichten.",
+    "textbInf": "Als je deze optie niet reëel acht, dan krijg je geen vervolgvragen in deze module en kun je de module direct afsluiten. Je kunt wel de motivatie van jouw keuze toelichten.",
+    "textc": "",
+    "textcInf": ""
   },
   {
     "header": "Marktpartij 1",
     "headerInf": "Marktpartij 1",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "texta": "In dit onderdeel kunt u alle informatie over de geïnteresseerde marktpartij vastleggen. Hiermee geeft u uw opvolger duidelijke informatie over contactpersonen, gemaakte gesprekken en afspraken. ",
+    "textaInf": "In dit onderdeel kun je alle informatie over de geïnteresseerde marktpartij vastleggen. Hiermee geef je jouw opvolger duidelijke informatie over contactpersonen, gemaakte gesprekken en afspraken.",
+    "textb": "Dit is voor uw opvolger essentiële informatie, waarmee sneller kandidaat-kopers voor uw onderneming in kaart zijn gebracht en dit kan leiden tot een sneller verkoopproces.",
+    "textbInf": "Dit is voor jouw opvolger essentiële informatie, waarmee sneller kandidaat-kopers voor jouw onderneming in kaart zijn gebracht en dit kan leiden tot een sneller verkoopproces.",
+    "textc": "",
+    "textcInf": ""
   },
   {
     "header": "Marktpartij 2",
     "headerInf": "Marktpartij 2",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "texta": "In dit onderdeel kunt u alle informatie over een tweede geïnteresseerde marktpartij vastleggen. Hiermee geeft u uw opvolger duidelijke informatie over contactpersonen, gemaakte gesprekken en afspraken. ",
+    "textaInf": "In dit onderdeel kun je alle informatie over een tweede geïnteresseerde marktpartij vastleggen. Hiermee geef je jouw opvolger duidelijke informatie over contactpersonen, gemaakte gesprekken en afspraken.",
+    "textb": "",
+    "textbInf": "",
+    "textc": "",
+    "textcInf": ""
   },
   {
     "header": "Marktpartij 3",
     "headerInf": "Marktpartij 3",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "texta": "In dit onderdeel kunt u alle informatie over een derde geïnteresseerde marktpartij vastleggen. Hiermee geeft u uw opvolger duidelijke informatie over contactpersonen, gemaakte gesprekken en afspraken. ",
+    "textaInf": "In dit onderdeel kun je alle informatie over een derde geïnteresseerde marktpartij vastleggen. Hiermee geef je jouw opvolger duidelijke informatie over contactpersonen, gemaakte gesprekken en afspraken.",
+    "textb": "",
+    "textbInf": "",
+    "textc": "",
+    "textcInf": ""
   },
   {
     "header": "Einde",
     "headerInf": "Einde",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "texta": "U bent aan het einde gekomen van deze module. Wilt u uw antwoorden nog bekijken of veranderen? Gebruik de knop TERUG.",
+    "textaInf": "Je bent aan het einde gekomen van deze module. Wil je je antwoorden nog bekijken of veranderen? Gebruik de knop TERUG. ",
+    "textb": "Met de knop BEWAAR legt u uw antwoorden vast en vormt dit de basis voor het rapport dat wij voor u opstellen.",
+    "textbInf": "Met de knop BEWAAR leg je je antwoorden vast en vormt dit de basis voor het rapport dat wij voor je opstellen.",
+    "textc": "Dit rapport stellen wij op als u alle modules heeft ingevuld. ",
+    "textcInf": "Dit rapport stellen wij op als je alle modules hebt ingevuld."
   }
 
 ]

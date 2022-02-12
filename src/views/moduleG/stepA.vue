@@ -559,6 +559,10 @@ export default {
       question_j: "",
       question_k: "",
       finishModGpartA: true,
+      finishModGpartB: true,
+      finishModGpartC: true,
+      finishModGpartD: true,
+      finishModG: true,
       saving: false,
     };
   },
@@ -571,7 +575,7 @@ export default {
       this.$router.push({ name: "module-g-start" });
     },
     saveItem() {
-      console.log("next Step works");
+      this.finishModGpartA = true;
       this.saving = true;
       const clientId = JSON.parse(localStorage.getItem("pass_token"));
       const payload = {
@@ -587,6 +591,10 @@ export default {
         question_j: this.question_j,
         question_k: this.question_k,
         finishModGpartA: this.finishModGpartA,
+        finishModGpartB: this.finishModGpartB,
+        finishModGpartC: this.finishModGpartC,
+        finishModGpartD: this.finishModGpartD,
+        finishModG: this.finishModG,
       };
       resultService
         .saveDataG(clientId, payload)
@@ -620,6 +628,11 @@ export default {
     this.question_i = this.planSingle.g_bv.question_i;
     this.question_j = this.planSingle.g_bv.question_j;
     this.question_k = this.planSingle.g_bv.question_k;
+    this.finishModG = this.planSingle.finishModG;
+    this.finishModGpartA = this.planSingle.finishModGpartA;
+    this.finishModGpartB = this.planSingle.finishModGpartB;
+    this.finishModGpartC = this.planSingle.finishModGpartC;
+    this.finishModGpartD = this.planSingle.finishModGpartD;
   },
 };
 </script>

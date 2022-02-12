@@ -65,8 +65,8 @@
 </template>
 
 <script>
-import textAppLeft from "@/text/moduleB/textAppLeftB.json";
-import textAppRight from "@/text/moduleB/textAppRightB.json";
+import textAppLeft from "@/text/moduleE/textAppLeftE.json";
+import textAppRight from "@/text/moduleE/textAppRightE.json";
 import { mapGetters } from "vuex";
 import resultService from "@/services/ResultService";
 
@@ -89,13 +89,13 @@ export default {
     },
 
     goBack() {
-      this.$router.push({ name: "module-d-step-a" });
+      this.$router.push({ name: "module-e-step-a" });
     },
     getReport() {
       this.disableBtn = true;
       const clientId = JSON.parse(localStorage.getItem("pass_token"));
       resultService
-        .getReportE(clientId)
+        .finishModE(clientId)
         .then(() => {
           this.disableBtn = false;
         })

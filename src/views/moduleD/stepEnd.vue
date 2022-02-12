@@ -100,11 +100,9 @@ export default {
     goBack() {
       if (this.question_a === "ke2") {
         this.$router.push({ name: "module-d-step-a" });
-      }
-      if (this.question_b === "ke2") {
+      } else if (this.question_b === "ke2") {
         this.$router.push({ name: "module-d-step-b" });
-      }
-      if (this.question_j === "ke2") {
+      } else if (this.question_j === "ke2") {
         this.$router.push({ name: "module-d-step-c" });
       } else {
         this.$router.push({ name: "module-d-step-d" });
@@ -114,7 +112,7 @@ export default {
       this.disableBtn = true;
       const clientId = JSON.parse(localStorage.getItem("pass_token"));
       resultService
-        .getReportD(clientId)
+        .finishModD(clientId)
         .then(() => {
           this.disableBtn = false;
         })

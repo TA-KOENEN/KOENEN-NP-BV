@@ -498,6 +498,8 @@ export default {
     },
     saveItem() {
       console.log("next Step works");
+      this.finishModDpartD = true;
+      this.finishModD = true;
       this.saving = true;
       const clientId = JSON.parse(localStorage.getItem("pass_token"));
       const payload = {
@@ -543,6 +545,11 @@ export default {
     this.question_x = this.planSingle.d_bv.question_x;
     this.question_y = this.planSingle.d_bv.question_y;
     this.text_e = this.planSingle.d_bv.text_e;
+    this.finishModD = this.planSingle.finishModD;
+    this.finishModCpartA = this.planSingle.finishModCpartA;
+    this.finishModCpartB = this.planSingle.finishModCpartB;
+    this.finishModCpartC = this.planSingle.finishModCpartC;
+    this.finishModCpartD = this.planSingle.finishModCpartD;
   },
 };
 </script>

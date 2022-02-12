@@ -39,22 +39,24 @@
       <v-col cols="12" md="6" class="justify-center align-center">
         <div class="ma-5 pa-0">
           <v-row class="mt-15 ml-10">
-            <h3 class="primary--text">Toegangscode</h3>
+            <h3 class="primary--text">Persoonlijke inlogcode</h3>
           </v-row>
         </div>
         <v-row class="ml-15 mt-15 mr-15">
           <div v-if="formal">
             Beste {{ firstNameClient }} {{ lastNameClient }}, <br /><br />
-            U heeft zojuist per mail een code ontvangen. Met deze code krijgt u
-            toegang.<br />
-            Let op deze code is 30 minuten geldig.
+            Vul hier de persoonlijke inlogcode in om toegang te krijgen tot de
+            Noodplan app. Let op: deze persoonlijke inlogcode is 30 minuten
+            geldig. Lukt het niet om binnen deze tijd in te loggen, ga dan terug
+            naar het beginscherm.
           </div>
           <div v-if="!formal">
             Beste {{ firstNameClient }}, <br />
             <br />
-            Je hebt zojuist per mail een code ontvangen. Met deze code krijg je
-            toegang.<br />
-            Let op deze code is 30 minuten geldig.
+            Vul hier de persoonlijke inlogcode in om toegang te krijgen tot de
+            Noodplan app. Let op: deze persoonlijke inlogcode is 30 minuten
+            geldig. Lukt het niet om binnen deze tijd in te loggen, ga dan terug
+            naar het beginscherm.
           </div>
         </v-row>
         <v-row class="ml-15 mr-15 mt-15">
@@ -138,6 +140,7 @@ export default {
         clientId: this.clientId,
         token: this.securityCode,
         tokkie: this.tokkie,
+        formal: this.formal,
       };
       this.error = null;
       try {

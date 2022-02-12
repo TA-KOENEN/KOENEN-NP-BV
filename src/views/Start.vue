@@ -1,6 +1,7 @@
 <template>
   <v-container xs12 sm6 offset-sm3>
     <v-row justify="center">
+      <ErrorStart />
       <div class="hoofd" @click="begin">
         <transition
           enter-active-class="animate__animated animate__slideInDown"
@@ -52,10 +53,10 @@
 
 <script>
 import ResultService from "@/services/ResultService";
-
+import ErrorStart from "@/components/core/errorStart";
 export default {
   name: "Start",
-
+  components: { ErrorStart },
   data() {
     return {
       tokkie: "",

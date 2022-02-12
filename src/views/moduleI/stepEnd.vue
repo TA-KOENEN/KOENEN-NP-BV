@@ -77,7 +77,6 @@ export default {
 
   data() {
     return {
-
       disableBtn: false,
       reportSend: false,
       dialogStop: false,
@@ -101,7 +100,7 @@ export default {
       this.disableBtn = true;
       const clientId = JSON.parse(localStorage.getItem("pass_token"));
       resultService
-        .getReportI(clientId)
+        .finishModI(clientId)
         .then(() => {
           this.disableBtn = false;
         })

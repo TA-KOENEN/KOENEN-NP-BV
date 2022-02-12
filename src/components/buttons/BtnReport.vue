@@ -1,6 +1,6 @@
 <template>
   <v-btn color="info" x-large @click="onClick" :disabled="disabled">
-    <slot>Rapportage</slot>
+    <slot>Bewaar</slot>
   </v-btn>
 </template>
 

@@ -114,9 +114,9 @@ export default {
       },
     });
   },
-  getReportA(id) {
+  saveDataK(id, payload) {
     const token = localStorage.getItem("token");
-    return axios.get(`/getReportBV_moduleA/${id}`, {
+    return axios.post(`/saveDataBV_moduleK/${id}`, payload, {
       baseURL: process.env.VUE_APP_API_URL,
       headers: {
         Accept: "Application/json",
@@ -124,9 +124,9 @@ export default {
       },
     });
   },
-  getReportB(id) {
+  saveDataL(id, payload) {
     const token = localStorage.getItem("token");
-    return axios.get(`/getReportBV_moduleB/${id}`, {
+    return axios.post(`/saveDataBV_moduleL/${id}`, payload, {
       baseURL: process.env.VUE_APP_API_URL,
       headers: {
         Accept: "Application/json",
@@ -134,9 +134,9 @@ export default {
       },
     });
   },
-  getReportC(id) {
+  saveDataM(id, payload) {
     const token = localStorage.getItem("token");
-    return axios.get(`/getReportBV_moduleC/${id}`, {
+    return axios.post(`/saveDataBV_moduleM/${id}`, payload, {
       baseURL: process.env.VUE_APP_API_URL,
       headers: {
         Accept: "Application/json",
@@ -144,9 +144,9 @@ export default {
       },
     });
   },
-  getReportD(id) {
+  saveDataN(id, payload) {
     const token = localStorage.getItem("token");
-    return axios.get(`/getReportBV_moduleD/${id}`, {
+    return axios.post(`/saveDataBV_moduleN/${id}`, payload, {
       baseURL: process.env.VUE_APP_API_URL,
       headers: {
         Accept: "Application/json",
@@ -154,9 +154,9 @@ export default {
       },
     });
   },
-  getReportE(id) {
+  saveDataReport(id, payload) {
     const token = localStorage.getItem("token");
-    return axios.get(`/getReportBV_moduleE/${id}`, {
+    return axios.post(`/saveDataBV_Report/${id}`, payload, {
       baseURL: process.env.VUE_APP_API_URL,
       headers: {
         Accept: "Application/json",
@@ -164,9 +164,9 @@ export default {
       },
     });
   },
-  getReportF(id) {
+  finishModA(id) {
     const token = localStorage.getItem("token");
-    return axios.get(`/getReportBV_moduleF/${id}`, {
+    return axios.get(`/finishBV_mod_a/${id}`, {
       baseURL: process.env.VUE_APP_API_URL,
       headers: {
         Accept: "Application/json",
@@ -174,9 +174,9 @@ export default {
       },
     });
   },
-  getReportG(id) {
+  finishModB(id) {
     const token = localStorage.getItem("token");
-    return axios.get(`/getReportBV_moduleG/${id}`, {
+    return axios.get(`/finishBV_mod_b/${id}`, {
       baseURL: process.env.VUE_APP_API_URL,
       headers: {
         Accept: "Application/json",
@@ -184,9 +184,9 @@ export default {
       },
     });
   },
-  getReportH(id) {
+  finishModC(id) {
     const token = localStorage.getItem("token");
-    return axios.get(`/getReportBV_moduleH/${id}`, {
+    return axios.get(`/finishBV_mod_c/${id}`, {
       baseURL: process.env.VUE_APP_API_URL,
       headers: {
         Accept: "Application/json",
@@ -194,9 +194,9 @@ export default {
       },
     });
   },
-  getReportI(id) {
+  finishModD(id) {
     const token = localStorage.getItem("token");
-    return axios.get(`/getReportBV_moduleI/${id}`, {
+    return axios.get(`/finishBV_mod_d/${id}`, {
       baseURL: process.env.VUE_APP_API_URL,
       headers: {
         Accept: "Application/json",
@@ -204,9 +204,99 @@ export default {
       },
     });
   },
-  getReportJ(id) {
+  finishModE(id) {
     const token = localStorage.getItem("token");
-    return axios.get(`/getReportBV_moduleJ/${id}`, {
+    return axios.get(`/finishBV_mod_e/${id}`, {
+      baseURL: process.env.VUE_APP_API_URL,
+      headers: {
+        Accept: "Application/json",
+        Authorization: `Bearer ` + token,
+      },
+    });
+  },
+  finishModF(id) {
+    const token = localStorage.getItem("token");
+    return axios.get(`/finishBV_mod_f/${id}`, {
+      baseURL: process.env.VUE_APP_API_URL,
+      headers: {
+        Accept: "Application/json",
+        Authorization: `Bearer ` + token,
+      },
+    });
+  },
+  finishModG(id) {
+    const token = localStorage.getItem("token");
+    return axios.get(`/finishBV_mod_g/${id}`, {
+      baseURL: process.env.VUE_APP_API_URL,
+      headers: {
+        Accept: "Application/json",
+        Authorization: `Bearer ` + token,
+      },
+    });
+  },
+  finishModH(id) {
+    const token = localStorage.getItem("token");
+    return axios.get(`/finishBV_mod_h/${id}`, {
+      baseURL: process.env.VUE_APP_API_URL,
+      headers: {
+        Accept: "Application/json",
+        Authorization: `Bearer ` + token,
+      },
+    });
+  },
+  finishModI(id) {
+    const token = localStorage.getItem("token");
+    return axios.get(`/finishBV_mod_i/${id}`, {
+      baseURL: process.env.VUE_APP_API_URL,
+      headers: {
+        Accept: "Application/json",
+        Authorization: `Bearer ` + token,
+      },
+    });
+  },
+  finishModJ(id) {
+    const token = localStorage.getItem("token");
+    return axios.get(`/finishBV_mod_j/${id}`, {
+      baseURL: process.env.VUE_APP_API_URL,
+      headers: {
+        Accept: "Application/json",
+        Authorization: `Bearer ` + token,
+      },
+    });
+  },
+  finishModK(id) {
+    const token = localStorage.getItem("token");
+    return axios.get(`/finishBV_mod_k/${id}`, {
+      baseURL: process.env.VUE_APP_API_URL,
+      headers: {
+        Accept: "Application/json",
+        Authorization: `Bearer ` + token,
+      },
+    });
+  },
+  finishModL(id) {
+    const token = localStorage.getItem("token");
+    return axios.get(`/finishBV_mod_l/${id}`, {
+      baseURL: process.env.VUE_APP_API_URL,
+      headers: {
+        Accept: "Application/json",
+        Authorization: `Bearer ` + token,
+      },
+    });
+  },
+  finishModM(id) {
+    const token = localStorage.getItem("token");
+    return axios.get(`/finishBV_mod_m/${id}`, {
+      baseURL: process.env.VUE_APP_API_URL,
+      headers: {
+        Accept: "Application/json",
+        Authorization: `Bearer ` + token,
+      },
+    });
+  },
+  finishModN(id) {
+    const token = localStorage.getItem("token");
+    return axios.get(`/finishBV_mod_n/${id}`, {
       baseURL: process.env.VUE_APP_API_URL,
       headers: {
         Accept: "Application/json",

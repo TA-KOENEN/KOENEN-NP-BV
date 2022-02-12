@@ -44,10 +44,12 @@
         <v-row class="ml-15 mt-15 mr-15">
           <div>
             Beste {{ firstNameClient }} {{ lastNameClient }}, <br /><br />
-            Voordat we verder gaan, kunt u / kan je aangeven wat uw / jouw
-            voorkeur heeft?<br />
-            Onze rapportage en vraagstelling kunnen wij hier dan op
-            aansluiten.<br /><br />
+            Voordat we verder gaan, vragen we u / je aan te geven hoe we de
+            Noodplan app het beste laten aansluiten bij (jo)uw stijl. We hebben
+            de volgende vraag.<br />
+            Een formele stijl of liever informeel? Hieronder is de mogelijkheid
+            om deze keuze aan te geven:
+            <br /><br />
             Verder kan met de knop voor een donker of licht kleurenschema worden
             gekozen. Dit kan eventueel later nog gewijzigd worden met de knop
             rechtsboven.
@@ -64,7 +66,8 @@
         </v-row>
         <v-row class="ml-15 mt-15 mr-15">
           <div>
-            Bla bla bla <br /><br />
+            Heeft u tijdens het invullen van de Noodplan app ondersteuning
+            nodig? Bel mij gerust! Mijn contactgegevens zijn:<br /><br />
             {{ companyNameTeam }}<br />
             {{ firstNameUser }} {{ lastNameUser }}<br />
             {{ emailUser }}<br />

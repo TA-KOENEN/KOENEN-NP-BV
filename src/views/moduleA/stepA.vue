@@ -213,7 +213,11 @@ export default {
       question_a: "",
       question_b: "",
       question_c: "",
+      finishModA: false,
       finishModApartA: true,
+      finishModApartB: false,
+      finishModApartC: false,
+      finishModApartD: false,
       saving: false,
     };
   },
@@ -228,12 +232,17 @@ export default {
     saveItem() {
       console.log("next Step works");
       this.saving = true;
+      this.finishModApartA = true;
       const clientId = JSON.parse(localStorage.getItem("pass_token"));
       const payload = {
         question_a: this.question_a,
         question_b: this.question_b,
         question_c: this.question_c,
         finishModApartA: this.finishModApartA,
+        finishModApartB: this.finishModApartB,
+        finishModApartC: this.finishModApartC,
+        finishModApartD: this.finishModApartD,
+        finishModA: this.finishModA,
       };
       resultService
         .saveDataA(clientId, payload)
@@ -259,6 +268,12 @@ export default {
     this.question_a = this.planSingle.a_bv.question_a;
     this.question_b = this.planSingle.a_bv.question_b;
     this.question_c = this.planSingle.a_bv.question_c;
+    this.finishModA = this.planSingle.finishModA;
+    this.finishModApartA = this.planSingle.finishModApartA;
+    this.finishModApartB = this.planSingle.finishModApartB;
+    this.finishModApartC = this.planSingle.finishModApartC;
+    this.finishModApartD = this.planSingle.finishModApartD;
+    this.finishModA = this.planSingle.finishModA;
   },
 };
 </script>

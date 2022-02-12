@@ -8,54 +8,56 @@
     "textbInf": "Not in use"
   },
   {
-    "header": "Opvolging door medewerker(s)",
-    "headerInf": "Opvolging door medewerker(s)",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "header": "Voortzetting door medewerker(s)",
+    "headerInf": "Voortzetting door medewerker(s)",
+    "texta": "In deze module kunt u vastleggen of de voortzetting van uw onderneming door één of meerdere medewerkers voor u een reële optie is.",
+    "textaInf": "In deze module kun je vastleggen of de voortzetting van jouw onderneming door één of meerdere medewerkers voor jou een reële optie is.",
+    "textb": "Uw medewerker(s) kennen uw onderneming door en door, hebben de nodige contacten met leveranciers en klanten en wellicht ook de competenties om uw rol in de leiding van de onderneming voort te zetten.",
+    "textbInf": "Je medewerker(s) kennen jouw onderneming door en door, hebben de nodige contacten met leveranciers en klanten en wellicht ook de competenties om jouw rol in de leiding van de onderneming voort te zetten.",
+    "textc": "Voor uw naasten kan het een veilige keuze zijn om deze optie mogelijk te maken, mede omdat banken deze 'Management Buy Out' vaak als goed financierbaar beoordelen.",
+    "textcInf": "Voor jouw naasten kan het een veilige keuze zijn om deze optie mogelijk te maken, mede omdat banken deze 'Management Buy Out' vaak als goed financierbaar beoordelen.",
+    "textd":"LET OP: werkt u in uw onderneming samen met andere eigenaren, dan heeft u mogelijk afspraken gemaakt met hen over de situatie bij noodopvolging. Deze afspraken kunnen haaks staan op dit scenario.",
+    "textdInf": "LET OP: werk je in jouw onderneming samen met andere eigenaren, dan heb je mogelijk afspraken gemaakt met hen over de situatie bij noodopvolging. Deze afspraken kunnen haaks staan op dit scenario."
   },
   {
     "header": "Medewerker(s)",
     "headerInf": "Medewerker(s)",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "texta": "Als u deze optie reëel acht en er zijn één of meerdere medewerkers met belangstelling, dan kunt u dit in deze module vastleggen.",
+    "textaInf": "Als u deze optie reëel acht en er zijn één of meerdere medewerkers met belangstelling, dan kunt u dit in deze module vastleggen.",
+    "textb": "Ziet u deze optie als niet reëel, dan kunt u deze module direct afsluiten. U krijgt geen vervolgvragen meer.",
+    "textbInf": "Zie je deze optie als niet reëel, dan kun je deze module direct afsluiten. Je krijgt geen vervolgvragen meer.",
+    "textc": "",
+    "textcInf": ""
   },
   {
     "header": "Afspraken",
     "headerInf": "Afspraken",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "texta": "Als u gesprekken heeft gevoerd en eventueel schriftelijke heeft afspraken gemaakt met één of meerdere medewerkers, dan is het verstandig om dit in deze module vast te leggen.",
+    "textaInf": "Als je gesprekken hebt gevoerd en eventueel schriftelijke afspraken hebt gemaakt met één of meerdere medewerkers, dan is het verstandig om dit in deze module vast te leggen.",
+    "textb": "Uw opvolger en levenspartner zijn dan op de hoogte, waardoor een eventueel verkoopproces aan deze medewerker(s) versneld kan verlopen. ",
+    "textbInf": "Jouw opvolger en levenspartner zijn dan op de hoogte, waardoor een eventueel verkoopproces aan deze medewerker(s) versneld kan verlopen.",
+    "textc": "",
+    "textcInf": ""
   },
   {
     "header": "Toelichting",
     "headerInf": "Toelichting",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "texta": "Geef hier uw toelichting op de (potentiële) interesse van de betreffende medewerker(s).",
+    "textaInf": "Geef hier jouw toelichting op de (potentiële) interesse van de betreffende medewerker(s).",
+    "textb": "",
+    "textbInf": "",
+    "textc": "",
+    "textcInf": ""
   },
   {
     "header": "Einde",
     "headerInf": "Einde",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "texta": "U bent aan het einde gekomen van deze module. Wilt u uw antwoorden nog bekijken of veranderen? Gebruik de knop TERUG.",
+    "textaInf": "Je bent aan het einde gekomen van deze module. Wil je je antwoorden nog bekijken of veranderen? Gebruik de knop TERUG. ",
+    "textb": "Met de knop BEWAAR legt u uw antwoorden vast en vormt dit de basis voor het rapport dat wij voor u opstellen.",
+    "textbInf": "Met de knop BEWAAR leg je je antwoorden vast en vormt dit de basis voor het rapport dat wij voor je opstellen.",
+    "textc": "Dit rapport stellen wij op als u alle modules heeft ingevuld. ",
+    "textcInf": "Dit rapport stellen wij op als je alle modules hebt ingevuld."
   }
 
 ]

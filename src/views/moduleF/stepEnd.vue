@@ -117,7 +117,7 @@ export default {
       this.disableBtn = true;
       const clientId = JSON.parse(localStorage.getItem("pass_token"));
       resultService
-        .getReportD(clientId)
+        .finishModF(clientId)
         .then(() => {
           this.disableBtn = false;
         })

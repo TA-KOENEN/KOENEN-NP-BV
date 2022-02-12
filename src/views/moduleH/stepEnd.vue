@@ -65,10 +65,10 @@
 </template>
 
 <script>
-import textAppLeft from "@/text/moduleA/textAppLeftA.json";
-import textAppRight from "@/text/moduleA/textAppRightA.json";
-import Questions from "@/text/moduleA/moduleA.json";
-import ExtraText from "@/text/moduleA/textA.json";
+import textAppLeft from "@/text/moduleH/textAppLeftH.json";
+import textAppRight from "@/text/moduleH/textAppRightH.json";
+import Questions from "@/text/moduleH/moduleH.json";
+import ExtraText from "@/text/moduleH/textH.json";
 import { mapGetters } from "vuex";
 import resultService from "@/services/ResultService";
 
@@ -99,7 +99,7 @@ export default {
       this.disableBtn = true;
       const clientId = JSON.parse(localStorage.getItem("pass_token"));
       resultService
-        .getReportH(clientId)
+        .finishModH(clientId)
         .then(() => {
           this.disableBtn = false;
         })

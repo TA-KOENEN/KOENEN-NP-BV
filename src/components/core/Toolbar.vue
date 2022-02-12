@@ -60,7 +60,7 @@ export default {
       localStorage.removeItem("telephoneUser");
       localStorage.removeItem("companyNameTeam");
       localStorage.removeItem("websiteTeam");
-      this.$router.push({ path: "/" });
+      this.$router.push({ path: "/einde" });
     },
   },
   mounted() {

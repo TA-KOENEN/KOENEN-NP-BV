@@ -8,54 +8,54 @@
     "textbInf": "Not in use"
   },
   {
-    "header": "Intro",
-    "headerInf": "Intro",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "header": "Introductie",
+    "headerInf": "Introductie",
+    "texta": "Deze module gaat in op de samenwerking die u heeft met uw zakelijk partners. Op het moment dat u plotseling wegvalt, nemen uw zakelijk partners uw taken en verantwoordelijkheden over. Dus de onderneming kan blijven doordraaien.",
+    "textaInf": "Deze module gaat in op de samenwerking die je hebt met jouw zakelijk partners. Op het moment dat je plotseling wegvalt, nemen jouw zakelijk partners jouw taken en verantwoordelijkheden over. Dus de onderneming kan blijven doordraaien.",
+    "textb": "Op het moment echter, dat u langer niet werkzaam bent of niet meer terugkeert in de onderneming, zullen uw zakelijk partners eventuele afspraken over de situatie bij arbeidsongeschiktheid of overlijden inroepen.",
+    "textbInf": "Op het moment echter, dat je langer niet werkzaam bent of niet meer terugkeert in de onderneming, zullen jouw zakelijk partners eventuele afspraken over de situatie bij arbeidsongeschiktheid of overlijden inroepen.",
+    "textc": "De informatie die u in deze module vastligt, biedt uw levenspartner en opvolger de mogelijkheid te controleren of uw zakelijk partners de gemaakte afspraken op een correcte wijze nakomen.",
+    "textcInf": "De informatie die je in deze module vastligt, biedt jouw levenspartner en opvolger de mogelijkheid te controleren of jouw zakelijk partners de gemaakte afspraken op een correcte wijze nakomen."
   },
   {
     "header": "Mede-eigenaren",
     "headerInf": "Mede-eigenaren",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "texta": "De gegevens van uw zakelijk partners of mede-eigenaren kunt u hier vastleggen. U kunt maximaal 3 mede-eigenaren vermelden.",
+    "textaInf": "De gegevens van jouw zakelijk partners of mede-eigenaren kun je hier vastleggen. Je kunt maximaal 3 mede-eigenaren vermelden.",
+    "textb": "",
+    "textbInf": "",
+    "textc": "",
+    "textcInf": ""
   },
   {
     "header": "Afspraken",
     "headerInf": "Afspraken",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "texta": "Gebruikelijk is om de afspraken tussen de mede-eigenaren schriftelijk vast te leggen. Vaak in een aandeelhouders- of partnerovereenkomst.",
+    "textaInf": "Gebruikelijk is om de afspraken tussen de mede-eigenaren schriftelijk vast te leggen. Vaak in een aandeelhouders- of partnerovereenkomst.",
+    "textb": "In de situatie van noodopvolging, gaat het in eerste instantie om hoe dit op te vangen in de bedrijfsvoering. Vervolgens gaat het bij ziekte of overlijden om de afspraken die daar specifiek over gemaakt zijn.",
+    "textbInf": "In de situatie van noodopvolging, gaat het in eerste instantie om hoe dit op te vangen in de bedrijfsvoering. Vervolgens gaat het bij ziekte of overlijden om de afspraken die daar specifiek over gemaakt zijn.",
+    "textc": "In deze module legt u vooral de laatste afspraken vast. De bedrijfsvoering komt in andere modules aan de orde.",
+    "textcInf": "In deze module legt u vooral de laatste afspraken vast. De bedrijfsvoering komt in andere modules aan de orde."
   },
   {
     "header": "Overige afspraken",
     "headerInf": "Overige afspraken",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "texta": "Mogelijk bestaan de afspraken in de aandeelhouders- of partnerovereenkomst al enige tijd. In de afgelopen periode kan de onderneming zijn gegroeid of zijn haar omstandigheden gewijzigd.",
+    "textaInf": "Mogelijk bestaan de afspraken in de aandeelhouders- of partnerovereenkomst al enige tijd. In de afgelopen periode kan de onderneming zijn gegroeid of zijn haar omstandigheden gewijzigd.",
+    "textb": "Ook kunnen de persoonlijke omstandigheden en vooruitzichten van de mede-eigenaren veranderd zijn. Dit kan leiden tot een actualisering van de gemaakte afspraken.",
+    "textbInf": "Ook kunnen de persoonlijke omstandigheden en vooruitzichten van de mede-eigenaren veranderd zijn. Dit kan leiden tot een actualisering van de gemaakte afspraken.",
+    "textc": "Als u een wijziging in deze afspraken wilt aanbrengen, dan kunt u hier noteren welke afspraken dit zijn.",
+    "textcInf": "Als je een wijziging in deze afspraken wilt aanbrengen, dan kun je hier noteren welke afspraken dit zijn."
   },
   {
     "header": "Einde",
     "headerInf": "Einde",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "texta": "U bent aan het einde gekomen van deze module. Wilt u uw antwoorden nog bekijken of veranderen? Gebruik de knop TERUG.",
+    "textaInf": "Je bent aan het einde gekomen van deze module. Wil je je antwoorden nog bekijken of veranderen? Gebruik de knop TERUG. ",
+    "textb": "Met de knop BEWAAR legt u uw antwoorden vast en vormt dit de basis voor het rapport dat wij voor u opstellen.",
+    "textbInf": "Met de knop BEWAAR leg je je antwoorden vast en vormt dit de basis voor het rapport dat wij voor je opstellen.",
+    "textc": "Dit rapport stellen wij op als u alle modules heeft ingevuld. ",
+    "textcInf": "Dit rapport stellen wij op als je alle modules hebt ingevuld."
   }
 
 ]

@@ -74,23 +74,18 @@
                       class="mb-5"
                     />
 
-                    <BaseValInput
-                      rules="max:150"
+                    <base-radio
                       v-model="question_b"
-                      v-bind:label="statement[2].label"
+                      :error-messages="errors"
+                      rules="required"
+                      v-bind:nrOptions="statement[2].nrOptions"
+                      v-bind:optionA="statement[2].optionA"
+                      v-bind:optionB="statement[2].optionB"
+                      v-bind:optionC="statement[2].optionC"
+                      v-bind:optionD="statement[2].optionD"
                     />
                   </div>
                   <div v-if="question_a === 'ke2'">
-                    <StatementText
-                      :text="textData[1].textAppForm"
-                      :note="textData[1].commentApp"
-                      :nr-notes="textData[1].nrNotes"
-                      :noteA="textData[1].noteAppFormA"
-                      :noteB="textData[1].noteAppFormB"
-                      :noteC="textData[1].noteAppFormC"
-                      class="mb-5"
-                    />
-
                     <StatementText
                       :text="statement[3].questionAppForm"
                       :note="statement[3].commentApp"
@@ -101,12 +96,18 @@
                       class="mb-5"
                     />
 
-                    <base-val-area
-                      rules="max:500"
-                      v-model="text_a"
-                      v-bind:label="statement[3].label"
+                    <base-radio
+                      v-model="question_c"
+                      :error-messages="errors"
+                      rules="required"
+                      v-bind:nrOptions="statement[3].nrOptions"
+                      v-bind:optionA="statement[3].optionA"
+                      v-bind:optionB="statement[3].optionB"
+                      v-bind:optionC="statement[3].optionC"
+                      v-bind:optionD="statement[3].optionD"
                     />
-
+                  </div>
+                  <div v-if="question_c === 'ke2' || question_b === 'ke2'">
                     <StatementText
                       :text="statement[4].questionAppForm"
                       :note="statement[4].commentApp"
@@ -117,27 +118,38 @@
                       class="mb-5"
                     />
 
-                    <base-val-area
-                      rules="max:500"
-                      v-model="text_b"
-                      v-bind:label="statement[4].label"
+                    <base-radio
+                      v-model="question_d"
+                      :error-messages="errors"
+                      rules="required"
+                      v-bind:nrOptions="statement[4].nrOptions"
+                      v-bind:optionA="statement[4].optionA"
+                      v-bind:optionB="statement[4].optionB"
+                      v-bind:optionC="statement[4].optionC"
+                      v-bind:optionD="statement[4].optionD"
                     />
+                    <div v-if="question_d === 'ke2'">
+                      <StatementText
+                        :text="statement[5].questionAppForm"
+                        :note="statement[5].commentApp"
+                        :nr-notes="statement[5].nrNotes"
+                        :noteA="statement[5].noteAppFormA"
+                        :noteB="statement[5].noteAppFormB"
+                        :noteC="statement[5].noteAppFormC"
+                        class="mb-5"
+                      />
 
-                    <StatementText
-                      :text="statement[5].questionAppForm"
-                      :note="statement[5].commentApp"
-                      :nr-notes="statement[5].nrNotes"
-                      :noteA="statement[5].noteAppFormA"
-                      :noteB="statement[5].noteAppFormB"
-                      :noteC="statement[5].noteAppFormC"
-                      class="mb-5"
-                    />
-
-                    <base-val-area
-                      rules="max:500"
-                      v-model="text_c"
-                      v-bind:label="statement[5].label"
-                    />
+                      <base-radio
+                        v-model="question_e"
+                        :error-messages="errors"
+                        rules="required"
+                        v-bind:nrOptions="statement[5].nrOptions"
+                        v-bind:optionA="statement[5].optionA"
+                        v-bind:optionB="statement[5].optionB"
+                        v-bind:optionC="statement[5].optionC"
+                        v-bind:optionD="statement[5].optionD"
+                      />
+                    </div>
                   </div>
                 </div>
 
@@ -175,23 +187,18 @@
                       class="mb-5"
                     />
 
-                    <BaseValInput
-                      rules="max:150"
+                    <base-radio
                       v-model="question_b"
-                      v-bind:label="statement[2].label"
+                      :error-messages="errors"
+                      rules="required"
+                      v-bind:nrOptions="statement[2].nrOptions"
+                      v-bind:optionA="statement[2].optionA"
+                      v-bind:optionB="statement[2].optionB"
+                      v-bind:optionC="statement[2].optionC"
+                      v-bind:optionD="statement[2].optionD"
                     />
                   </div>
                   <div v-if="question_a === 'ke2'">
-                    <StatementText
-                      :text="textData[1].textAppInform"
-                      :note="textData[1].commentApp"
-                      :nr-notes="textData[1].nrNotes"
-                      :noteA="textData[1].noteAppInfA"
-                      :noteB="textData[1].noteAppInfB"
-                      :noteC="textData[1].noteAppInfC"
-                      class="mb-5"
-                    />
-
                     <StatementText
                       :text="statement[3].questionAppInform"
                       :note="statement[3].commentApp"
@@ -202,12 +209,18 @@
                       class="mb-5"
                     />
 
-                    <base-val-area
-                      rules="max:500"
-                      v-model="text_a"
-                      v-bind:label="statement[3].label"
+                    <base-radio
+                      v-model="question_c"
+                      :error-messages="errors"
+                      rules="required"
+                      v-bind:nrOptions="statement[3].nrOptions"
+                      v-bind:optionA="statement[3].optionA"
+                      v-bind:optionB="statement[3].optionB"
+                      v-bind:optionC="statement[3].optionC"
+                      v-bind:optionD="statement[3].optionD"
                     />
-
+                  </div>
+                  <div v-if="question_c === 'ke2' || question_b === 'ke2'">
                     <StatementText
                       :text="statement[4].questionAppInform"
                       :note="statement[4].commentApp"
@@ -218,30 +231,40 @@
                       class="mb-5"
                     />
 
-                    <base-val-area
-                      rules="max:500"
-                      v-model="text_b"
-                      v-bind:label="statement[4].label"
+                    <base-radio
+                      v-model="question_d"
+                      :error-messages="errors"
+                      rules="required"
+                      v-bind:nrOptions="statement[4].nrOptions"
+                      v-bind:optionA="statement[4].optionA"
+                      v-bind:optionB="statement[4].optionB"
+                      v-bind:optionC="statement[4].optionC"
+                      v-bind:optionD="statement[4].optionD"
                     />
+                    <div v-if="question_d === 'ke2'">
+                      <StatementText
+                        :text="statement[5].questionAppInform"
+                        :note="statement[5].commentApp"
+                        :nr-notes="statement[5].nrNotes"
+                        :noteA="statement[5].noteAppInfA"
+                        :noteB="statement[5].noteAppInfB"
+                        :noteC="statement[5].noteAppInfC"
+                        class="mb-5"
+                      />
 
-                    <StatementText
-                      :text="statement[5].questionAppInform"
-                      :note="statement[5].commentApp"
-                      :nr-notes="statement[5].nrNotes"
-                      :noteA="statement[5].noteAppInfA"
-                      :noteB="statement[5].noteAppInfB"
-                      :noteC="statement[5].noteAppInfC"
-                      class="mb-5"
-                    />
-
-                    <base-val-area
-                      rules="max:500"
-                      v-model="text_c"
-                      v-bind:label="statement[5].label"
-                    />
+                      <base-radio
+                        v-model="question_e"
+                        :error-messages="errors"
+                        rules="required"
+                        v-bind:nrOptions="statement[5].nrOptions"
+                        v-bind:optionA="statement[5].optionA"
+                        v-bind:optionB="statement[5].optionB"
+                        v-bind:optionC="statement[5].optionC"
+                        v-bind:optionD="statement[5].optionD"
+                      />
+                    </div>
                   </div>
                 </div>
-
                 <v-row class="mt-10">
                   <btn-stop :on-click="stopThis" />
                   <v-spacer />
@@ -275,6 +298,12 @@
               class="mb-5"
               :active="false"
             />
+            <step-text
+              :stepText="textAppRight[6].header"
+              :number="5"
+              class="mb-5"
+              :active="false"
+            />
           </div>
         </v-col>
       </v-row>
@@ -305,10 +334,15 @@ export default {
       formal: null,
       question_a: "",
       question_b: "",
-      text_a: "",
-      text_b: "",
-      text_c: "",
+      question_c: "",
+      question_d: "",
+      question_e: "",
+      finishModJ: false,
       finishModJpartA: true,
+      finishModJpartB: false,
+      finishModJpartC: false,
+      finishModJpartD: false,
+
       saving: false,
     };
   },
@@ -321,16 +355,35 @@ export default {
       this.$router.push({ name: "module-j-start" });
     },
     saveItem() {
+      if (this.question_d === "ke1") {
+        this.finishModJ = true;
+        this.finishModJpartA = true;
+        this.finishModJpartB = true;
+        this.finishModJpartC = false;
+        this.finishModJpartD = false;
+      } else if (this.question_a === "ke1" && this.question_b === "ke1") {
+        this.finishModJpartA = true;
+      } else {
+        this.finishModJpartA = true;
+        this.finishModJpartB = true;
+        this.finishModJpartC = true;
+        this.finishModJpartD = true;
+      }
+
       console.log("next Step works");
       this.saving = true;
       const clientId = JSON.parse(localStorage.getItem("pass_token"));
       const payload = {
         question_a: this.question_a,
         question_b: this.question_b,
-        text_a: this.text_a,
-        text_b: this.text_b,
-        text_c: this.text_c,
+        question_c: this.question_c,
+        question_d: this.question_d,
+        question_e: this.question_e,
         finishModJpartA: this.finishModJpartA,
+        finishModJpartB: this.finishModJpartB,
+        finishModJpartC: this.finishModJpartC,
+        finishModJpartD: this.finishModJpartD,
+        finishModJ: this.finishModJ,
       };
       resultService
         .saveDataJ(clientId, payload)
@@ -340,7 +393,14 @@ export default {
         })
         .then(() => {
           this.saving = false;
-          this.$router.push({ name: "module-j-step-b" });
+
+          if (this.question_d === "ke1") {
+            this.$router.push({ name: "module-j-step-c" });
+          } else if (this.question_a === "ke1" && this.question_b === "ke1") {
+            this.$router.push({ name: "module-j-step-b" });
+          } else {
+            this.$router.push({ name: "module-j-end" });
+          }
         });
     },
   },
@@ -353,11 +413,16 @@ export default {
   },
   mounted() {
     this.formal = JSON.parse(localStorage.getItem("formal"));
-    this.question_a = this.planSingle.h_bv.question_a;
-    this.question_b = this.planSingle.h_bv.question_b;
-    this.text_a = this.planSingle.h_bv.text_a;
-    this.text_b = this.planSingle.h_bv.text_b;
-    this.text_c = this.planSingle.h_bv.text_c;
+    this.question_a = this.planSingle.j_bv.question_a;
+    this.question_b = this.planSingle.j_bv.question_b;
+    this.question_c = this.planSingle.j_bv.question_c;
+    this.question_d = this.planSingle.j_bv.question_d;
+    this.question_e = this.planSingle.j_bv.question_e;
+    this.finishModJ = this.planSingle.finishModJ;
+    this.finishModJpartA = this.planSingle.finishModJpartA;
+    this.finishModJpartB = this.planSingle.finishModJpartB;
+    this.finishModJpartC = this.planSingle.finishModJpartC;
+    this.finishModJpartD = this.planSingle.finishModJpartD;
   },
 };
 </script>

@@ -1,16 +1,17 @@
 <template>
   <div>
     <div v-if="formal">
-      <h3 class="primary--text">Uw rapportage is onderweg.</h3>
+      <h3 class="primary--text">Uw gegevens zijn veilig opgeslagen.</h3>
       <br />
-      Let op deze rapportage kan in uw spambox terecht komen.<br />
+      Na afronding van alle modules kunnen wij een noodplan voor u opstellen.<br />
       U kan nu direct verder gaan met een volgende module of stoppen en later
       verder gaan.
     </div>
     <div v-if="!formal">
-      <h3 class="primary--text">Jouw rapportage is onderweg.</h3>
+      <h3 class="primary--text">Jouw gegevens zijn veilig opgeslagen.</h3>
       <br />
-      Let op deze rapportage kan in je spambox terecht komen.<br />
+      Na afronding van alle modules kunnen wij een noodplan voor je
+      opstellen.<br />
       Je kan nu direct verder gaan met een volgende module of stoppen en later
       verder gaan.
     </div>
@@ -67,7 +68,7 @@ export default {
       localStorage.removeItem("telephoneUser");
       localStorage.removeItem("companyNameTeam");
       localStorage.removeItem("websiteTeam");
-      this.$router.push({ path: "/" });
+      this.$router.push({ path: "/einde" });
     },
     goOn() {
       this.$router.push({ name: "Modules" });

@@ -471,6 +471,7 @@ export default {
         this.finishModDpartD = true;
         this.finishModD = true;
       }
+      this.finishModDpartC = true;
       console.log("next Step works");
       this.saving = true;
       const clientId = JSON.parse(localStorage.getItem("pass_token"));
@@ -525,6 +526,11 @@ export default {
     this.question_q = this.planSingle.d_bv.question_q;
     this.question_r = this.planSingle.d_bv.question_r;
     this.text_d = this.planSingle.d_bv.text_d;
+    this.finishModD = this.planSingle.finishModD;
+    this.finishModCpartA = this.planSingle.finishModCpartA;
+    this.finishModCpartB = this.planSingle.finishModCpartB;
+    this.finishModCpartC = this.planSingle.finishModCpartC;
+    this.finishModCpartD = this.planSingle.finishModCpartD;
   },
 };
 </script>

@@ -309,6 +309,10 @@ export default {
       text_b: "",
       text_c: "",
       finishModHpartA: true,
+      finishModHpartB: false,
+      finishModHpartC: false,
+      finishModHpartD: false,
+      finishModH: false,
       saving: false,
     };
   },
@@ -321,7 +325,7 @@ export default {
       this.$router.push({ name: "module-h-start" });
     },
     saveItem() {
-      console.log("next Step works");
+      this.finishModHpartA = true;
       this.saving = true;
       const clientId = JSON.parse(localStorage.getItem("pass_token"));
       const payload = {
@@ -331,6 +335,10 @@ export default {
         text_b: this.text_b,
         text_c: this.text_c,
         finishModHpartA: this.finishModHpartA,
+        finishModHpartB: this.finishModHpartB,
+        finishModHpartC: this.finishModHpartC,
+        finishModHpartD: this.finishModHpartD,
+        finishModH: this.finishModH,
       };
       resultService
         .saveDataH(clientId, payload)
@@ -358,6 +366,11 @@ export default {
     this.text_a = this.planSingle.h_bv.text_a;
     this.text_b = this.planSingle.h_bv.text_b;
     this.text_c = this.planSingle.h_bv.text_c;
+    this.finishModH = this.planSingle.finishModH;
+    this.finishModHpartA = this.planSingle.finishModHpartA;
+    this.finishModHpartB = this.planSingle.finishModHpartB;
+    this.finishModHpartC = this.planSingle.finishModHpartC;
+    this.finishModHpartD = this.planSingle.finishModHpartD;
   },
 };
 </script>

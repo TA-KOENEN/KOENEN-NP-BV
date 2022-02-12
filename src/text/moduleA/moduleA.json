@@ -354,7 +354,7 @@
     "optionD": ""
   },
   {
-    "id": 20,
+    "id": 19,
     "ref":"question_t",
     "question": "Het Directiereglement?",
     "label": "Directiereglement",
@@ -375,7 +375,7 @@
     "optionD": ""
   },
   {
-    "id": 21,
+    "id": 20,
     "ref":"question_u",
     "question": "De statuten van de BV of van de Stichting administratiekantoor?",
     "label": "Statuten",
@@ -396,7 +396,7 @@
     "optionD": ""
   },
   {
-    "id": 22,
+    "id": 21,
     "ref":"question_v",
     "question": "Op basis van een aandeelhouders- of partnerovereenkomst (bij meerdere eigenaren)?",
     "label": "Overeenkomst",
@@ -417,7 +417,7 @@
     "optionD": ""
   },
   {
-    "id": 23,
+    "id": 22,
     "ref":"question_w",
     "question": "Op basis van een (levens)testament?",
     "label": "(Levens)testament",
@@ -438,7 +438,7 @@
     "optionD": ""
   },
   {
-    "id": 24,
+    "id": 23,
     "ref":"question_x",
     "question": "Is de opvolger voldoende autorisatie gegeven om namens de ondernemer te kunnen handelen in deze BV?",
     "label": "Autorisatie",
@@ -459,12 +459,12 @@
     "optionD": ""
   },
   {
-    "id": 25,
+    "id": 24,
     "ref":"question_y",
     "question": "Is er met de opvolger gesproken over de wensen van de ondernemer rondom de toekomst van de onderneming?",
     "label": "Verwachting",
     "questionAppForm": "Heeft u met uw opvolger gesproken over uw wensen rondom de toekomst van uw onderneming?",
-    "questionAppInf": "Heb je met je opvolger gesproken over jouw wensen rondom de toekomst van uw onderneming",
+    "questionAppInf": "Heb je met je opvolger gesproken over jouw wensen rondom de toekomst van jouw onderneming",
     "commentApp": false,
     "nrNotes": 1,
     "noteAppFormA": "",
@@ -480,7 +480,7 @@
     "optionD": ""
   },
   {
-    "id": 26,
+    "id": 25,
     "ref":"question_z",
     "question": "Indien een opvolger niet direct beschikbaar is om de rol van de ondernemer in de onderneming over te nemen, welke oplossing wordt dan gekozen?",
     "label": "Andere oplossingen",

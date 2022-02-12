@@ -8,54 +8,54 @@
     "textbInf": "Not in use"
   },
   {
-    "header": "Intro",
-    "headerInf": "Intro",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "header": "Introductie",
+    "headerInf": "Introductie",
+    "texta": "Voor uw waarnemer en opvolger is het van essentieel belang om te weten welke ondernemingsdoelen u nastreeft en op welke wijze u deze wilt bereiken.",
+    "textaInf": "Voor jouw waarnemer en opvolger is het van essentieel belang om te weten welke ondernemingsdoelen je nastreeft en op welke wijze je deze wilt bereiken.",
+    "textb": "U heeft de mogelijkheid om aan te geven of u een Business Plan heeft. Heeft u deze (nog) niet, dan kunt u de belangrijkste doelen in deze module vastleggen.",
+    "textbInf": "Je hebt de mogelijkheid om aan te geven of je een Business Plan heeft. Heb je deze (nog) niet, dan kun je de belangrijkste doelen in deze module vastleggen.",
+    "textc": "Hiernaast kunt u in deze module eventuele voor de onderneming noodzakelijke vergunningen, certificaten of diploma's vastleggen. Als uw onderneming in haar strategie samenwerkt met andere marktpartijen, dan kunt u hier de gegevens vastleggen.",
+    "textcInf": "Hiernaast kun je in deze module eventuele voor de onderneming noodzakelijke vergunningen, certificaten of diploma's vastleggen. Als jouw onderneming in haar strategie samenwerkt met andere marktpartijen, dan kun je hier de gegevens vastleggen."
   },
   {
     "header": "Business plan",
     "headerInf": "Business plan",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "texta": "Uw Business Plan geeft inzicht in wat uw onderneming wil bereiken en op welke wijze dit nagestreefd wordt. Het maakt voor uw waarnemer en opvolger duidelijk welk kader zij dienen te volgen in uw afwezigheid.",
+    "textaInf": "Jouw Business Plan geeft inzicht in wat jouw onderneming wil bereiken en op welke wijze dit nagestreefd wordt. Het maakt voor jouw waarnemer en opvolger duidelijk welk kader zij dienen te volgen in jouw afwezigheid.",
+    "textb": "Is er (nog) geen Business Plan geschreven, dan kunt u in dit onderdeel uw belangrijkste doelen vastleggen. ",
+    "textbInf": "Is er (nog) geen Business Plan geschreven, dan kun je in dit onderdeel jouw belangrijkste doelen vastleggen.",
+    "textc": "",
+    "textcInf": ""
   },
   {
     "header": "Vergunningen",
     "headerInf": "Vergunningen",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "texta": "Als uw onderneming voor de bedrijfsvoering dient te beschikken over vergunningen, certificaten of diploma's, dan legt u dit in deze module vast.",
+    "textaInf": "Als jouw onderneming voor de bedrijfsvoering dient te beschikken over vergunningen, certificaten of diploma's, dan leg je dit in deze module vast.",
+    "textb": "Een aandachtspunt kan zijn of de betreffende vergunningen, certificaten of diploma's aan u persoonlijk zijn verbonden. Mocht u dan plotseling wegvallen, wat betekent dit dan voor het behoud hiervan?",
+    "textbInf": "Een aandachtspunt kan zijn of de betreffende vergunningen, certificaten of diploma's aan jou persoonlijk zijn verbonden. Mocht je dan plotseling wegvallen, wat betekent dit dan voor het behoud hiervan?",
+    "textc": "",
+    "textcInf": ""
   },
   {
     "header": "Strategische samenwerking",
     "headerInf": "Strategische samenwerking",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "texta": "Als u een samenwerking heeft met een andere onderneming, die essentieel is voor de uitvoering van uw strategie, dan kunt u de gegevens van deze onderneming in dit onderdeel vastleggen.",
+    "textaInf": "Als je een samenwerking hebt met een andere onderneming, die essentieel is voor de uitvoering van jouw strategie, dan kun je de gegevens van deze onderneming in dit onderdeel vastleggen.",
+    "textb": "Hiermee geeft u uw waarnemer of opvolger de mogelijkheid direct in contact te treden met deze strategische partner in de situatie dat u plotseling wegvalt.",
+    "textbInf": "Hiermee geef je jouw waarnemer of opvolger de mogelijkheid direct in contact te treden met deze strategische partner in de situatie dat je plotseling wegvalt.",
+    "textc": "U kunt de gegevens van maximaal 2 strategische partners vastleggen.",
+    "textcInf": "Je kunt de gegevens van maximaal 2 strategische partners vastleggen."
   },
   {
     "header": "Einde",
     "headerInf": "Einde",
-    "texta": "text",
-    "textaInf": "text",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!"
+    "texta": "U bent aan het einde gekomen van deze module. Wilt u uw antwoorden nog bekijken of veranderen? Gebruik de knop TERUG.",
+    "textaInf": "Je bent aan het einde gekomen van deze module. Wil je je antwoorden nog bekijken of veranderen? Gebruik de knop TERUG. ",
+    "textb": "Met de knop BEWAAR legt u uw antwoorden vast en vormt dit de basis voor het rapport dat wij voor u opstellen.",
+    "textbInf": "Met de knop BEWAAR leg je je antwoorden vast en vormt dit de basis voor het rapport dat wij voor je opstellen.",
+    "textc": "Dit rapport stellen wij op als u alle modules heeft ingevuld. ",
+    "textcInf": "Dit rapport stellen wij op als je alle modules hebt ingevuld."
   }
 
 ]

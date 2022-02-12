@@ -7,6 +7,8 @@ import Intro from "@/views/Intro";
 import Style from "@/views/Style";
 import Modules from "@/views/Modules";
 
+const Eind = () => import("@/views/Eind" /* webpackChunkName: "moduleEind" */);
+
 const startModuleA = () =>
   import("@/views/moduleA/start" /* webpackChunkName: "moduleAstart" */);
 const stepAModuleA = () =>
@@ -118,8 +120,43 @@ const stepBModuleJ = () =>
   import("@/views/moduleJ/stepB" /* webpackChunkName: "moduleJstepB" */);
 const stepCModuleJ = () =>
   import("@/views/moduleJ/stepC" /* webpackChunkName: "moduleJstepC" */);
+const stepDModuleJ = () =>
+  import("@/views/moduleJ/stepD" /* webpackChunkName: "moduleJstepD" */);
 const endModuleJ = () =>
   import("@/views/moduleJ/stepEnd" /* webpackChunkName: "moduleJstepEnd" */);
+
+const startModuleK = () =>
+  import("@/views/moduleK/start" /* webpackChunkName: "moduleKstart" */);
+const stepAModuleK = () =>
+  import("@/views/moduleK/stepA" /* webpackChunkName: "moduleKstepA" */);
+const stepBModuleK = () =>
+  import("@/views/moduleK/stepB" /* webpackChunkName: "moduleKstepB" */);
+const endModuleK = () =>
+  import("@/views/moduleK/stepEnd" /* webpackChunkName: "moduleKstepEnd" */);
+
+const startModuleL = () =>
+  import("@/views/moduleL/start" /* webpackChunkName: "moduleLstart" */);
+const stepAModuleL = () =>
+  import("@/views/moduleL/stepA" /* webpackChunkName: "moduleLstepA" */);
+const endModuleL = () =>
+  import("@/views/moduleL/stepEnd" /* webpackChunkName: "moduleLstepEnd" */);
+
+const startModuleM = () =>
+  import("@/views/moduleM/start" /* webpackChunkName: "moduleMstart" */);
+const stepAModuleM = () =>
+  import("@/views/moduleM/stepA" /* webpackChunkName: "moduleMstepA" */);
+const endModuleM = () =>
+  import("@/views/moduleM/stepEnd" /* webpackChunkName: "moduleMstepEnd" */);
+
+const startModuleN = () =>
+  import("@/views/moduleN/start" /* webpackChunkName: "moduleNstart" */);
+const stepAModuleN = () =>
+  import("@/views/moduleN/stepA" /* webpackChunkName: "moduleNstepA" */);
+const endModuleN = () =>
+  import("@/views/moduleN/stepEnd" /* webpackChunkName: "moduleNstepEnd" */);
+
+const ReportEnd = () =>
+  import("@/views/Report" /* webpackChunkName: "reportEnd" */);
 
 Vue.use(VueRouter);
 
@@ -132,11 +169,22 @@ const router = new VueRouter({
       return { x: 0, y: 0 };
     }
   },
+
   routes: [
     {
       path: "/style",
       name: "Style",
       component: Style,
+    },
+    {
+      path: "/einde",
+      name: "eind",
+      component: Eind,
+    },
+    {
+      path: "/rapportage",
+      name: "report-end",
+      component: ReportEnd,
     },
     {
       path: "/",
@@ -468,9 +516,34 @@ const router = new VueRouter({
       name: "module-j-step-c",
     },
     {
+      path: "/module-j-step-d",
+      component: stepDModuleJ,
+      name: "module-j-step-d",
+    },
+    {
       path: "/module-j-end",
       component: endModuleJ,
       name: "module-j-end",
+    },
+    {
+      path: "/module-k-start",
+      component: startModuleK,
+      name: "module-k-start",
+    },
+    {
+      path: "/module-k-step-a",
+      component: stepAModuleK,
+      name: "module-k-step-a",
+    },
+    {
+      path: "/module-k-step-b",
+      component: stepBModuleK,
+      name: "module-k-step-b",
+    },
+    {
+      path: "/module-k-end",
+      component: endModuleK,
+      name: "module-k-end",
       beforeEnter(to, from, next) {
         if (localStorage.stepTwo) {
           next();
@@ -478,6 +551,51 @@ const router = new VueRouter({
           next("/start");
         }
       },
+    },
+    {
+      path: "/module-l-start",
+      component: startModuleL,
+      name: "module-l-start",
+    },
+    {
+      path: "/module-l-step-a",
+      component: stepAModuleL,
+      name: "module-l-step-a",
+    },
+    {
+      path: "/module-l-end",
+      component: endModuleL,
+      name: "module-l-end",
+    },
+    {
+      path: "/module-m-start",
+      component: startModuleM,
+      name: "module-m-start",
+    },
+    {
+      path: "/module-m-step-a",
+      component: stepAModuleM,
+      name: "module-m-step-a",
+    },
+    {
+      path: "/module-m-end",
+      component: endModuleM,
+      name: "module-m-end",
+    },
+    {
+      path: "/module-n-start",
+      component: startModuleN,
+      name: "module-n-start",
+    },
+    {
+      path: "/module-n-step-a",
+      component: stepAModuleN,
+      name: "module-n-step-a",
+    },
+    {
+      path: "/module-n-end",
+      component: endModuleN,
+      name: "module-n-end",
     },
   ],
 });

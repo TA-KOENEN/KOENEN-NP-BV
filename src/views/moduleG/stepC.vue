@@ -173,7 +173,10 @@ export default {
       formal: null,
       question_t: "",
       text_a: "",
+      finishModGpartA: true,
+      finishModGpartB: true,
       finishModGpartC: true,
+      finishModGpartD: true,
       finishModG: true,
       saving: false,
     };
@@ -187,14 +190,19 @@ export default {
       this.$router.push({ name: "module-g-step-b" });
     },
     saveItem() {
+      this.finishModGpartC = true;
+      this.finishModG = true;
       console.log("next Step works");
       this.saving = true;
       const clientId = JSON.parse(localStorage.getItem("pass_token"));
       const payload = {
         question_t: this.question_t,
         text_a: this.text_a,
-        finishModG: this.finishModG,
+        finishModGpartA: this.finishModGpartA,
+        finishModGpartB: this.finishModGpartB,
         finishModGpartC: this.finishModGpartC,
+        finishModGpartD: this.finishModGpartD,
+        finishModG: this.finishModG,
       };
       resultService
         .saveDataG(clientId, payload)
@@ -219,6 +227,11 @@ export default {
     this.formal = JSON.parse(localStorage.getItem("formal"));
     this.question_t = this.planSingle.g_bv.question_t;
     this.text_a = this.planSingle.g_bv.text_a;
+    this.finishModG = this.planSingle.finishModG;
+    this.finishModGpartA = this.planSingle.finishModGpartA;
+    this.finishModGpartB = this.planSingle.finishModGpartB;
+    this.finishModGpartC = this.planSingle.finishModGpartC;
+    this.finishModGpartD = this.planSingle.finishModGpartD;
   },
 };
 </script>
