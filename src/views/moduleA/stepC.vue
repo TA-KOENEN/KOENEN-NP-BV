@@ -74,7 +74,7 @@
                     />
                     <BaseValInput
                       rules="max:150"
-                      v-model="question_o"
+                      v-model="question_n"
                       v-bind:label="statement[14].label"
                     />
                     <StatementText
@@ -88,7 +88,7 @@
                     />
                     <BaseValInput
                       rules="max:150"
-                      v-model="question_p"
+                      v-model="question_o"
                       v-bind:label="statement[15].label"
                     />
                     <StatementText
@@ -102,7 +102,7 @@
                     />
                     <BaseValInput
                       rules="max:150"
-                      v-model="question_q"
+                      v-model="question_p"
                       v-bind:label="statement[16].label"
                     />
                     <StatementText
@@ -378,7 +378,7 @@
                     />
                     <BaseValInput
                       rules="max:150"
-                      v-model="question_o"
+                      v-model="question_n"
                       v-bind:label="statement[14].label"
                     />
                     <StatementText
@@ -392,7 +392,7 @@
                     />
                     <BaseValInput
                       rules="max:150"
-                      v-model="question_p"
+                      v-model="question_o"
                       v-bind:label="statement[15].label"
                     />
                     <StatementText
@@ -406,7 +406,7 @@
                     />
                     <BaseValInput
                       rules="max:150"
-                      v-model="question_q"
+                      v-model="question_p"
                       v-bind:label="statement[16].label"
                     />
                     <StatementText
@@ -715,7 +715,6 @@ export default {
       text_b: "",
       text_c: "",
       text_d: "",
-
       finishModA: true,
       finishModApartA: true,
       finishModApartB: true,
@@ -733,7 +732,7 @@ export default {
       this.$router.push({ name: "module-a-step-b" });
     },
     saveItem() {
-      console.log("next Step works");
+      this.finishModApartB = true;
       this.finishModApartC = true;
       this.finishModA = true;
       this.saving = true;

@@ -14,8 +14,8 @@
     "textaInf": "Deze module helpt je om jouw waarnemer en opvolger te informeren over jouw rol in de onderneming. Hierdoor wordt zichtbaar welke taken en verantwoordelijkheden je hebt. Binnen het management en eventueel binnen het primaire proces.",
     "textb": "Door deze informatie over te dragen, weten uw waarnemer en opvolger welke taken en verantwoordelijkheden overgenomen moeten worden in uw afwezigheid. Het overzicht kan u ook ondersteunen om te bepalen welke taken u wilt delegeren aan uw medewerkers.",
     "textbInf": "Door deze informatie over te dragen, weten jouw waarnemer en opvolger welke taken en verantwoordelijkheden overgenomen moeten worden in jouw afwezigheid. Het overzicht kan je ook ondersteunen om te bepalen welke taken je wil delegeren aan jouw medewerkers.",
-    "textc": "Deze module brengt achtereenvolgens in kaart of sprake is van een management team, welke rol u heeft in het management, op basis van welke managementinformatie gestuurd wordt en wat uw rol in de operatie is.",
-    "textcInf": "Deze module brengt achtereenvolgens in kaart of sprake is van een management team, welke rol u heeft in het management, op basis van welke managementinformatie gestuurd wordt en wat uw rol in de operatie is."
+    "textc": "Deze module brengt achtereenvolgens in kaart of sprake is van een managementteam, welke rol u heeft in het management, op basis van welke managementinformatie gestuurd wordt en wat uw rol in de operatie is.",
+    "textcInf": "Deze module brengt achtereenvolgens in kaart of sprake is van een managementteam, welke rol u heeft in het management, op basis van welke managementinformatie gestuurd wordt en wat uw rol in de operatie is."
   },
   {
     "header": "Management",
@@ -28,10 +28,10 @@
     "textcInf": ""
   },
   {
-    "header": "Rol in management team",
-    "headerInf": "Rol in management team",
-    "texta": "Als u een rol heeft in een management team, brengt dit onderdeel in kaart welke rol dit is.",
-    "textaInf": "Als u een rol heeft in een management team, brengt dit onderdeel in kaart welke rol dit is.",
+    "header": "Rol in managementteam",
+    "headerInf": "Rol in managementteam",
+    "texta": "Als u een rol heeft in een managementteam, brengt dit onderdeel in kaart welke rol dit is.",
+    "textaInf": "Als u een rol heeft in een managementteam, brengt dit onderdeel in kaart welke rol dit is.",
     "textb": "Als u niet in het management betrokken bent, dan kunt u dit hier ook aangeven.",
     "textbInf": "Als je niet in het management betrokken bent, dan kun je dit hier ook aangeven.",
     "textc": "",

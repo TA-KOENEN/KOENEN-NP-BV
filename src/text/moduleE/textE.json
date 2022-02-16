@@ -18,9 +18,9 @@
   },
   {
     "id": 2,
-    "text": "Wat zijn de voornaamste aandachtspunten bij staking van de activiteiten ten aanzien van:",
-    "textAppForm": "Wat zijn uw voornaamste aandachtspunten bij staking van de activiteiten ten aanzien van:",
-    "textAppInform": "Wat zijn jouw voornaamste aandachtspunten bij staking van de activiteiten ten aanzien van:",
+    "text": "Wat zijn de aandachtspunten bij staking van de activiteiten ten aanzien van:",
+    "textAppForm": "Heeft u aandachtspunten bij staking van de activiteiten ten aanzien van:",
+    "textAppInform": "Heb je aandachtspunten bij staking van de activiteiten ten aanzien van:",
     "commentApp": false,
     "nrNotes": 1,
     "noteAppFormA": "",

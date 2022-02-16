@@ -256,13 +256,13 @@
             />
             <step-text
               :stepText="textAppRight[5].header"
-              :number="4"
+              :number="5"
               class="mb-5"
               :active="false"
             />
             <step-text
               :stepText="textAppRight[6].header"
-              :number="5"
+              :number="6"
               class="mb-5"
               :active="false"
             />

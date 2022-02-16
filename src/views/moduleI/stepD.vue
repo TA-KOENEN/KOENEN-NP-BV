@@ -164,6 +164,21 @@
                     v-model="question_x"
                     v-bind:label="statement[25].label"
                   />
+                  <StatementText
+                    :text="statement[26].questionAppForm"
+                    :note="statement[26].commentApp"
+                    :nr-notes="statement[26].nrNotes"
+                    :noteA="statement[26].noteAppFormA"
+                    :noteB="statement[26].noteAppFormB"
+                    :noteC="statement[26].noteAppFormC"
+                    class="mb-5"
+                  />
+
+                  <BaseValInput
+                    rules="max:150"
+                    v-model="question_y"
+                    v-bind:label="statement[26].label"
+                  />
                 </div>
 
                 <!--informal-->
@@ -290,6 +305,21 @@
                     v-model="question_x"
                     v-bind:label="statement[25].label"
                   />
+                  <StatementText
+                    :text="statement[26].questionAppInform"
+                    :note="statement[26].commentApp"
+                    :nr-notes="statement[26].nrNotes"
+                    :noteA="statement[26].noteAppInfA"
+                    :noteB="statement[26].noteAppInfB"
+                    :noteC="statement[26].noteAppInfC"
+                    class="mb-5"
+                  />
+
+                  <BaseValInput
+                    rules="max:150"
+                    v-model="question_x"
+                    v-bind:label="statement[26].label"
+                  />
                 </div>
 
                 <v-row class="mt-10">
@@ -308,7 +338,7 @@
             <div class="mt-10" />
             <step-text
               :stepText="textAppRight[6].header"
-              :number="5"
+              :number="6"
               class="mb-5"
               :active="false"
             />
@@ -347,6 +377,7 @@ export default {
       question_v: "",
       question_w: "",
       question_x: "",
+      question_y: "",
       finishModIpartA: true,
       finishModIpartB: false,
       finishModIpartC: false,
@@ -411,6 +442,7 @@ export default {
     this.question_v = this.planSingle.i_bv.question_v;
     this.question_w = this.planSingle.i_bv.question_w;
     this.question_x = this.planSingle.i_bv.question_x;
+    this.question_y = this.planSingle.i_bv.question_y;
     this.finishModI = this.planSingle.finishModI;
     this.finishModIpartA = this.planSingle.finishModIpartA;
     this.finishModIpartB = this.planSingle.finishModIpartB;

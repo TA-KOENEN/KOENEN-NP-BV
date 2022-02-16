@@ -302,7 +302,7 @@
             />
             <step-text
               :stepText="textAppRight[5].header"
-              :number="4"
+              :number="5"
               class="mb-5"
               :active="false"
             />

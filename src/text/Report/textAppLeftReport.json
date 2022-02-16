@@ -1,18 +1,14 @@
 [
 
   {
-    "header": "Rapportage",
-    "headerInf": "Rapportage",
-    "texta": "Geef ons een seintje....",
-    "textaInf": "Geef ons een seintje....",
-    "textb": "text",
-    "textbInf": "text",
-    "textc": "max till f",
-    "textcInf": "max till f!",
-    "textc": "max till f",
-    "textcInf": "max till f!",
-    "textd": "max till f",
-    "textdInf": "max till f!"
+    "header": "Rapport",
+    "headerInf": "Rapport",
+    "texta": "Als u alle modules heeft afgerond, dan geeft u via deze module aan ons door dat wij kunnen starten met uw Noodplan.",
+    "textaInf": "Als je alle modules hebt afgerond, dan geef je via deze module aan ons door dat wij kunnen starten met uw Noodplan.",
+    "textb": "We hebben even nodig om het Noodplan voor u te schrijven. Als wij vragen hebben, dan nemen wij contact met u op. Is uw Noodplan gereed, dan nemen wij contact met u op om een afspraak te maken.",
+    "textbInf": "We hebben even nodig om het Noodplan voor jou te schrijven. Als wij vragen hebben, dan nemen wij contact met je op. Is jouw Noodplan gereed, dan nemen wij contact met je op om een afspraak te maken.",
+    "textc": "Heeft u tussentijds zelf vragen? Bel gerust. Wij staan u graag te woord.",
+    "textcInf": "Heb je tussentijds zelf vragen? Bel gerust. Wij staan je graag te woord."
   }
 
 ]

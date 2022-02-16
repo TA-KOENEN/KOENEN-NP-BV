@@ -32,7 +32,7 @@
           <div class="ma-10">
             <step-text
               :stepText="textAppRight[6].header"
-              :number="5"
+              :number="6"
               class="mb-5"
               :active="false"
             />

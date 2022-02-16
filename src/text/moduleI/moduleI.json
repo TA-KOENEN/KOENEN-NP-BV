@@ -543,5 +543,26 @@
     "optionB": "",
     "optionC": "",
     "optionD": ""
+  },
+  {
+    "id": 26,
+    "ref": "question_y",
+    "question": "Verzekeringspolissen",
+    "label": "Verzekeringspolissen",
+    "questionAppForm": "Verzekeringspolissen",
+    "questionAppInform": "Verzekeringspolissen",
+    "commentApp": false,
+    "nrNotes": 2,
+    "noteAppFormA": "",
+    "noteAppFormB": "",
+    "noteAppFormC": "",
+    "noteAppInfA": "",
+    "noteAppInfB": "",
+    "noteAppInfC": "",
+    "nrOptions": 1,
+    "optionA": "",
+    "optionB": "",
+    "optionC": "",
+    "optionD": ""
   }
 ]

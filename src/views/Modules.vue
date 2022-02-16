@@ -36,584 +36,573 @@
         </v-col>
         <v-col cols="12" md="6" class="rightPanel justify-center">
           <div class="ma-5">
-            <!--            <v-hover v-slot="{ hover }">-->
-            <!--              <v-card-->
-            <!--                class="mt-10"-->
-            <!--                @click="goModA"-->
-            <!--                :class="{ 'on-hover': hover }"-->
-            <!--              >-->
-            <!--                <v-card-title v-if="formal" class="primary&#45;&#45;text text-h5">{{-->
-            <!--                  moduleData[0].header-->
-            <!--                }}</v-card-title>-->
-            <!--                <v-card-title v-if="!formal" class="primary&#45;&#45;text text-h5">{{-->
-            <!--                  moduleData[0].headerInf-->
-            <!--                }}</v-card-title>-->
-            <!--                <v-card-text>-->
-            <!--                  <v-row v-if="formal" no-gutters-->
-            <!--                    >{{ moduleData[0].text }}-->
-            <!--                  </v-row>-->
-            <!--                  <v-row v-if="!formal" no-gutters-->
-            <!--                    >{{ moduleData[0].InfText }}-->
-            <!--                  </v-row>-->
-            <!--                  <v-row no-gutters class="mt-5">-->
-            <!--                    Status:-->
-            <!--                    <v-icon color="green darken-3" class="ml-2">-->
-            <!--                      mdi-checkbox-marked-circle-plus-outline-->
-            <!--                    </v-icon>-->
-            <!--                  </v-row>-->
-            <!--                </v-card-text>-->
-            <!--                <v-card-actions class="mb-10">-->
-            <!--                  <v-spacer />-->
-            <!--                  <v-btn class="primary mr-10 mb-5">start</v-btn>-->
-            <!--                </v-card-actions>-->
-            <!--              </v-card>-->
-            <!--            </v-hover>-->
-            <v-hover v-slot="{ hover }">
-              <v-card
-                class="mt-10"
-                @click="goModA"
-                :class="{ 'on-hover': hover }"
+            <div>
+              <statement-text :text="'Openstaande modules'" />
+              <v-hover v-slot="{ hover }" v-if="!planSingle.finishModA">
+                <v-card
+                  class="mt-10"
+                  @click="goModA"
+                  :class="{ 'on-hover': hover }"
+                >
+                  <v-card-title v-if="formal" class="primary--text text-h5">{{
+                    moduleData[1].header
+                  }}</v-card-title>
+                  <v-card-title v-if="!formal" class="primary--text text-h5">{{
+                    moduleData[1].headerInf
+                  }}</v-card-title>
+                  <v-card-text>
+                    <v-row v-if="formal" no-gutters
+                      >{{ moduleData[1].text }}
+                    </v-row>
+                    <v-row v-if="!formal" no-gutters
+                      >{{ moduleData[1].InfText }}
+                    </v-row>
+                    <v-row no-gutters class="mt-5">
+                      Status:
+                      <status-icon
+                        :finish="planSingle.finishModApartA"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModApartB"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModApartC"
+                        class="ml-2"
+                      />
+                    </v-row>
+                  </v-card-text>
+                  <v-card-actions class="mb-10">
+                    <v-spacer />
+                    <v-btn class="primary mr-10 mb-5">start</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-hover>
+              <v-hover
+                v-slot="{ hover }"
+                v-if="planSingle.useModB && !planSingle.finishModB"
               >
-                <v-card-title v-if="formal" class="primary--text text-h5">{{
-                  moduleData[1].header
-                }}</v-card-title>
-                <v-card-title v-if="!formal" class="primary--text text-h5">{{
-                  moduleData[1].headerInf
-                }}</v-card-title>
-                <v-card-text>
-                  <v-row v-if="formal" no-gutters
-                    >{{ moduleData[1].text }}
-                  </v-row>
-                  <v-row v-if="!formal" no-gutters
-                    >{{ moduleData[1].InfText }}
-                  </v-row>
-                  <v-row no-gutters class="mt-5">
-                    Status:
-                    <status-icon
-                      :finish="planSingle.finishModApartA"
-                      class="ml-2"
-                    />
-                    <status-icon
-                      :finish="planSingle.finishModApartB"
-                      class="ml-2"
-                    />
-                    <status-icon
-                      :finish="planSingle.finishModApartC"
-                      class="ml-2"
-                    />
-                  </v-row>
-                </v-card-text>
-                <v-card-actions class="mb-10">
-                  <v-spacer />
-                  <v-btn class="primary mr-10 mb-5">start</v-btn>
-                </v-card-actions>
-              </v-card>
-            </v-hover>
-            <v-hover v-slot="{ hover }">
-              <v-card
-                class="mt-10"
-                @click="goModB"
-                :class="{ 'on-hover': hover }"
+                <v-card
+                  class="mt-10"
+                  @click="goModB"
+                  :class="{ 'on-hover': hover }"
+                >
+                  <v-card-title v-if="formal" class="primary--text text-h5">{{
+                    moduleData[2].header
+                  }}</v-card-title>
+                  <v-card-title v-if="!formal" class="primary--text text-h5">{{
+                    moduleData[2].headerInf
+                  }}</v-card-title>
+                  <v-card-text>
+                    <v-row v-if="formal" no-gutters
+                      >{{ moduleData[2].text }}
+                    </v-row>
+                    <v-row v-if="!formal" no-gutters
+                      >{{ moduleData[2].InfText }}
+                    </v-row>
+                    <v-row no-gutters class="mt-5">
+                      Status:
+                      <status-icon
+                        :finish="planSingle.finishModBpartA"
+                        class="ml-2"
+                      />
+                    </v-row>
+                  </v-card-text>
+                  <v-card-actions class="mb-10">
+                    <v-spacer />
+                    <v-btn class="primary mr-10 mb-5">start</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-hover>
+              <v-hover
+                v-slot="{ hover }"
+                v-if="planSingle.useModC && !planSingle.finishModC"
               >
-                <v-card-title v-if="formal" class="primary--text text-h5">{{
-                  moduleData[2].header
-                }}</v-card-title>
-                <v-card-title v-if="!formal" class="primary--text text-h5">{{
-                  moduleData[2].headerInf
-                }}</v-card-title>
-                <v-card-text>
-                  <v-row v-if="formal" no-gutters
-                    >{{ moduleData[2].text }}
-                  </v-row>
-                  <v-row v-if="!formal" no-gutters
-                    >{{ moduleData[2].InfText }}
-                  </v-row>
-                  <v-row no-gutters class="mt-5">
-                    Status:
-                    <status-icon
-                      :finish="planSingle.finishModBpartA"
-                      class="ml-2"
-                    />
-                  </v-row>
-                </v-card-text>
-                <v-card-actions class="mb-10">
-                  <v-spacer />
-                  <v-btn class="primary mr-10 mb-5">start</v-btn>
-                </v-card-actions>
-              </v-card>
-            </v-hover>
-            <v-hover v-slot="{ hover }">
-              <v-card
-                class="mt-10"
-                @click="goModC"
-                :class="{ 'on-hover': hover }"
+                <v-card
+                  class="mt-10"
+                  @click="goModC"
+                  :class="{ 'on-hover': hover }"
+                >
+                  <v-card-title v-if="formal" class="primary--text text-h5">{{
+                    moduleData[3].header
+                  }}</v-card-title>
+                  <v-card-title v-if="!formal" class="primary--text text-h5">{{
+                    moduleData[3].headerInf
+                  }}</v-card-title>
+                  <v-card-text>
+                    <v-row v-if="formal" no-gutters
+                      >{{ moduleData[3].text }}
+                    </v-row>
+                    <v-row v-if="!formal" no-gutters
+                      >{{ moduleData[3].InfText }}
+                    </v-row>
+                    <v-row no-gutters class="mt-5">
+                      Status:
+                      <status-icon
+                        :finish="planSingle.finishModCpartA"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModCpartB"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModCpartC"
+                        class="ml-2"
+                      />
+                    </v-row>
+                  </v-card-text>
+                  <v-card-actions class="mb-10">
+                    <v-spacer />
+                    <v-btn class="primary mr-10 mb-5">start</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-hover>
+              <v-hover
+                v-slot="{ hover }"
+                v-if="planSingle.useModD && !planSingle.finishModD"
               >
-                <v-card-title v-if="formal" class="primary--text text-h5">{{
-                  moduleData[3].header
-                }}</v-card-title>
-                <v-card-title v-if="!formal" class="primary--text text-h5">{{
-                  moduleData[3].headerInf
-                }}</v-card-title>
-                <v-card-text>
-                  <v-row v-if="formal" no-gutters
-                    >{{ moduleData[3].text }}
-                  </v-row>
-                  <v-row v-if="!formal" no-gutters
-                    >{{ moduleData[3].InfText }}
-                  </v-row>
-                  <v-row no-gutters class="mt-5">
-                    Status:
-                    <status-icon
-                      :finish="planSingle.finishModCpartA"
-                      class="ml-2"
-                    />
-                    <status-icon
-                      :finish="planSingle.finishModCpartB"
-                      class="ml-2"
-                    />
-                    <status-icon
-                      :finish="planSingle.finishModCpartC"
-                      class="ml-2"
-                    />
-                  </v-row>
-                </v-card-text>
-                <v-card-actions class="mb-10">
-                  <v-spacer />
-                  <v-btn class="primary mr-10 mb-5">start</v-btn>
-                </v-card-actions>
-              </v-card>
-            </v-hover>
-            <v-hover v-slot="{ hover }">
-              <v-card
-                class="mt-10"
-                @click="goModD"
-                :class="{ 'on-hover': hover }"
+                <v-card
+                  class="mt-10"
+                  @click="goModD"
+                  :class="{ 'on-hover': hover }"
+                >
+                  <v-card-title v-if="formal" class="primary--text text-h5">{{
+                    moduleData[4].header
+                  }}</v-card-title>
+                  <v-card-title v-if="!formal" class="primary--text text-h5">{{
+                    moduleData[4].headerInf
+                  }}</v-card-title>
+                  <v-card-text>
+                    <v-row v-if="formal" no-gutters
+                      >{{ moduleData[4].text }}
+                    </v-row>
+                    <v-row v-if="!formal" no-gutters
+                      >{{ moduleData[4].InfText }}
+                    </v-row>
+                    <v-row no-gutters class="mt-5">
+                      Status:
+                      <status-icon
+                        :finish="planSingle.finishModDpartA"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModDpartB"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModDpartC"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModDpartD"
+                        class="ml-2"
+                      />
+                    </v-row>
+                  </v-card-text>
+                  <v-card-actions class="mb-10">
+                    <v-spacer />
+                    <v-btn class="primary mr-10 mb-5">start</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-hover>
+              <v-hover
+                v-slot="{ hover }"
+                v-if="planSingle.useModE && !planSingle.finishModE"
               >
-                <v-card-title v-if="formal" class="primary--text text-h5">{{
-                  moduleData[4].header
-                }}</v-card-title>
-                <v-card-title v-if="!formal" class="primary--text text-h5">{{
-                  moduleData[4].headerInf
-                }}</v-card-title>
-                <v-card-text>
-                  <v-row v-if="formal" no-gutters
-                    >{{ moduleData[4].text }}
-                  </v-row>
-                  <v-row v-if="!formal" no-gutters
-                    >{{ moduleData[4].InfText }}
-                  </v-row>
-                  <v-row no-gutters class="mt-5">
-                    Status:
-                    <status-icon
-                      :finish="planSingle.finishModDpartA"
-                      class="ml-2"
-                    />
-                    <status-icon
-                      :finish="planSingle.finishModDpartB"
-                      class="ml-2"
-                    />
-                    <status-icon
-                      :finish="planSingle.finishModDpartC"
-                      class="ml-2"
-                    />
-                    <status-icon
-                      :finish="planSingle.finishModDpartD"
-                      class="ml-2"
-                    />
-                  </v-row>
-                </v-card-text>
-                <v-card-actions class="mb-10">
-                  <v-spacer />
-                  <v-btn class="primary mr-10 mb-5">start</v-btn>
-                </v-card-actions>
-              </v-card>
-            </v-hover>
-            <v-hover v-slot="{ hover }">
-              <v-card
-                class="mt-10"
-                @click="goModE"
-                :class="{ 'on-hover': hover }"
+                <v-card
+                  class="mt-10"
+                  @click="goModE"
+                  :class="{ 'on-hover': hover }"
+                >
+                  <v-card-title v-if="formal" class="primary--text text-h5">{{
+                    moduleData[5].header
+                  }}</v-card-title>
+                  <v-card-title v-if="!formal" class="primary--text text-h5">{{
+                    moduleData[5].headerInf
+                  }}</v-card-title>
+                  <v-card-text>
+                    <v-row v-if="formal" no-gutters
+                      >{{ moduleData[5].text }}
+                    </v-row>
+                    <v-row v-if="!formal" no-gutters
+                      >{{ moduleData[5].InfText }}
+                    </v-row>
+                    <v-row no-gutters class="mt-5">
+                      Status:
+                      <status-icon
+                        :finish="planSingle.finishModEpartA"
+                        class="ml-2"
+                      />
+                    </v-row>
+                  </v-card-text>
+                  <v-card-actions class="mb-10">
+                    <v-spacer />
+                    <v-btn class="primary mr-10 mb-5">start</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-hover>
+              <v-hover
+                v-slot="{ hover }"
+                v-if="planSingle.useModF && !planSingle.finishModF"
               >
-                <v-card-title v-if="formal" class="primary--text text-h5">{{
-                  moduleData[5].header
-                }}</v-card-title>
-                <v-card-title v-if="!formal" class="primary--text text-h5">{{
-                  moduleData[5].headerInf
-                }}</v-card-title>
-                <v-card-text>
-                  <v-row v-if="formal" no-gutters
-                    >{{ moduleData[5].text }}
-                  </v-row>
-                  <v-row v-if="!formal" no-gutters
-                    >{{ moduleData[5].InfText }}
-                  </v-row>
-                  <v-row no-gutters class="mt-5">
-                    Status:
-                    <status-icon
-                      :finish="planSingle.finishModEpartA"
-                      class="ml-2"
-                    />
-                  </v-row>
-                </v-card-text>
-                <v-card-actions class="mb-10">
-                  <v-spacer />
-                  <v-btn class="primary mr-10 mb-5">start</v-btn>
-                </v-card-actions>
-              </v-card>
-            </v-hover>
-            <v-hover v-slot="{ hover }" v-if="planSingle.useModF">
-              <v-card
-                class="mt-10"
-                @click="goModF"
-                :class="{ 'on-hover': hover }"
+                <v-card
+                  class="mt-10"
+                  @click="goModF"
+                  :class="{ 'on-hover': hover }"
+                >
+                  <v-card-title v-if="formal" class="primary--text text-h5">{{
+                    moduleData[6].header
+                  }}</v-card-title>
+                  <v-card-title v-if="!formal" class="primary--text text-h5">{{
+                    moduleData[6].headerInf
+                  }}</v-card-title>
+                  <v-card-text>
+                    <v-row v-if="formal" no-gutters
+                      >{{ moduleData[6].text }}
+                    </v-row>
+                    <v-row v-if="!formal" no-gutters
+                      >{{ moduleData[6].InfText }}
+                    </v-row>
+                    <v-row no-gutters class="mt-5">
+                      Status:
+                      <status-icon
+                        :finish="planSingle.finishModFpartA"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModFpartB"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModFpartC"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModFpartD"
+                        class="ml-2"
+                      />
+                    </v-row>
+                  </v-card-text>
+                  <v-card-actions class="mb-10">
+                    <v-spacer />
+                    <v-btn class="primary mr-10 mb-5">start</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-hover>
+              <v-hover
+                v-slot="{ hover }"
+                v-if="planSingle.useModG && !planSingle.finishModG"
               >
-                <v-card-title v-if="formal" class="primary--text text-h5">{{
-                  moduleData[6].header
-                }}</v-card-title>
-                <v-card-title v-if="!formal" class="primary--text text-h5">{{
-                  moduleData[6].headerInf
-                }}</v-card-title>
-                <v-card-text>
-                  <v-row v-if="formal" no-gutters
-                    >{{ moduleData[6].text }}
-                  </v-row>
-                  <v-row v-if="!formal" no-gutters
-                    >{{ moduleData[6].InfText }}
-                  </v-row>
-                  <v-row no-gutters class="mt-5">
-                    Status:
-                    <status-icon
-                      :finish="planSingle.finishModFpartA"
-                      class="ml-2"
-                    />
-                    <status-icon
-                      :finish="planSingle.finishModFpartB"
-                      class="ml-2"
-                    />
-                    <status-icon
-                      :finish="planSingle.finishModFpartC"
-                      class="ml-2"
-                    />
-                    <status-icon
-                      :finish="planSingle.finishModFpartD"
-                      class="ml-2"
-                    />
-                  </v-row>
-                </v-card-text>
-                <v-card-actions class="mb-10">
-                  <v-spacer />
-                  <v-btn class="primary mr-10 mb-5">start</v-btn>
-                </v-card-actions>
-              </v-card>
-            </v-hover>
-            <v-hover v-slot="{ hover }" v-if="planSingle.useModG">
-              <v-card
-                class="mt-10"
-                @click="goModG"
-                :class="{ 'on-hover': hover }"
-              >
-                <v-card-title v-if="formal" class="primary--text text-h5">{{
-                  moduleData[7].header
-                }}</v-card-title>
-                <v-card-title v-if="!formal" class="primary--text text-h5">{{
-                  moduleData[7].headerInf
-                }}</v-card-title>
-                <v-card-text>
-                  <v-row v-if="formal" no-gutters
-                    >{{ moduleData[7].text }}
-                  </v-row>
-                  <v-row v-if="!formal" no-gutters
-                    >{{ moduleData[7].InfText }}
-                  </v-row>
-                  <v-row no-gutters class="mt-5">
-                    Status:
-                    <status-icon
-                      :finish="planSingle.finishModGpartA"
-                      class="ml-2"
-                    />
-                    <status-icon
-                      :finish="planSingle.finishModGpartB"
-                      class="ml-2"
-                    />
-                    <status-icon
-                      :finish="planSingle.finishModGpartC"
-                      class="ml-2"
-                    />
-                  </v-row>
-                </v-card-text>
-                <v-card-actions class="mb-10">
-                  <v-spacer />
-                  <v-btn class="primary mr-10 mb-5">start</v-btn>
-                </v-card-actions>
-              </v-card>
-            </v-hover>
-            <v-hover v-slot="{ hover }">
-              <v-card
-                class="mt-10"
-                @click="goModH"
-                :class="{ 'on-hover': hover }"
-              >
-                <v-card-title v-if="formal" class="primary--text text-h5">{{
-                  moduleData[8].header
-                }}</v-card-title>
-                <v-card-title v-if="!formal" class="primary--text text-h5">{{
-                  moduleData[8].headerInf
-                }}</v-card-title>
-                <v-card-text>
-                  <v-row v-if="formal" no-gutters
-                    >{{ moduleData[8].text }}
-                  </v-row>
-                  <v-row v-if="!formal" no-gutters
-                    >{{ moduleData[8].InfText }}
-                  </v-row>
-                  <v-row no-gutters class="mt-5">
-                    Status:
-                    <status-icon
-                      :finish="planSingle.finishModHpartA"
-                      class="ml-2"
-                    />
-                    <status-icon
-                      :finish="planSingle.finishModHpartB"
-                      class="ml-2"
-                    />
-                    <status-icon
-                      :finish="planSingle.finishModHpartC"
-                      class="ml-2"
-                    />
-                  </v-row>
-                </v-card-text>
-                <v-card-actions class="mb-10">
-                  <v-spacer />
-                  <v-btn class="primary mr-10 mb-5">start</v-btn>
-                </v-card-actions>
-              </v-card>
-            </v-hover>
-            <v-hover v-slot="{ hover }">
-              <v-card
-                class="mt-10"
-                @click="goModI"
-                :class="{ 'on-hover': hover }"
-              >
-                <v-card-title v-if="formal" class="primary--text text-h5">{{
-                  moduleData[9].header
-                }}</v-card-title>
-                <v-card-title v-if="!formal" class="primary--text text-h5">{{
-                  moduleData[9].headerInf
-                }}</v-card-title>
-                <v-card-text>
-                  <v-row v-if="formal" no-gutters
-                    >{{ moduleData[9].text }}
-                  </v-row>
-                  <v-row v-if="!formal" no-gutters
-                    >{{ moduleData[9].InfText }}
-                  </v-row>
-                  <v-row no-gutters class="mt-5">
-                    Status:
-                    <status-icon
-                      :finish="planSingle.finishModIpartA"
-                      class="ml-2"
-                    />
-                    <status-icon
-                      :finish="planSingle.finishModIpartB"
-                      class="ml-2"
-                    />
-                    <status-icon
-                      :finish="planSingle.finishModIpartC"
-                      class="ml-2"
-                    />
-                    <status-icon
-                      :finish="planSingle.finishModIpartD"
-                      class="ml-2"
-                    />
-                  </v-row>
-                </v-card-text>
-                <v-card-actions class="mb-10">
-                  <v-spacer />
-                  <v-btn class="primary mr-10 mb-5">start</v-btn>
-                </v-card-actions>
-              </v-card>
-            </v-hover>
-            <v-hover v-slot="{ hover }">
-              <v-card
-                class="mt-10"
-                @click="goModJ"
-                :class="{ 'on-hover': hover }"
-              >
-                <v-card-title v-if="formal" class="primary--text text-h5">{{
-                  moduleData[10].header
-                }}</v-card-title>
-                <v-card-title v-if="!formal" class="primary--text text-h5">{{
-                  moduleData[10].headerInf
-                }}</v-card-title>
-                <v-card-text>
-                  <v-row v-if="formal" no-gutters
-                    >{{ moduleData[10].text }}
-                  </v-row>
-                  <v-row v-if="!formal" no-gutters
-                    >{{ moduleData[10].InfText }}
-                  </v-row>
-                  <v-row no-gutters class="mt-5">
-                    Status:
-                    <status-icon
-                      :finish="planSingle.finishModJpartA"
-                      class="ml-2"
-                    />
-                    <status-icon
-                      :finish="planSingle.finishModJpartB"
-                      class="ml-2"
-                    />
-                    <status-icon
-                      :finish="planSingle.finishModJpartC"
-                      class="ml-2"
-                    />
-                    <status-icon
-                      :finish="planSingle.finishModJpartD"
-                      class="ml-2"
-                    />
-                  </v-row>
-                </v-card-text>
-                <v-card-actions class="mb-10">
-                  <v-spacer />
-                  <v-btn class="primary mr-10 mb-5">start</v-btn>
-                </v-card-actions>
-              </v-card>
-            </v-hover>
-            <v-hover v-slot="{ hover }">
-              <v-card
-                class="mt-10"
-                @click="goModK"
-                :class="{ 'on-hover': hover }"
-              >
-                <v-card-title v-if="formal" class="primary--text text-h5">{{
-                  moduleData[11].header
-                }}</v-card-title>
-                <v-card-title v-if="!formal" class="primary--text text-h5">{{
-                  moduleData[11].headerInf
-                }}</v-card-title>
-                <v-card-text>
-                  <v-row v-if="formal" no-gutters
-                    >{{ moduleData[11].text }}
-                  </v-row>
-                  <v-row v-if="!formal" no-gutters
-                    >{{ moduleData[11].InfText }}
-                  </v-row>
-                  <v-row no-gutters class="mt-5">
-                    Status:
-                    <status-icon
-                      :finish="planSingle.finishModKpartA"
-                      class="ml-2"
-                    />
-                    <status-icon
-                      :finish="planSingle.finishModKpartB"
-                      class="ml-2"
-                    />
-                  </v-row>
-                </v-card-text>
-                <v-card-actions class="mb-10">
-                  <v-spacer />
-                  <v-btn class="primary mr-10 mb-5">start</v-btn>
-                </v-card-actions>
-              </v-card>
-            </v-hover>
-            <v-hover v-slot="{ hover }">
-              <v-card
-                class="mt-10"
-                @click="goModL"
-                :class="{ 'on-hover': hover }"
-              >
-                <v-card-title v-if="formal" class="primary--text text-h5">{{
-                  moduleData[12].header
-                }}</v-card-title>
-                <v-card-title v-if="!formal" class="primary--text text-h5">{{
-                  moduleData[12].headerInf
-                }}</v-card-title>
-                <v-card-text>
-                  <v-row v-if="formal" no-gutters
-                    >{{ moduleData[12].text }}
-                  </v-row>
-                  <v-row v-if="!formal" no-gutters
-                    >{{ moduleData[12].InfText }}
-                  </v-row>
-                  <v-row no-gutters class="mt-5">
-                    Status:
-                    <status-icon
-                      :finish="planSingle.finishModLpartA"
-                      class="ml-2"
-                    />
-                  </v-row>
-                </v-card-text>
-                <v-card-actions class="mb-10">
-                  <v-spacer />
-                  <v-btn class="primary mr-10 mb-5">start</v-btn>
-                </v-card-actions>
-              </v-card>
-            </v-hover>
-            <v-hover v-slot="{ hover }">
-              <v-card
-                class="mt-10"
-                @click="goModM"
-                :class="{ 'on-hover': hover }"
-              >
-                <v-card-title v-if="formal" class="primary--text text-h5">{{
-                  moduleData[13].header
-                }}</v-card-title>
-                <v-card-title v-if="!formal" class="primary--text text-h5">{{
-                  moduleData[13].headerInf
-                }}</v-card-title>
-                <v-card-text>
-                  <v-row v-if="formal" no-gutters
-                    >{{ moduleData[13].text }}
-                  </v-row>
-                  <v-row v-if="!formal" no-gutters
-                    >{{ moduleData[13].InfText }}
-                  </v-row>
-                  <v-row no-gutters class="mt-5">
-                    Status:
-                    <status-icon
-                      :finish="planSingle.finishModMpartA"
-                      class="ml-2"
-                    />
-                  </v-row>
-                </v-card-text>
-                <v-card-actions class="mb-10">
-                  <v-spacer />
-                  <v-btn class="primary mr-10 mb-5">start</v-btn>
-                </v-card-actions>
-              </v-card>
-            </v-hover>
-            <v-hover v-slot="{ hover }">
-              <v-card
-                class="mt-10"
-                @click="goModN"
-                :class="{ 'on-hover': hover }"
-              >
-                <v-card-title v-if="formal" class="primary--text text-h5">{{
-                  moduleData[14].header
-                }}</v-card-title>
-                <v-card-title v-if="!formal" class="primary--text text-h5">{{
-                  moduleData[14].headerInf
-                }}</v-card-title>
-                <v-card-text>
-                  <v-row v-if="formal" no-gutters
-                    >{{ moduleData[14].text }}
-                  </v-row>
-                  <v-row v-if="!formal" no-gutters
-                    >{{ moduleData[14].InfText }}
-                  </v-row>
-                  <v-row no-gutters class="mt-5">
-                    Status:
-                    <status-icon
-                      :finish="planSingle.finishModNpartA"
-                      class="ml-2"
-                    />
-                  </v-row>
-                </v-card-text>
-                <v-card-actions class="mb-10">
-                  <v-spacer />
-                  <v-btn class="primary mr-10 mb-5">start</v-btn>
-                </v-card-actions>
-              </v-card>
-            </v-hover>
+                <v-card
+                  class="mt-10"
+                  @click="goModG"
+                  :class="{ 'on-hover': hover }"
+                >
+                  <v-card-title v-if="formal" class="primary--text text-h5">{{
+                    moduleData[7].header
+                  }}</v-card-title>
+                  <v-card-title v-if="!formal" class="primary--text text-h5">{{
+                    moduleData[7].headerInf
+                  }}</v-card-title>
+                  <v-card-text>
+                    <v-row v-if="formal" no-gutters
+                      >{{ moduleData[7].text }}
+                    </v-row>
+                    <v-row v-if="!formal" no-gutters
+                      >{{ moduleData[7].InfText }}
+                    </v-row>
+                    <v-row no-gutters class="mt-5">
+                      Status:
+                      <status-icon
+                        :finish="planSingle.finishModGpartA"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModGpartB"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModGpartC"
+                        class="ml-2"
+                      />
+                    </v-row>
+                  </v-card-text>
+                  <v-card-actions class="mb-10">
+                    <v-spacer />
+                    <v-btn class="primary mr-10 mb-5">start</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-hover>
+              <v-hover v-slot="{ hover }" v-if="!planSingle.finishModH">
+                <v-card
+                  class="mt-10"
+                  @click="goModH"
+                  :class="{ 'on-hover': hover }"
+                >
+                  <v-card-title v-if="formal" class="primary--text text-h5">{{
+                    moduleData[8].header
+                  }}</v-card-title>
+                  <v-card-title v-if="!formal" class="primary--text text-h5">{{
+                    moduleData[8].headerInf
+                  }}</v-card-title>
+                  <v-card-text>
+                    <v-row v-if="formal" no-gutters
+                      >{{ moduleData[8].text }}
+                    </v-row>
+                    <v-row v-if="!formal" no-gutters
+                      >{{ moduleData[8].InfText }}
+                    </v-row>
+                    <v-row no-gutters class="mt-5">
+                      Status:
+                      <status-icon
+                        :finish="planSingle.finishModHpartA"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModHpartB"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModHpartC"
+                        class="ml-2"
+                      />
+                    </v-row>
+                  </v-card-text>
+                  <v-card-actions class="mb-10">
+                    <v-spacer />
+                    <v-btn class="primary mr-10 mb-5">start</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-hover>
+              <v-hover v-slot="{ hover }" v-if="!planSingle.finishModI">
+                <v-card
+                  class="mt-10"
+                  @click="goModI"
+                  :class="{ 'on-hover': hover }"
+                >
+                  <v-card-title v-if="formal" class="primary--text text-h5">{{
+                    moduleData[9].header
+                  }}</v-card-title>
+                  <v-card-title v-if="!formal" class="primary--text text-h5">{{
+                    moduleData[9].headerInf
+                  }}</v-card-title>
+                  <v-card-text>
+                    <v-row v-if="formal" no-gutters
+                      >{{ moduleData[9].text }}
+                    </v-row>
+                    <v-row v-if="!formal" no-gutters
+                      >{{ moduleData[9].InfText }}
+                    </v-row>
+                    <v-row no-gutters class="mt-5">
+                      Status:
+                      <status-icon
+                        :finish="planSingle.finishModIpartA"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModIpartB"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModIpartC"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModIpartD"
+                        class="ml-2"
+                      />
+                    </v-row>
+                  </v-card-text>
+                  <v-card-actions class="mb-10">
+                    <v-spacer />
+                    <v-btn class="primary mr-10 mb-5">start</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-hover>
+              <v-hover v-slot="{ hover }" v-if="!planSingle.finishModJ">
+                <v-card
+                  class="mt-10"
+                  @click="goModJ"
+                  :class="{ 'on-hover': hover }"
+                >
+                  <v-card-title v-if="formal" class="primary--text text-h5">{{
+                    moduleData[10].header
+                  }}</v-card-title>
+                  <v-card-title v-if="!formal" class="primary--text text-h5">{{
+                    moduleData[10].headerInf
+                  }}</v-card-title>
+                  <v-card-text>
+                    <v-row v-if="formal" no-gutters
+                      >{{ moduleData[10].text }}
+                    </v-row>
+                    <v-row v-if="!formal" no-gutters
+                      >{{ moduleData[10].InfText }}
+                    </v-row>
+                    <v-row no-gutters class="mt-5">
+                      Status:
+                      <status-icon
+                        :finish="planSingle.finishModJpartA"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModJpartB"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModJpartC"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModJpartD"
+                        class="ml-2"
+                      />
+                    </v-row>
+                  </v-card-text>
+                  <v-card-actions class="mb-10">
+                    <v-spacer />
+                    <v-btn class="primary mr-10 mb-5">start</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-hover>
+              <v-hover v-slot="{ hover }" v-if="!planSingle.finishModK">
+                <v-card
+                  class="mt-10"
+                  @click="goModK"
+                  :class="{ 'on-hover': hover }"
+                >
+                  <v-card-title v-if="formal" class="primary--text text-h5">{{
+                    moduleData[11].header
+                  }}</v-card-title>
+                  <v-card-title v-if="!formal" class="primary--text text-h5">{{
+                    moduleData[11].headerInf
+                  }}</v-card-title>
+                  <v-card-text>
+                    <v-row v-if="formal" no-gutters
+                      >{{ moduleData[11].text }}
+                    </v-row>
+                    <v-row v-if="!formal" no-gutters
+                      >{{ moduleData[11].InfText }}
+                    </v-row>
+                    <v-row no-gutters class="mt-5">
+                      Status:
+                      <status-icon
+                        :finish="planSingle.finishModKpartA"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModKpartB"
+                        class="ml-2"
+                      />
+                    </v-row>
+                  </v-card-text>
+                  <v-card-actions class="mb-10">
+                    <v-spacer />
+                    <v-btn class="primary mr-10 mb-5">start</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-hover>
+              <v-hover v-slot="{ hover }" v-if="!planSingle.finishModL">
+                <v-card
+                  class="mt-10"
+                  @click="goModL"
+                  :class="{ 'on-hover': hover }"
+                >
+                  <v-card-title v-if="formal" class="primary--text text-h5">{{
+                    moduleData[12].header
+                  }}</v-card-title>
+                  <v-card-title v-if="!formal" class="primary--text text-h5">{{
+                    moduleData[12].headerInf
+                  }}</v-card-title>
+                  <v-card-text>
+                    <v-row v-if="formal" no-gutters
+                      >{{ moduleData[12].text }}
+                    </v-row>
+                    <v-row v-if="!formal" no-gutters
+                      >{{ moduleData[12].InfText }}
+                    </v-row>
+                    <v-row no-gutters class="mt-5">
+                      Status:
+                      <status-icon
+                        :finish="planSingle.finishModLpartA"
+                        class="ml-2"
+                      />
+                    </v-row>
+                  </v-card-text>
+                  <v-card-actions class="mb-10">
+                    <v-spacer />
+                    <v-btn class="primary mr-10 mb-5">start</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-hover>
+              <v-hover v-slot="{ hover }" v-if="!planSingle.finishModM">
+                <v-card
+                  class="mt-10"
+                  @click="goModM"
+                  :class="{ 'on-hover': hover }"
+                >
+                  <v-card-title v-if="formal" class="primary--text text-h5">{{
+                    moduleData[13].header
+                  }}</v-card-title>
+                  <v-card-title v-if="!formal" class="primary--text text-h5">{{
+                    moduleData[13].headerInf
+                  }}</v-card-title>
+                  <v-card-text>
+                    <v-row v-if="formal" no-gutters
+                      >{{ moduleData[13].text }}
+                    </v-row>
+                    <v-row v-if="!formal" no-gutters
+                      >{{ moduleData[13].InfText }}
+                    </v-row>
+                    <v-row no-gutters class="mt-5">
+                      Status:
+                      <status-icon
+                        :finish="planSingle.finishModMpartA"
+                        class="ml-2"
+                      />
+                    </v-row>
+                  </v-card-text>
+                  <v-card-actions class="mb-10">
+                    <v-spacer />
+                    <v-btn class="primary mr-10 mb-5">start</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-hover>
+              <v-hover v-slot="{ hover }" v-if="!planSingle.finishModN">
+                <v-card
+                  class="mt-10"
+                  @click="goModN"
+                  :class="{ 'on-hover': hover }"
+                >
+                  <v-card-title v-if="formal" class="primary--text text-h5">{{
+                    moduleData[14].header
+                  }}</v-card-title>
+                  <v-card-title v-if="!formal" class="primary--text text-h5">{{
+                    moduleData[14].headerInf
+                  }}</v-card-title>
+                  <v-card-text>
+                    <v-row v-if="formal" no-gutters
+                      >{{ moduleData[14].text }}
+                    </v-row>
+                    <v-row v-if="!formal" no-gutters
+                      >{{ moduleData[14].InfText }}
+                    </v-row>
+                    <v-row no-gutters class="mt-5">
+                      Status:
+                      <status-icon
+                        :finish="planSingle.finishModNpartA"
+                        class="ml-2"
+                      />
+                    </v-row>
+                  </v-card-text>
+                  <v-card-actions class="mb-10">
+                    <v-spacer />
+                    <v-btn class="primary mr-10 mb-5">start</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-hover>
+            </div>
             <v-hover v-slot="{ hover }">
               <v-card
                 class="mt-10"
@@ -640,6 +629,573 @@
                 </v-card-actions>
               </v-card>
             </v-hover>
+            <div>
+              <statement-text :text="'Afgeronde modules'" />
+              <v-hover v-slot="{ hover }" v-if="planSingle.finishModA">
+                <v-card
+                  class="mt-10"
+                  @click="goModA"
+                  :class="{ 'on-hover': hover }"
+                >
+                  <v-card-title v-if="formal" class="primary--text text-h5">{{
+                    moduleData[1].header
+                  }}</v-card-title>
+                  <v-card-title v-if="!formal" class="primary--text text-h5">{{
+                    moduleData[1].headerInf
+                  }}</v-card-title>
+                  <v-card-text>
+                    <v-row v-if="formal" no-gutters
+                      >{{ moduleData[1].text }}
+                    </v-row>
+                    <v-row v-if="!formal" no-gutters
+                      >{{ moduleData[1].InfText }}
+                    </v-row>
+                    <v-row no-gutters class="mt-5">
+                      Status:
+                      <status-icon
+                        :finish="planSingle.finishModApartA"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModApartB"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModApartC"
+                        class="ml-2"
+                      />
+                    </v-row>
+                  </v-card-text>
+                  <v-card-actions class="mb-10">
+                    <v-spacer />
+                    <v-btn class="primary mr-10 mb-5">start</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-hover>
+              <v-hover
+                v-slot="{ hover }"
+                v-if="planSingle.useModB && planSingle.finishModB"
+              >
+                <v-card
+                  class="mt-10"
+                  @click="goModB"
+                  :class="{ 'on-hover': hover }"
+                >
+                  <v-card-title v-if="formal" class="primary--text text-h5">{{
+                    moduleData[2].header
+                  }}</v-card-title>
+                  <v-card-title v-if="!formal" class="primary--text text-h5">{{
+                    moduleData[2].headerInf
+                  }}</v-card-title>
+                  <v-card-text>
+                    <v-row v-if="formal" no-gutters
+                      >{{ moduleData[2].text }}
+                    </v-row>
+                    <v-row v-if="!formal" no-gutters
+                      >{{ moduleData[2].InfText }}
+                    </v-row>
+                    <v-row no-gutters class="mt-5">
+                      Status:
+                      <status-icon
+                        :finish="planSingle.finishModBpartA"
+                        class="ml-2"
+                      />
+                    </v-row>
+                  </v-card-text>
+                  <v-card-actions class="mb-10">
+                    <v-spacer />
+                    <v-btn class="primary mr-10 mb-5">start</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-hover>
+              <v-hover
+                v-slot="{ hover }"
+                v-if="planSingle.useModC && planSingle.finishModC"
+              >
+                <v-card
+                  class="mt-10"
+                  @click="goModC"
+                  :class="{ 'on-hover': hover }"
+                >
+                  <v-card-title v-if="formal" class="primary--text text-h5">{{
+                    moduleData[3].header
+                  }}</v-card-title>
+                  <v-card-title v-if="!formal" class="primary--text text-h5">{{
+                    moduleData[3].headerInf
+                  }}</v-card-title>
+                  <v-card-text>
+                    <v-row v-if="formal" no-gutters
+                      >{{ moduleData[3].text }}
+                    </v-row>
+                    <v-row v-if="!formal" no-gutters
+                      >{{ moduleData[3].InfText }}
+                    </v-row>
+                    <v-row no-gutters class="mt-5">
+                      Status:
+                      <status-icon
+                        :finish="planSingle.finishModCpartA"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModCpartB"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModCpartC"
+                        class="ml-2"
+                      />
+                    </v-row>
+                  </v-card-text>
+                  <v-card-actions class="mb-10">
+                    <v-spacer />
+                    <v-btn class="primary mr-10 mb-5">start</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-hover>
+              <v-hover
+                v-slot="{ hover }"
+                v-if="planSingle.useModD && planSingle.finishModD"
+              >
+                <v-card
+                  class="mt-10"
+                  @click="goModD"
+                  :class="{ 'on-hover': hover }"
+                >
+                  <v-card-title v-if="formal" class="primary--text text-h5">{{
+                    moduleData[4].header
+                  }}</v-card-title>
+                  <v-card-title v-if="!formal" class="primary--text text-h5">{{
+                    moduleData[4].headerInf
+                  }}</v-card-title>
+                  <v-card-text>
+                    <v-row v-if="formal" no-gutters
+                      >{{ moduleData[4].text }}
+                    </v-row>
+                    <v-row v-if="!formal" no-gutters
+                      >{{ moduleData[4].InfText }}
+                    </v-row>
+                    <v-row no-gutters class="mt-5">
+                      Status:
+                      <status-icon
+                        :finish="planSingle.finishModDpartA"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModDpartB"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModDpartC"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModDpartD"
+                        class="ml-2"
+                      />
+                    </v-row>
+                  </v-card-text>
+                  <v-card-actions class="mb-10">
+                    <v-spacer />
+                    <v-btn class="primary mr-10 mb-5">start</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-hover>
+              <v-hover
+                v-slot="{ hover }"
+                v-if="planSingle.useModE && planSingle.finishModE"
+              >
+                <v-card
+                  class="mt-10"
+                  @click="goModE"
+                  :class="{ 'on-hover': hover }"
+                >
+                  <v-card-title v-if="formal" class="primary--text text-h5">{{
+                    moduleData[5].header
+                  }}</v-card-title>
+                  <v-card-title v-if="!formal" class="primary--text text-h5">{{
+                    moduleData[5].headerInf
+                  }}</v-card-title>
+                  <v-card-text>
+                    <v-row v-if="formal" no-gutters
+                      >{{ moduleData[5].text }}
+                    </v-row>
+                    <v-row v-if="!formal" no-gutters
+                      >{{ moduleData[5].InfText }}
+                    </v-row>
+                    <v-row no-gutters class="mt-5">
+                      Status:
+                      <status-icon
+                        :finish="planSingle.finishModEpartA"
+                        class="ml-2"
+                      />
+                    </v-row>
+                  </v-card-text>
+                  <v-card-actions class="mb-10">
+                    <v-spacer />
+                    <v-btn class="primary mr-10 mb-5">start</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-hover>
+              <v-hover
+                v-slot="{ hover }"
+                v-if="planSingle.useModF && planSingle.finishModF"
+              >
+                <v-card
+                  class="mt-10"
+                  @click="goModF"
+                  :class="{ 'on-hover': hover }"
+                >
+                  <v-card-title v-if="formal" class="primary--text text-h5">{{
+                    moduleData[6].header
+                  }}</v-card-title>
+                  <v-card-title v-if="!formal" class="primary--text text-h5">{{
+                    moduleData[6].headerInf
+                  }}</v-card-title>
+                  <v-card-text>
+                    <v-row v-if="formal" no-gutters
+                      >{{ moduleData[6].text }}
+                    </v-row>
+                    <v-row v-if="!formal" no-gutters
+                      >{{ moduleData[6].InfText }}
+                    </v-row>
+                    <v-row no-gutters class="mt-5">
+                      Status:
+                      <status-icon
+                        :finish="planSingle.finishModFpartA"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModFpartB"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModFpartC"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModFpartD"
+                        class="ml-2"
+                      />
+                    </v-row>
+                  </v-card-text>
+                  <v-card-actions class="mb-10">
+                    <v-spacer />
+                    <v-btn class="primary mr-10 mb-5">start</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-hover>
+              <v-hover
+                v-slot="{ hover }"
+                v-if="planSingle.useModG && planSingle.finishModG"
+              >
+                <v-card
+                  class="mt-10"
+                  @click="goModG"
+                  :class="{ 'on-hover': hover }"
+                >
+                  <v-card-title v-if="formal" class="primary--text text-h5">{{
+                    moduleData[7].header
+                  }}</v-card-title>
+                  <v-card-title v-if="!formal" class="primary--text text-h5">{{
+                    moduleData[7].headerInf
+                  }}</v-card-title>
+                  <v-card-text>
+                    <v-row v-if="formal" no-gutters
+                      >{{ moduleData[7].text }}
+                    </v-row>
+                    <v-row v-if="!formal" no-gutters
+                      >{{ moduleData[7].InfText }}
+                    </v-row>
+                    <v-row no-gutters class="mt-5">
+                      Status:
+                      <status-icon
+                        :finish="planSingle.finishModGpartA"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModGpartB"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModGpartC"
+                        class="ml-2"
+                      />
+                    </v-row>
+                  </v-card-text>
+                  <v-card-actions class="mb-10">
+                    <v-spacer />
+                    <v-btn class="primary mr-10 mb-5">start</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-hover>
+              <v-hover v-slot="{ hover }" v-if="planSingle.finishModH">
+                <v-card
+                  class="mt-10"
+                  @click="goModH"
+                  :class="{ 'on-hover': hover }"
+                >
+                  <v-card-title v-if="formal" class="primary--text text-h5">{{
+                    moduleData[8].header
+                  }}</v-card-title>
+                  <v-card-title v-if="!formal" class="primary--text text-h5">{{
+                    moduleData[8].headerInf
+                  }}</v-card-title>
+                  <v-card-text>
+                    <v-row v-if="formal" no-gutters
+                      >{{ moduleData[8].text }}
+                    </v-row>
+                    <v-row v-if="!formal" no-gutters
+                      >{{ moduleData[8].InfText }}
+                    </v-row>
+                    <v-row no-gutters class="mt-5">
+                      Status:
+                      <status-icon
+                        :finish="planSingle.finishModHpartA"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModHpartB"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModHpartC"
+                        class="ml-2"
+                      />
+                    </v-row>
+                  </v-card-text>
+                  <v-card-actions class="mb-10">
+                    <v-spacer />
+                    <v-btn class="primary mr-10 mb-5">start</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-hover>
+              <v-hover v-slot="{ hover }" v-if="planSingle.finishModI">
+                <v-card
+                  class="mt-10"
+                  @click="goModI"
+                  :class="{ 'on-hover': hover }"
+                >
+                  <v-card-title v-if="formal" class="primary--text text-h5">{{
+                    moduleData[9].header
+                  }}</v-card-title>
+                  <v-card-title v-if="!formal" class="primary--text text-h5">{{
+                    moduleData[9].headerInf
+                  }}</v-card-title>
+                  <v-card-text>
+                    <v-row v-if="formal" no-gutters
+                      >{{ moduleData[9].text }}
+                    </v-row>
+                    <v-row v-if="!formal" no-gutters
+                      >{{ moduleData[9].InfText }}
+                    </v-row>
+                    <v-row no-gutters class="mt-5">
+                      Status:
+                      <status-icon
+                        :finish="planSingle.finishModIpartA"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModIpartB"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModIpartC"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModIpartD"
+                        class="ml-2"
+                      />
+                    </v-row>
+                  </v-card-text>
+                  <v-card-actions class="mb-10">
+                    <v-spacer />
+                    <v-btn class="primary mr-10 mb-5">start</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-hover>
+              <v-hover v-slot="{ hover }" v-if="planSingle.finishModJ">
+                <v-card
+                  class="mt-10"
+                  @click="goModJ"
+                  :class="{ 'on-hover': hover }"
+                >
+                  <v-card-title v-if="formal" class="primary--text text-h5">{{
+                    moduleData[10].header
+                  }}</v-card-title>
+                  <v-card-title v-if="!formal" class="primary--text text-h5">{{
+                    moduleData[10].headerInf
+                  }}</v-card-title>
+                  <v-card-text>
+                    <v-row v-if="formal" no-gutters
+                      >{{ moduleData[10].text }}
+                    </v-row>
+                    <v-row v-if="!formal" no-gutters
+                      >{{ moduleData[10].InfText }}
+                    </v-row>
+                    <v-row no-gutters class="mt-5">
+                      Status:
+                      <status-icon
+                        :finish="planSingle.finishModJpartA"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModJpartB"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModJpartC"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModJpartD"
+                        class="ml-2"
+                      />
+                    </v-row>
+                  </v-card-text>
+                  <v-card-actions class="mb-10">
+                    <v-spacer />
+                    <v-btn class="primary mr-10 mb-5">start</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-hover>
+              <v-hover v-slot="{ hover }" v-if="planSingle.finishModK">
+                <v-card
+                  class="mt-10"
+                  @click="goModK"
+                  :class="{ 'on-hover': hover }"
+                >
+                  <v-card-title v-if="formal" class="primary--text text-h5">{{
+                    moduleData[11].header
+                  }}</v-card-title>
+                  <v-card-title v-if="!formal" class="primary--text text-h5">{{
+                    moduleData[11].headerInf
+                  }}</v-card-title>
+                  <v-card-text>
+                    <v-row v-if="formal" no-gutters
+                      >{{ moduleData[11].text }}
+                    </v-row>
+                    <v-row v-if="!formal" no-gutters
+                      >{{ moduleData[11].InfText }}
+                    </v-row>
+                    <v-row no-gutters class="mt-5">
+                      Status:
+                      <status-icon
+                        :finish="planSingle.finishModKpartA"
+                        class="ml-2"
+                      />
+                      <status-icon
+                        :finish="planSingle.finishModKpartB"
+                        class="ml-2"
+                      />
+                    </v-row>
+                  </v-card-text>
+                  <v-card-actions class="mb-10">
+                    <v-spacer />
+                    <v-btn class="primary mr-10 mb-5">start</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-hover>
+              <v-hover v-slot="{ hover }" v-if="planSingle.finishModL">
+                <v-card
+                  class="mt-10"
+                  @click="goModL"
+                  :class="{ 'on-hover': hover }"
+                >
+                  <v-card-title v-if="formal" class="primary--text text-h5">{{
+                    moduleData[12].header
+                  }}</v-card-title>
+                  <v-card-title v-if="!formal" class="primary--text text-h5">{{
+                    moduleData[12].headerInf
+                  }}</v-card-title>
+                  <v-card-text>
+                    <v-row v-if="formal" no-gutters
+                      >{{ moduleData[12].text }}
+                    </v-row>
+                    <v-row v-if="!formal" no-gutters
+                      >{{ moduleData[12].InfText }}
+                    </v-row>
+                    <v-row no-gutters class="mt-5">
+                      Status:
+                      <status-icon
+                        :finish="planSingle.finishModLpartA"
+                        class="ml-2"
+                      />
+                    </v-row>
+                  </v-card-text>
+                  <v-card-actions class="mb-10">
+                    <v-spacer />
+                    <v-btn class="primary mr-10 mb-5">start</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-hover>
+              <v-hover v-slot="{ hover }" v-if="planSingle.finishModM">
+                <v-card
+                  class="mt-10"
+                  @click="goModM"
+                  :class="{ 'on-hover': hover }"
+                >
+                  <v-card-title v-if="formal" class="primary--text text-h5">{{
+                    moduleData[13].header
+                  }}</v-card-title>
+                  <v-card-title v-if="!formal" class="primary--text text-h5">{{
+                    moduleData[13].headerInf
+                  }}</v-card-title>
+                  <v-card-text>
+                    <v-row v-if="formal" no-gutters
+                      >{{ moduleData[13].text }}
+                    </v-row>
+                    <v-row v-if="!formal" no-gutters
+                      >{{ moduleData[13].InfText }}
+                    </v-row>
+                    <v-row no-gutters class="mt-5">
+                      Status:
+                      <status-icon
+                        :finish="planSingle.finishModMpartA"
+                        class="ml-2"
+                      />
+                    </v-row>
+                  </v-card-text>
+                  <v-card-actions class="mb-10">
+                    <v-spacer />
+                    <v-btn class="primary mr-10 mb-5">start</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-hover>
+              <v-hover v-slot="{ hover }" v-if="planSingle.finishModN">
+                <v-card
+                  class="mt-10"
+                  @click="goModN"
+                  :class="{ 'on-hover': hover }"
+                >
+                  <v-card-title v-if="formal" class="primary--text text-h5">{{
+                    moduleData[14].header
+                  }}</v-card-title>
+                  <v-card-title v-if="!formal" class="primary--text text-h5">{{
+                    moduleData[14].headerInf
+                  }}</v-card-title>
+                  <v-card-text>
+                    <v-row v-if="formal" no-gutters
+                      >{{ moduleData[14].text }}
+                    </v-row>
+                    <v-row v-if="!formal" no-gutters
+                      >{{ moduleData[14].InfText }}
+                    </v-row>
+                    <v-row no-gutters class="mt-5">
+                      Status:
+                      <status-icon
+                        :finish="planSingle.finishModNpartA"
+                        class="ml-2"
+                      />
+                    </v-row>
+                  </v-card-text>
+                  <v-card-actions class="mb-10">
+                    <v-spacer />
+                    <v-btn class="primary mr-10 mb-5">start</v-btn>
+                  </v-card-actions>
+                </v-card>
+              </v-hover>
+            </div>
           </div>
         </v-col>
       </v-row>
