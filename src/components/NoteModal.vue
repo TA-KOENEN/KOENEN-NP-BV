@@ -6,7 +6,7 @@
     transition="dialog-bottom-transition"
   >
     <v-card>
-      <v-toolbar dark color="accent">
+      <v-toolbar dark color="primary">
         <v-btn icon dark @click="show = false">
           <v-icon>mdi-close</v-icon>
         </v-btn>

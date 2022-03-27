@@ -1,5 +1,5 @@
 <template>
-  <v-divider class="info mt-5" />
+  <v-divider class="leftPanel mt-5" />
 </template>
 
 <script>

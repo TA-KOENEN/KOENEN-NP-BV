@@ -7,42 +7,42 @@
       v-on="$listeners"
     >
       <div>
-        <v-radio value="ke1" color="info">
+        <v-radio value="ke1" color="primary">
           <template v-slot:label> {{ optionA }} </template>
         </v-radio>
       </div>
       <div class="mt-3" v-if="nrOptions > 1">
-        <v-radio value="ke2" color="info">
+        <v-radio value="ke2" color="primary">
           <template v-slot:label> {{ optionB }} </template>
         </v-radio>
       </div>
       <div class="mt-3" v-if="nrOptions > 2">
-        <v-radio value="ke3" color="info">
+        <v-radio value="ke3" color="primary">
           <template v-slot:label>{{ optionC }} </template>
         </v-radio>
       </div>
       <div class="mt-3" v-if="nrOptions > 3">
-        <v-radio value="ke4" color="info">
+        <v-radio value="ke4" color="primary">
           <template v-slot:label>{{ optionD }} </template>
         </v-radio>
       </div>
       <div class="mt-3" v-if="nrOptions > 4">
-        <v-radio value="ke5" color="info">
+        <v-radio value="ke5" color="primary">
           <template v-slot:label>{{ optionE }} </template>
         </v-radio>
       </div>
       <div class="mt-3" v-if="nrOptions > 5">
-        <v-radio value="ke6" color="info">
+        <v-radio value="ke6" color="primary">
           <template v-slot:label>{{ optionF }} </template>
         </v-radio>
       </div>
       <div class="mt-3" v-if="nrOptions > 6">
-        <v-radio value="ke7" color="info">
+        <v-radio value="ke7" color="primary">
           <template v-slot:label>{{ optionG }} </template>
         </v-radio>
       </div>
       <div class="mt-3" v-if="nrOptions > 7">
-        <v-radio value="ke8" color="info">
+        <v-radio value="ke8" color="primary">
           <template v-slot:label>{{ optionH }} </template>
         </v-radio>
       </div>

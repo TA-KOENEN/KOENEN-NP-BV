@@ -4,7 +4,7 @@
       <v-col
         cols="12"
         md="6"
-        class="secondary align-center"
+        class="leftPanel align-center"
         :class="{ 'full-page': $vuetify.breakpoint.mdAndUp }"
       >
         <v-row class="ma-16">
@@ -21,7 +21,7 @@
           </v-col>
         </v-row>
         <v-row class="justify-center">
-          <h3>Welkom bij Trusted Accountant</h3>
+          <h3>Welkom bij Koenen en Co</h3>
         </v-row>
         <v-row class="justify-center mt-10">
           <h5>Liever een ander kleurschema klik op de knop</h5></v-row

@@ -1,5 +1,5 @@
 <template>
-  <v-alert icon="mdi-shield-lock-outline" prominent text type="info">
+  <v-alert icon="mdi-shield-lock-outline" prominent text type="primary">
     <p v-if="message" class="mt-2" key="message">
       {{ message }}
     </p>
