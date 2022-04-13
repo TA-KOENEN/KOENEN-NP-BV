@@ -67,9 +67,10 @@
             <br />
             <br />
             <br />
-            {{ contactData.name }}<br />
-            {{ contactData.email }}<br />
-            {{ contactData.telephone }}<br />
+            {{ companyNameTeam }}
+            {{ firstNameUser }} {{ lastNameUser }}<br />
+            {{ emailUser }}<br />
+            {{ telephoneUser }}<br />
           </div>
           <div v-if="!formal">
             Beste belangstellende ,<br />
@@ -93,9 +94,10 @@
             <br />
             <br />
             <br />
-            {{ contactData.name }}<br />
-            {{ contactData.email }}<br />
-            {{ contactData.telephone }}<br />
+            {{ companyNameTeam }}
+            {{ firstNameUser }} {{ lastNameUser }}<br />
+            {{ emailUser }}<br />
+            {{ telephoneUser }}<br />
           </div>
           <div class="text-end mr-15 mb-10 mt-15">
             <v-btn elevation="15" class="primary" @click="start">Ja</v-btn>
@@ -111,7 +113,6 @@
 import vimeoData from "@/text/vimeo.json";
 import NotInt from "@/components/core/notInt";
 import textData from "@/text/textAintro.json";
-import contactData from "@/text/contact.json";
 
 export default {
   name: "Intro",
@@ -122,7 +123,11 @@ export default {
       valid: true,
       vimeo: vimeoData,
       textData: textData,
-      contactData: contactData,
+      telephoneUser: "",
+      emailUser: "",
+      firstNameUser: "",
+      lastNameUser: "",
+      companyNameTeam: "",
     };
   },
   methods: {
@@ -149,6 +154,11 @@ export default {
       this.$vuetify.theme.dark = theme === "true";
     }
     this.formal = JSON.parse(localStorage.getItem("formal"));
+    this.companyNameTeam = JSON.parse(localStorage.getItem("companyNameTeam"));
+    this.emailUser = JSON.parse(localStorage.getItem("emailUser"));
+    this.firstNameUser = JSON.parse(localStorage.getItem("firstNameUser"));
+    this.lastNameUser = JSON.parse(localStorage.getItem("lastNameUser"));
+    this.telephoneUser = JSON.parse(localStorage.getItem("telephoneUser"));
   },
   computed: {},
 };
