@@ -13,7 +13,6 @@ export const state = {
   stepfamily: false,
   token: localStorage.getItem("token") || "",
   family: null,
-
 };
 
 export const mutations = {
