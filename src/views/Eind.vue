@@ -1,7 +1,7 @@
 <template>
   <v-container xs12 sm6 offset-sm3>
     <v-row justify="center">
-      <div class="hoofd" @click="begin">
+      <div class="hoofd">
         <transition
           enter-active-class="animate__animated animate__slideInDown"
           appear
@@ -43,7 +43,9 @@
           enter-active-class="animate__animated animate__fadeInLeft"
           appear
         >
-          <p class="logoC">Uitgelogd. Opnieuw inloggen? Gebruik de link in de mail.<br /></p>
+          <p class="logoC">
+            Uitgelogd. Opnieuw inloggen? Gebruik de link in de mail.<br />
+          </p>
         </transition>
       </div>
     </v-row>

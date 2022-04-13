@@ -63,6 +63,11 @@ Vue.component("stop-element", stopElement);
 import endElement from "@/components/core/endElement";
 Vue.component("end-element", endElement);
 
+import TaModuleCardNp from "@/components/core/TaModuleCardNp";
+Vue.component("ta-module-card-np", TaModuleCardNp);
+import TaStatusIcon from "@/components/core/TaStatusIcon";
+Vue.component("ta-status-icon", TaStatusIcon);
+
 new Vue({
   router,
   store,

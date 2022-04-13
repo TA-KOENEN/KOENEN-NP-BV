@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="accent--text">
+    <div class="primary--text">
       {{ text }}
       <v-icon v-if="note" color="primary" dark @click.stop="showToel = true"
         >mdi-chat</v-icon
